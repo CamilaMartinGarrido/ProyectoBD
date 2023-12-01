@@ -40,12 +40,12 @@
                <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-               <MFXPasswordField fx:id="textPassword" floatingText="Contraseña" graphicTextGap="5.0" prefHeight="29.0" prefWidth="221.0" styleClass="mfx-password-field" GridPane.rowIndex="2" />
+               <MFXPasswordField fx:id="textPassword" floatingText="Contraseña" focusTraversable="false" graphicTextGap="5.0" prefHeight="29.0" prefWidth="221.0" selectable="false" styleClass="mfx-password-field" GridPane.rowIndex="2" />
                <MFXButton fx:id="btnLogin" buttonType="RAISED" computeRadiusMultiplier="false" depthLevel="LEVEL3" prefHeight="48.0" prefWidth="221.0" rippleAnimateBackground="false" rippleRadius="50.0" rippleRadiusMultiplier="3.0" style="-fx-border-color: #458FD3; -fx-background-radius: 20; -fx-border-radius: 20;" styleClass="mfx-button" text="Iniciar Sesion" GridPane.rowIndex="3">
                   <cursor>
                      <Cursor fx:constant="HAND" />
                   </cursor></MFXButton>
-               <MFXTextField fx:id="textUser" caretVisible="false" floatingText="Nombre de Usuario" prefHeight="36.0" prefWidth="221.0" selectable="false" styleClass="mfx-text-field" GridPane.rowIndex="1">
+               <MFXTextField fx:id="textUser" floatingText="Nombre de Usuario" focusTraversable="false" prefHeight="36.0" prefWidth="221.0" selectable="false" styleClass="mfx-text-field" GridPane.rowIndex="1">
                   <textFill>
                      <Color red="0.44736841320991516" green="0.19054581224918365" blue="0.19054581224918365" opacity="0.8700000047683716" />
                   </textFill></MFXTextField>
