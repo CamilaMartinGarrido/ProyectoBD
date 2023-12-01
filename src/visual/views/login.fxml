@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="832.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.LoginController">
+   <Pane layoutY="-1.0" prefHeight="370.0" prefWidth="626.0">
+      <ImageView fx:id="loginBack" fitHeight="379.0" fitWidth="619.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <Image url="@../../images/fongo-5.jpg" />
+      </ImageView>
+      <ImageView fitHeight="322.0" fitWidth="467.0" layoutX="-39.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/logo-2.png" />
+         </image>
+      </ImageView>
+   </Pane>
+   <Pane layoutX="381.0" prefHeight="370.0" prefWidth="451.0" style="-fx-background-color: #C8E1F8; -fx-background-radius: 50 0 0 50;">
+      <children>
+         <GridPane layoutX="69.0" layoutY="25.0" prefHeight="320.0" prefWidth="314.0">
+            <columnConstraints>
+               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints maxHeight="139.0" minHeight="10.0" prefHeight="137.0" valignment="CENTER" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="153.0" minHeight="10.0" prefHeight="55.0" valignment="CENTER" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="143.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+               <MFXPasswordField fx:id="textPassword" floatingText="Contraseña" graphicTextGap="5.0" prefHeight="29.0" prefWidth="221.0" styleClass="mfx-password-field" GridPane.rowIndex="2" />
+               <MFXButton fx:id="btnLogin" buttonType="RAISED" computeRadiusMultiplier="false" depthLevel="LEVEL3" prefHeight="48.0" prefWidth="221.0" rippleAnimateBackground="false" rippleRadius="50.0" rippleRadiusMultiplier="3.0" style="-fx-border-color: #458FD3; -fx-background-radius: 20; -fx-border-radius: 20;" styleClass="mfx-button" text="Iniciar Sesion" GridPane.rowIndex="3">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor></MFXButton>
+               <MFXTextField fx:id="textUser" caretVisible="false" floatingText="Nombre de Usuario" prefHeight="36.0" prefWidth="221.0" selectable="false" styleClass="mfx-text-field" GridPane.rowIndex="1">
+                  <textFill>
+                     <Color red="0.44736841320991516" green="0.19054581224918365" blue="0.19054581224918365" opacity="0.8700000047683716" />
+                  </textFill></MFXTextField>
+               <ImageView fitHeight="341.0" fitWidth="273.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../images/conozcocuba.png" />
+                  </image>
+               </ImageView>
+            </children>
+         </GridPane>
+         <ImageView fx:id="btnClose" accessibleRole="BUTTON" fitHeight="48.0" fitWidth="41.0" layoutX="396.0" layoutY="14.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../images/close-button.png" />
+            </image>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </ImageView>
+      </children></Pane>
+</AnchorPane>

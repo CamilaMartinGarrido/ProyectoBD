@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import io.github.palexdev.mfxcore.controls.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="620.0" prefWidth="839.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.Dashboard">
+   <children>
+      <ImageView fitHeight="274.0" fitWidth="432.0" layoutX="315.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/conozcocuba.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="620.0" prefWidth="241.0" style="-fx-background-color: #0752CD; -fx-background-radius: 0 35 35 0;">
+         <children>
+            <VBox layoutY="212.0" prefHeight="409.0" prefWidth="241.0">
+               <children>
+                  <JFXButton focusTraversable="false" prefHeight="46.0" prefWidth="241.0" style="-fx-border-color: white; -fx-border-width: 0 0 1 0;" text="Inicio" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton focusTraversable="false" prefHeight="46.0" prefWidth="241.0" style="-fx-border-color: white; -fx-border-width: 0 0 1 0;" text="Usuarios" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton focusTraversable="false" prefHeight="46.0" prefWidth="241.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: white;" text="Contratos" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton focusTraversable="false" prefHeight="46.0" prefWidth="241.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: white;" text="Hoteles" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton focusTraversable="false" prefHeight="46.0" prefWidth="241.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: white;" text="Transporte" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton focusTraversable="false" prefHeight="46.0" prefWidth="241.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: white;" text="Servicios" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton focusTraversable="false" prefHeight="46.0" prefWidth="241.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: white;" text="Paquetes" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton focusTraversable="false" prefHeight="46.0" prefWidth="241.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: white;" text="Ventas" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton focusTraversable="false" prefHeight="46.0" prefWidth="241.0" text="Cerrar Sesion" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style" size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <Pane layoutX="-43.0" layoutY="10.0" prefHeight="202.0" prefWidth="269.0" style="-fx-background-color: white; -fx-background-radius: 35;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="79.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/avatar.png" />
+                     </image>
+                  </ImageView>
+                  <Label fontSmoothingType="GRAY" layoutX="75.0" layoutY="150.0" prefHeight="36.0" prefWidth="160.0" text="Nombre de Usuario">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow height="0.0" radius="4.75" />
+               </effect>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="241.0" prefHeight="620.0" prefWidth="599.0" />
+   </children>
+</AnchorPane>
