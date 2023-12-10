@@ -12,9 +12,7 @@ public class Contract {
 
 	//Getters and Setters
     //id_contract
-    public int getId_contract() {
-        return id_contract;
-    }
+    public int getId_contract() { return id_contract; }
     public void setId_contract(int id_contract) {
         this.id_contract = id_contract;
     }
@@ -43,16 +41,12 @@ public class Contract {
     public String getDescription_contract() {
         return description_contract;
     }
-    public void setDescription_contract(String description_contract) {
-        this.description_contract = description_contract;
-    }
+    public void setDescription_contract(String description_contract) { this.description_contract = description_contract; }
     //contract_type
     public String getContract_type() {
         return contract_type;
     }
-    public void setContract_type(String contract_type) {
-        this.contract_type = contract_type;
-    }
+    public void setContract_type(String contract_type) { this.contract_type = contract_type; }
 
     //Constructor
     public Contract(int id_contract, Date start_contract, Date end_contract, Date resolution_contract,

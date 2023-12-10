@@ -20,7 +20,7 @@ public class Hotel {
     private int room_count;
     private int floor_count;
     private String location_hotel;
-    private int id_b_model;
+    private String business_model;
 
 	//Getters ans Setters
     //id_hotel
@@ -41,9 +41,7 @@ public class Hotel {
     public String getChain_hotel() {
         return chain_hotel;
     }
-    public void setChain_hotel(String chain_hotel) {
-        this.chain_hotel = chain_hotel;
-    }
+    public void setChain_hotel(String chain_hotel) { this.chain_hotel = chain_hotel; }
     //category_hotel
     public String getCategory_hotel() {
         return category_hotel;
@@ -135,19 +133,19 @@ public class Hotel {
     public void setLocation_hotel(String location_hotel) {
         this.location_hotel = location_hotel;
     }
-    //id_b_model
-    public int getId_b_model() {
-        return id_b_model;
+    //business_model
+    public String getBusiness_model() {
+        return business_model;
     }
-    public void setId_b_model(int id_b_model) {
-        this.id_b_model = id_b_model;
+    public void setBusiness_model(String business_model) {
+        this.business_model = business_model;
     }
 
     //Constructor
     public Hotel(int id_hotel, String name_hotel, String chain_hotel, String category_hotel, String address_hotel,
                  String province_hotel, boolean is_active, Date date_hotel, String phone, String fax, String email,
                  double distance_to_city, double distance_to_airport, int room_count, int floor_count,
-                 String location_hotel, int id_b_model) {
+                 String location_hotel, String business_model) {
         this.setId_hotel(id_hotel);
         this.setName_hotel(name_hotel);
         this.setChain_hotel(chain_hotel);
@@ -164,6 +162,6 @@ public class Hotel {
         this.setRoom_count(room_count);
         this.setFloor_count(floor_count);
         this.setLocation_hotel(location_hotel);
-        this.setId_b_model(id_b_model);
+        this.setBusiness_model(business_model);
     }
 }

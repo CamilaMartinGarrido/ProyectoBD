@@ -4,6 +4,7 @@ public class Role {
     //Attributes
     private int id_role;
     private String name_role;
+    private String description_role;
 
     //Getters and Setters
     //id_role
@@ -20,10 +21,14 @@ public class Role {
     public void setName_role(String name_role) {
         this.name_role = name_role;
     }
+    //description_role
+    public String getDescription_role() { return description_role; }
+    public void setDescription_role(String description_role) { this.description_role = description_role; }
 
     //Constructor
-    public Role(int id_role, String name_role) {
+    public Role(int id_role, String name_role, String description_role) {
         this.setId_role(id_role);
         this.setName_role(name_role);
+        this.setDescription_role(description_role);
     }
 }

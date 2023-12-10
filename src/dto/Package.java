@@ -11,6 +11,7 @@ public class Package {
     private double hotel_airport_ride_cost;
     private double total_transportation_cost;
     private double total_package_cost;
+    private double percent_profit;
     private int id_contract;
 
     //Getters and Setters
@@ -60,16 +61,12 @@ public class Package {
     public double getHotel_airport_ride_cost() {
         return hotel_airport_ride_cost;
     }
-    public void setHotel_airport_ride_cost(double hotel_airport_ride_cost) {
-        this.hotel_airport_ride_cost = hotel_airport_ride_cost;
-    }
+    public void setHotel_airport_ride_cost(double hotel_airport_ride_cost) { this.hotel_airport_ride_cost = hotel_airport_ride_cost; }
     //total_transportation_cost
     public double getTotal_transportation_cost() {
         return total_transportation_cost;
     }
-    public void setTotal_transportation_cost(double total_transportation_cost) {
-        this.total_transportation_cost = total_transportation_cost;
-    }
+    public void setTotal_transportation_cost(double total_transportation_cost) { this.total_transportation_cost = total_transportation_cost; }
     //total_package_cost
     public double getTotal_package_cost() {
         return total_package_cost;
@@ -77,6 +74,9 @@ public class Package {
     public void setTotal_package_cost(double total_package_cost) {
         this.total_package_cost = total_package_cost;
     }
+    //percent_profit
+    public double getPercent_profit() { return percent_profit; }
+    public void setPercent_profit(double percent_profit) { this.percent_profit = percent_profit; }
     //id_contract
     public int getId_contract() {
         return id_contract;
@@ -88,7 +88,7 @@ public class Package {
     //Constructor
     public Package(int id_package, String promotional_name, int days_count, int nights_count, int pax_count,
                    double total_hotel_cost, double hotel_airport_ride_cost, double total_transportation_cost,
-                   double total_package_cost, int id_contract) {
+                   double total_package_cost, double percent_profit, int id_contract) {
         this.setId_package(id_package);
         this.setPromotional_name(promotional_name);
         this.setDays_count(days_count);
@@ -98,6 +98,7 @@ public class Package {
         this.setHotel_airport_ride_cost(hotel_airport_ride_cost);
         this.setTotal_transportation_cost(total_transportation_cost);
         this.setTotal_package_cost(total_package_cost);
+        this.setPercent_profit(percent_profit);
         this.setId_contract(id_contract);
     }
 }
