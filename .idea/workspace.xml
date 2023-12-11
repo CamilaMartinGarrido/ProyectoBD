@@ -7,9 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="544eced7-edbf-49fc-93f0-cfd10c2f3bf9" name="Changes" comment="Actualización de las clases">
+    <list default="true" id="f480cd2c-4e8c-4126-a1fe-3667f16d7df5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/Daily_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/Daily_Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ServicesLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ServicesLocator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -117,7 +120,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="544eced7-edbf-49fc-93f0-cfd10c2f3bf9" name="Changes" comment="" />
+      <changelist id="f480cd2c-4e8c-4126-a1fe-3667f16d7df5" name="Default Changelist" comment="" />
       <created>1700235971693</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
