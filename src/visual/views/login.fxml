@@ -41,7 +41,7 @@
             </rowConstraints>
             <children>
                <MFXPasswordField fx:id="textPassword" floatingText="Contraseña" graphicTextGap="5.0" prefHeight="29.0" prefWidth="221.0" styleClass="mfx-password-field" GridPane.rowIndex="2" />
-               <MFXButton fx:id="btnLogin" buttonType="RAISED" computeRadiusMultiplier="false" depthLevel="LEVEL3" prefHeight="48.0" prefWidth="221.0" rippleAnimateBackground="false" rippleRadius="50.0" rippleRadiusMultiplier="3.0" style="-fx-border-color: #458FD3; -fx-background-radius: 20; -fx-border-radius: 20;" styleClass="mfx-button" text="Iniciar Sesion" GridPane.rowIndex="3">
+               <MFXButton fx:id="btnLogin" buttonType="RAISED" computeRadiusMultiplier="false" depthLevel="LEVEL3" onAction="#accederSistema" prefHeight="48.0" prefWidth="221.0" rippleAnimateBackground="false" rippleRadius="50.0" rippleRadiusMultiplier="3.0" style="-fx-border-color: #458FD3; -fx-background-radius: 20; -fx-border-radius: 20;" styleClass="mfx-button" text="Iniciar Sesion" GridPane.rowIndex="3">
                   <cursor>
                      <Cursor fx:constant="HAND" />
                   </cursor></MFXButton>
