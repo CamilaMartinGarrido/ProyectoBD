@@ -1,5 +1,6 @@
 package visual.controllers;
 
+import dto.User;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import io.github.palexdev.materialfx.controls.MFXPasswordField;
 import io.github.palexdev.materialfx.controls.MFXTextField;
@@ -11,13 +12,16 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import services.Control;
+import services.UserService;
 
+import javax.swing.*;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
-
+    private Control control = new Control();
     @FXML
     private ImageView btnClose;
 
@@ -43,20 +47,33 @@ public class LoginController implements Initializable {
         Stage stage = (Stage) btnClose.getScene().getWindow();
         stage.close();
     }
-    public void accederSistema(ActionEvent event){
-        String username = textUser.getText();
-        String password = textPassword.getText();
+
+    public void SystemAccess(ActionEvent event) {
+        getIn();
+    }
+
+    private void getIn() {
         String rol = null;
-        //if para comparar el usuario y la contraseña con la base de datos
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/visual/views/Hotel.fxml"));
-            Parent root = fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setTitle("Ventana");
-            stage.setScene(new Scene(root, 450, 450));
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
+        rol = UserService.getLoginUser(textUser.getText(), textPassword.getText());
+        if (rol == "") {
+            JOptionPane.showMessageDialog(null, "Contraseña y usuario inválidos");
+            textPassword.setText("");
+        } else {
+            int role = UserService.getLoginUser(textUser.getText());
+            User user = new User(textUser.getText(), role);
+            this.control.setSessionUser(user);
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/visual/views/Hotel.fxml"));
+                Parent root = fxmlLoader.load();
+                Stage stage = new Stage();
+                stage.setTitle("Ventana");
+                stage.setScene(new Scene(root, 450, 450));
+                stage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
         }
+
     }
 }
