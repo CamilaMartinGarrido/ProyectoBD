@@ -22,8 +22,6 @@ public class ServicesLocator {
     public static TransportationService transportationService = null;
     public static UserService userService = null;
     public static VehicleService vehicleService = null;
-    public static UserService userService = null;
-    public static RoleService roleService = null;
 
     public static java.sql.Connection getConnection() {
         DataBaseConnection connection = null;
