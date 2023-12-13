@@ -35,4 +35,8 @@ public class User {
         this.setPassword(password);
         this.setId_role(id_role);
     }
+    public User(String user_name, int id_role){
+        this.setUsername(user_name);
+        this.setId_role(id_role);
+    }
 }

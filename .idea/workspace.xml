@@ -7,8 +7,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="544eced7-edbf-49fc-93f0-cfd10c2f3bf9" name="Changes" comment="Actualizacion Visuals, Services y DTO">
+    <list default="true" id="544eced7-edbf-49fc-93f0-cfd10c2f3bf9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_9_0_801_jdbc3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/services/Control.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/services/RoleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/services/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Habitacion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/MealPlan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Temporada.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/main/Principal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Habitacion.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Meal_Plan.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Temporada.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/Control.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visual/controllers/Temporadas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visual/views/Temporadas.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conozca Cuba.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Conozca Cuba.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ServicesLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ServicesLocator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/AddContrato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/AddContrato.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/main/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +57,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/visual/views/ActividadesDiarias.fxml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/visual/views/Hoteles.fxml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -214,6 +234,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="368b398e-d305-4463-a13b-cf02c49e39d9">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/camil/IdeaProjects/Conozca Cuba/src" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -231,6 +276,11 @@
             </State>
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="368b398e-d305-4463-a13b-cf02c49e39d9" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
