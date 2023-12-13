@@ -41,11 +41,11 @@ public class ActividadesDiarias implements Initializable {
     @FXML
     private void deleteImageClicked(ActionEvent event) {
         ActionEvent select = new ActionEvent();
-        deleteUser(select);
+        deleteActivity(select);
     }
 
     @FXML
-    void deleteUser(ActionEvent select) {
+    void deleteActivity(ActionEvent select) {
         int pos = activitiesTable.getSelectionModel().getSelectedIndex();
         if(pos != -1){
             //

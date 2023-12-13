@@ -36,11 +36,11 @@ public class Hoteles implements Initializable {
     @FXML
     private void deleteImageClicked(ActionEvent event) {
         ActionEvent select = new ActionEvent();
-        deleteUser(select);
+        deleteHotel(select);
     }
 
     @FXML
-    void deleteUser(ActionEvent select) {
+    void deleteHotel(ActionEvent select) {
         int pos = hotelsTable.getSelectionModel().getSelectedIndex();
         if(pos != -1){
             //

@@ -31,11 +31,11 @@ public class PlanesAlimenticios implements Initializable {
     @FXML
     private void deleteImageClicked(ActionEvent event) {
         ActionEvent select = new ActionEvent();
-        deleteVehicle(select);
+        deletePlan(select);
     }
 
     @FXML
-    void deleteVehicle(ActionEvent select) {
+    void deletePlan(ActionEvent select) {
         int pos = plansTable.getSelectionModel().getSelectedIndex();
         if(pos != -1){
             //
