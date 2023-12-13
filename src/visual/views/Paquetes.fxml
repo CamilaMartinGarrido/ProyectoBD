@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="620.0" prefWidth="599.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.Usuarios">
+<AnchorPane prefHeight="620.0" prefWidth="599.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.Paquetes">
    <children>
       <TableView layoutX="30.0" layoutY="151.0" prefHeight="443.0" prefWidth="546.0" stylesheets="@table.css">
          <columns>

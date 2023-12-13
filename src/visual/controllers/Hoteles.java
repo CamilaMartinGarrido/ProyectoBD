@@ -1,5 +1,5 @@
 package visual.controllers;
-import dto.User;
+import dto.Hotel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -8,27 +8,31 @@ import javafx.scene.control.TableView;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Usuarios implements Initializable {
+public class Hoteles implements Initializable {
     //Table
     @FXML
-    private TableColumn<Usuarios, String> user_name;
+    private TableColumn<Hoteles, String> name_hotel;
     @FXML
-    private TableColumn<Usuarios, String> password;
+    private TableColumn<Hoteles, String> chain_hotel;
     @FXML
-    private TableColumn<Usuarios, String> role;
+    private TableColumn<Hoteles, String> category_hotel;
     @FXML
-    private TableView<User> usersTable;
+    private TableColumn<Hoteles, String> address_hotel;
+    @FXML
+    private TableColumn<Hoteles, String> province_hotel;
+    @FXML
+    private TableView<Hotel> hotelsTable;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) { }
 
-    //Insert user
+    //Insert hotel
 
 
-    //Update user
+    //Update hotel
 
 
-    //Delete user
+    //Delete hotel
     @FXML
     private void deleteImageClicked(ActionEvent event) {
         ActionEvent select = new ActionEvent();
@@ -37,16 +41,16 @@ public class Usuarios implements Initializable {
 
     @FXML
     void deleteUser(ActionEvent select) {
-        int pos = usersTable.getSelectionModel().getSelectedIndex();
+        int pos = hotelsTable.getSelectionModel().getSelectedIndex();
         if(pos != -1){
             //
-            updateUsersTable();
+            updateHotelsTable();
         }
 
     }
 
     //Update table
-    public void updateUsersTable(){
+    public void updateHotelsTable(){
         // Coding
     }
 

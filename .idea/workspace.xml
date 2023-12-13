@@ -8,8 +8,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="544eced7-edbf-49fc-93f0-cfd10c2f3bf9" name="Changes" comment="Actualización de las clases">
+      <change afterPath="$PROJECT_DIR$/src/services/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visual/controllers/ActividadesDiarias.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visual/controllers/Contratos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visual/controllers/Vehiculos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visual/views/ActividadesDiarias.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visual/views/PlanesAlimenticios.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visual/views/Vehiculos.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dto/Daily_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/Daily_Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ServicesLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ServicesLocator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Contracto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/PlanesAlimenticios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Hoteles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Usuarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Contracto.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Contratos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Hotel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Hoteles.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Paquetes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Paquetes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Usuarios.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Usuarios.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +39,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Class" />
+        <option value="JavaFXApplication" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -34,6 +53,10 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/visual/views/ActividadesDiarias.fxml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/visual/views/Hoteles.fxml" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -41,7 +64,9 @@
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2YJFrCFUmOH6GBMATLCavUwJJvq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,6 +74,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -58,6 +85,7 @@
       <recent name="D:\ProyectoBD\libs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\camil\IdeaProjects\Conozca Cuba\src\visual\views" />
       <recent name="D:\ProyectoBD\src\images" />
       <recent name="D:\ProyectoBD\libs" />
       <recent name="D:\ProyectoBD\src" />
@@ -178,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702182591080</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Actualización de las clases">
+      <created>1702185009945</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702185009945</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
