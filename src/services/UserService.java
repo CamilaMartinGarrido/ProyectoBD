@@ -1,7 +1,5 @@
 package services;
-
 import dto.User;
-
 import java.sql.*;
 import java.util.LinkedList;
 
@@ -58,7 +56,7 @@ public class UserService {
                 "SELECT * " +
                         "FROM public.user");
         while (result.next()) {
-            userList.add(new User(result.getString("user_name"), result.getInt("id_role"), result.getString("user_password")));
+            userList.add(new User(result.getString("user_name"), result.getString("user_password"), result.getInt("id_role")));
         }
         return userList;
     }

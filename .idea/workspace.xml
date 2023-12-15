@@ -7,12 +7,85 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f480cd2c-4e8c-4126-a1fe-3667f16d7df5" name="Default Changelist" comment="Ajustes">
+    <list default="true" id="544eced7-edbf-49fc-93f0-cfd10c2f3bf9" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/Package.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/Package.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/PackageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/PackageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/VehicleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/VehicleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/views/Paquetes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Paquetes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/conection/DataBaseConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Agency.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Contract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Contract_Hotel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Contract_Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Contract_Transportation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Daily_Activity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Hotel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Km_Cost.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Km_Hours_Cost.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Meal_Plan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Package.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Route.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Season.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Transportation_Model.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/BusinessModelService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/ContractService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/Control.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/DailyActivityService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/HotelService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/Hotel_Room_Season_Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/Km_CostService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/Km_Hours_Cost_Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/Meal_PlanService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/PackageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/RoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/RoleServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/RoomService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/RouteService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/SeasonService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/ServicesLocator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/TransportationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/Transportation_Model_Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/UserServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/VehicleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/ActividadesDiarias.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/AddContrato.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/AddHotel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/AddPaquetes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/AddUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/AdminUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/ClientUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Contracto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Dashboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Habitacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Hotel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/MealPlan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Paquetes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/PlanesAlimenticios.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Roles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Servicios.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Temporada.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Transporte.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Usuarios.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Vehículos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Ventas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/main/Principal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/ActividadesDiarias.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/ActividadesDiarias.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Contracto.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Habitacion.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Hotel.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Meal_Plan.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/PlanesAlimenticios.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/PlanesAlimenticios.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Temporada.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Usuarios.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Usuarios.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Vehículos.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ServicesLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ServicesLocator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +97,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="JavaFXApplication" />
         <option value="FxmlFile" />
         <option value="Class" />
       </list>
@@ -44,23 +118,30 @@
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2YJFrCFUmOH6GBMATLCavUwJJvq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="visual.controllers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\camil\IdeaProjects\Conozca Cuba\src" />
       <recent name="D:\ProyectoBD\libs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\camil\IdeaProjects\Conozca Cuba\src\visual\views" />
       <recent name="D:\ProyectoBD\src\images" />
       <recent name="D:\ProyectoBD\libs" />
       <recent name="D:\ProyectoBD\src" />
@@ -68,15 +149,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="visual.main.Principal" />
+      <option name="MAIN_CLASS_NAME" value="visual.main.Main" />
       <module name="Conozca Cuba" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-19.0.2.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="visual.main.*" />
+          <option name="PATTERN" value="visual.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
         <pattern>
@@ -110,7 +191,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Principal" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -120,7 +201,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f480cd2c-4e8c-4126-a1fe-3667f16d7df5" name="Default Changelist" comment="" />
+      <changelist id="544eced7-edbf-49fc-93f0-cfd10c2f3bf9" name="Changes" comment="" />
       <created>1700235971693</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -181,26 +262,65 @@
       <option name="project" value="LOCAL" />
       <updated>1702182591080</updated>
     </task>
-    <task id="LOCAL-00008" summary="Login funcional">
-      <created>1702326237234</created>
+    <task id="LOCAL-00008" summary="Actualización de las clases">
+      <created>1702185009945</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1702326237234</updated>
+      <updated>1702185009945</updated>
     </task>
-    <task id="LOCAL-00009" summary="Ajustes">
-      <created>1702326261164</created>
+    <task id="LOCAL-00009" summary="Actualizacion Visuals, Services y DTO">
+      <created>1702450314308</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1702326261164</updated>
+      <updated>1702450314308</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Actualizacion Visuals, Services y DTO">
+      <created>1702452066699</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702452066699</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Changes">
+      <created>1702497221267</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702497221267</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="368b398e-d305-4463-a13b-cf02c49e39d9">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/camil/IdeaProjects/Conozca Cuba/src" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -220,6 +340,11 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="368b398e-d305-4463-a13b-cf02c49e39d9" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
@@ -229,9 +354,9 @@
     <MESSAGE value="Agregado visuales" />
     <MESSAGE value="Agregado fotos" />
     <MESSAGE value="Actualización de las clases" />
-    <MESSAGE value="Login funcional" />
-    <MESSAGE value="Ajustes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajustes" />
+    <MESSAGE value="Actualizacion Visuals, Services y DTO" />
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -239,7 +364,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/visual/main/Main.java</url>
           <line>17</line>
-          <properties class="visual.main.Main">
+          <properties class="visual.main.Main" method="start">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

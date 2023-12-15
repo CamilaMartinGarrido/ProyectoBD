@@ -8,7 +8,7 @@ public class Control {
 
     public Control() {
         super();
-        // TODO Auto-generated constructor stub
+        //
     }
 
     public User getSessionUser() {
