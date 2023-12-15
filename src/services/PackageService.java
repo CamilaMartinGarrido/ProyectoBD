@@ -1,9 +1,34 @@
 package services;
 
+import dto.Package;
+
 import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.LinkedList;
 
 public class PackageService {
+
+    public static LinkedList<Package> getPackages()throws SQLException{
+        LinkedList<Package>list = new LinkedList<>();
+        Connection connection = ServicesLocator.getConnection();
+        ResultSet res = connection.createStatement().executeQuery(
+                "SELECT package.*" +
+                        "FROM public.package"
+        );
+        while(res.next()){
+            list.add(new Package( res.getInt("id_package"),res.getString( "promotional_name"),
+            res.getInt( "days_count"),
+            res.getInt( "nights_count"),
+            res.getInt( "pax_count"),
+            res.getDouble( "total_hotel_cost"),
+            res.getDouble("hotel_airport_ride_cost"),
+            res.getDouble( "total_transportation_cost"),
+            res.getDouble( "total_package_cost")));
+        }
+        return list;
+    }
     public void add_package(String promotional_name, int days_count, int nights_count, int pax_count, double total_hotel_cost, double hotel_airport_ride_cost, double total_transportation_cost, double total_package_cost) throws SQLException {
         String function = "{call add_package(?,?,?,?,?,?,?,?)}";
         java.sql.Connection connection = ServicesLocator.getConnection();

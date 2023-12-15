@@ -22,7 +22,7 @@
             <TableColumn minWidth="4.0" prefWidth="84.0" text="Costo Hotel" />
             <TableColumn minWidth="4.0" prefWidth="106.0" text="Costo Transporte" />
             <TableColumn minWidth="4.0" prefWidth="91.0" text="Coste Total" />
-            <TableColumn minWidth="4.0" prefWidth="103.0" text="Localizacion" />
+
          </columns>
       </TableView>
       <GridPane layoutX="396.0" layoutY="85.0" prefHeight="68.0" prefWidth="169.0">
