@@ -5,6 +5,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+
+import java.awt.event.KeyEvent;
 import java.net.URL;
 import java.util.Date;
 import java.util.ResourceBundle;
@@ -53,6 +55,12 @@ public class Contratos implements Initializable {
     //Update table
     public void updateContractsTable(){
         // Coding
+    }
+
+    //Search
+    @FXML
+    private void search(KeyEvent event) {
+        String filtro = this
     }
 
 }
