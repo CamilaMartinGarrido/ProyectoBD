@@ -88,7 +88,7 @@ public class Package {
     //Constructor
     public Package(int id_package, String promotional_name, int days_count, int nights_count, int pax_count,
                    double total_hotel_cost, double hotel_airport_ride_cost, double total_transportation_cost,
-                   double total_package_cost, double percent_profit, int id_contract) {
+                   double total_package_cost) {
         this.setId_package(id_package);
         this.setPromotional_name(promotional_name);
         this.setDays_count(days_count);
@@ -98,7 +98,6 @@ public class Package {
         this.setHotel_airport_ride_cost(hotel_airport_ride_cost);
         this.setTotal_transportation_cost(total_transportation_cost);
         this.setTotal_package_cost(total_package_cost);
-        this.setPercent_profit(percent_profit);
-        this.setId_contract(id_contract);
+
     }
 }

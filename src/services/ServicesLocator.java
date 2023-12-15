@@ -14,11 +14,13 @@ public class ServicesLocator {
     public static Km_Hours_Cost_Service km_hours_cost_service = null;
     public static Meal_PlanService meal_planService = null;
     public static PackageService packageService = null;
+    public static RoleService roleService = null;
     public static RoomService roomService = null;
     public static RouteService routeService = null;
     public static SeasonService seasonService = null;
     public static Transportation_Model_Service transportation_model_service = null;
     public static TransportationService transportationService = null;
+    public static UserService userService = null;
     public static VehicleService vehicleService = null;
 
     public static java.sql.Connection getConnection() {
@@ -136,5 +138,18 @@ public class ServicesLocator {
             vehicleService = new VehicleService();
         }
         return vehicleService;
+    }
+
+    public static UserService getUserService(){
+        if(userService == null){
+            userService= new UserService();
+        }
+        return userService;
+    }
+    public static RoleService getRoleService(){
+        if(roleService == null){
+            roleService = new RoleService();
+        }
+        return roleService;
     }
 }

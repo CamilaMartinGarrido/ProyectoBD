@@ -7,8 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="544eced7-edbf-49fc-93f0-cfd10c2f3bf9" name="Changes" comment="Agregado fotos">
+    <list default="true" id="544eced7-edbf-49fc-93f0-cfd10c2f3bf9" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Contratos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Contratos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Contratos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Contratos.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +22,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Class" />
+        <option value="JavaFXApplication" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -39,47 +42,38 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
-}</component>
   <component name="ProjectId" id="2YJFrCFUmOH6GBMATLCavUwJJvq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ProyectoBD/libs/virtualizedfx-11.2.6.1.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.4229885&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="visual.controllers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\camil\IdeaProjects\Conozca Cuba\src" />
       <recent name="D:\ProyectoBD\libs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\camil\IdeaProjects\Conozca Cuba\src\visual\views" />
       <recent name="D:\ProyectoBD\src\images" />
       <recent name="D:\ProyectoBD\libs" />
       <recent name="D:\ProyectoBD\src" />
       <recent name="D:\ProyectoBD\src\visual\views" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Principal">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -88,27 +82,11 @@
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-19.0.2.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="visual.main.*" />
+          <option name="PATTERN" value="visual.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
         <pattern>
           <option name="PATTERN" value="visual.main.Main" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="visual.main.Principal" />
-      <module name="Conozca Cuba" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-19.0.2.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="visual.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,7 +116,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Principal" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -203,20 +180,86 @@
       <option name="project" value="LOCAL" />
       <updated>1701400863614</updated>
     </task>
-    <task id="LOCAL-00007" summary="Agregado fotos">
-      <option name="closed" value="true" />
-      <created>1702308438775</created>
+    <task id="LOCAL-00007" summary="Actualización de las clases">
+      <created>1702182591080</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1702308438775</updated>
+      <updated>1702182591080</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Actualización de las clases">
+      <created>1702185009945</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702185009945</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Actualizacion Visuals, Services y DTO">
+      <created>1702450314308</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702450314308</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Actualizacion Visuals, Services y DTO">
+      <created>1702452066699</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702452066699</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Changes">
+      <created>1702497221267</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702497221267</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Changes">
+      <created>1702498907436</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702498907436</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Changes">
+      <created>1702675108624</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702675108624</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="368b398e-d305-4463-a13b-cf02c49e39d9">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/camil/IdeaProjects/Conozca Cuba/src" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -236,15 +279,23 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="368b398e-d305-4463-a13b-cf02c49e39d9" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Probando commit" />
     <MESSAGE value="Configurado JavaFX" />
     <MESSAGE value="Agregado login" />
     <MESSAGE value="Agregado visuales" />
-    <MESSAGE value="Login para acceder al sistema" />
     <MESSAGE value="Agregado fotos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agregado fotos" />
+    <MESSAGE value="Actualización de las clases" />
+    <MESSAGE value="Actualizacion Visuals, Services y DTO" />
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -252,7 +303,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/visual/main/Main.java</url>
           <line>17</line>
-          <properties class="visual.main.Main">
+          <properties class="visual.main.Main" method="start">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
