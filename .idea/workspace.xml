@@ -9,83 +9,10 @@
   <component name="ChangeListManager">
     <list default="true" id="544eced7-edbf-49fc-93f0-cfd10c2f3bf9" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/conection/DataBaseConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Agency.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Contract.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Contract_Hotel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Contract_Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Contract_Transportation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Daily_Activity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Hotel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Km_Cost.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Km_Hours_Cost.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Meal_Plan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Package.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Room.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Route.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Season.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Transportation_Model.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Vehicle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/BusinessModelService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/ContractService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/Control.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/DailyActivityService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/HotelService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/Hotel_Room_Season_Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/Km_CostService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/Km_Hours_Cost_Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/Meal_PlanService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/PackageService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/RoleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/RoleServices.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/RoomService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/RouteService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/SeasonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/ServicesLocator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/TransportationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/Transportation_Model_Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/UserServices.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/VehicleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/ActividadesDiarias.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/AddContrato.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/AddHotel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/AddPaquetes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/AddUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/AdminUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/ClientUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Contracto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Dashboard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Habitacion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Hotel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/MealPlan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Paquetes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/PlanesAlimenticios.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Roles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Servicios.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Temporada.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Transporte.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Usuarios.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Vehículos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Ventas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/main/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/main/Principal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/ActividadesDiarias.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/ActividadesDiarias.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Contracto.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Habitacion.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Hotel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Meal_Plan.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/PlanesAlimenticios.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/PlanesAlimenticios.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Temporada.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Usuarios.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Usuarios.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Vehículos.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ServicesLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ServicesLocator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Usuarios.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702497221267</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Changes">
+      <created>1702498907436</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702498907436</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

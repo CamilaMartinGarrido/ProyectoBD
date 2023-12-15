@@ -56,7 +56,7 @@ public class UserService {
                 "SELECT * " +
                         "FROM public.user");
         while (result.next()) {
-            userList.add(new User(result.getString("user_name"), result.getString("user_password"), result.getInt("id_role")));
+            userList.add(new User(result.getInt("id_user"), result.getString("user_name"), result.getString("user_password"), result.getInt("id_role")));
         }
         return userList;
     }

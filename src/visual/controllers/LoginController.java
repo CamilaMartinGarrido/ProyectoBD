@@ -60,8 +60,8 @@ public class LoginController implements Initializable {
             textPassword.setText("");
         } else {
             int role = UserService.getLoginUser(textUser.getText());
-            User user = new User(textUser.getText(), role);
-            this.control.setSessionUser(user);
+            //User user = new User(textUser.getText(), role);
+            //this.control.setSessionUser(user);
             try {
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/visual/views/Hotel.fxml"));
                 Parent root = fxmlLoader.load();
