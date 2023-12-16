@@ -7,6 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="544eced7-edbf-49fc-93f0-cfd10c2f3bf9" name="Changes" comment="workspace update">
       <change afterPath="$PROJECT_DIR$/src/visual/views/dialogs/DialogPlanAlimenticio.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -18,6 +19,44 @@
       <change beforePath="$PROJECT_DIR$/src/visual/views/dialogs/AddHotel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/dialogs/DialogHotel.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/visual/views/dialogs/AddPaquetes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/dialogs/DialogPaquetes.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/visual/views/dialogs/AddUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/dialogs/DialogUser.fxml" afterDir="false" />
+=======
+    <list default="true" id="544eced7-edbf-49fc-93f0-cfd10c2f3bf9" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/src/visual/controllers/Transportaciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/ActividadesDiarias.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/ActividadesDiarias.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Paquetes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Paquetes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/PlanesAlimenticios.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/PlanesAlimenticios.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Roles.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Roles.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Usuarios.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Usuarios.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conection/DataBaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/conection/DataBaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ServicesLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ServicesLocator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/ActividadesDiarias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/ActividadesDiarias.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Contratos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Contratos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Habitaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Habitaciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Hoteles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Hoteles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Paquetes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Paquetes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/PlanesAlimenticios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/PlanesAlimenticios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Roles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Servicios.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Temporadas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Temporadas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Transporte.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Usuarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Vehiculos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Vehiculos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Ventas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/ActividadesDiarias.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/ActividadesDiarias.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Contratos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Contratos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Habitaciones.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Habitaciones.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Hoteles.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Hoteles.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Paquetes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Paquetes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/PlanesAlimenticios.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/PlanesAlimenticios.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Roles.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Roles.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Servicios.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Temporadas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Temporadas.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Transporte.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Usuarios.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Usuarios.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Vehiculos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Vehiculos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Ventas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Transportaciones.fxml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702675108624</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Changes">
+      <created>1702679345524</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702679345524</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

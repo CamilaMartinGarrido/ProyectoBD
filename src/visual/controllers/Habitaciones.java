@@ -54,4 +54,8 @@ public class Habitaciones implements Initializable {
         // Coding
     }
 
+    //Search
+    @FXML
+    private void searchRooms(javafx.scene.input.KeyEvent event) {
+    }
 }

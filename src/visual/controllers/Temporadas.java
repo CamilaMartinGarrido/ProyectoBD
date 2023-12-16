@@ -54,4 +54,8 @@ public class Temporadas implements Initializable {
         // Coding
     }
 
+    //Search
+    @FXML
+    private void searchSeasons(javafx.scene.input.KeyEvent event) {
+    }
 }
