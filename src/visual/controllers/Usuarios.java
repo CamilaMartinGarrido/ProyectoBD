@@ -10,6 +10,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.input.KeyEvent;
 import services.ServicesLocator;
 import services.UserService;
 
@@ -86,5 +87,8 @@ public class Usuarios implements Initializable {
         SortedList<User> datosOrdenados = new SortedList<>(filtroUsuarios);
         datosOrdenados.comparatorProperty().bind(usersTable.comparatorProperty());
         usersTable.setItems(datosOrdenados);
+    }
+
+    public void searchUsers(KeyEvent keyEvent) {
     }
 }

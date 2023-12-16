@@ -1,4 +1,4 @@
-package visual.views.dialogs;
+package visual.controllers;
 
 public class DialogPlanAlimenticio {
 }

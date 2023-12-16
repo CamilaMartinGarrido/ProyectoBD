@@ -63,7 +63,7 @@ public class LoginController implements Initializable {
            // User user = new User(textUser.getText(), role);
            // this.control.setSessionUser(user);
             try {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/visual/views/Hotel.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/visual/views/Usuarios.fxml"));
                 Parent root = fxmlLoader.load();
                 Stage stage = new Stage();
                 stage.setTitle("Ventana");
