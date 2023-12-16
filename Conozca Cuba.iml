@@ -15,6 +15,6 @@
     <orderEntry type="library" exported="" name="adapter-0.2.0" level="project" />
     <orderEntry type="library" exported="" name="virtualizedfx-11.2.6.1" level="project" />
     <orderEntry type="library" exported="" name="mfxresources-11.13.1" level="project" />
-    <orderEntry type="library" exported="" name="postgresql-9.0-801.jdbc3" level="project" />
+    <orderEntry type="library" name="postgresql-9.0-801.jdbc4" level="project" />
   </component>
 </module>

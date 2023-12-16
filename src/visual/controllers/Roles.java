@@ -21,32 +21,13 @@ public class Roles implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) { }
 
-    //Insert role
-
-
-    //Update role
-
-
-    //Delete role
-    @FXML
-    private void deleteImageClicked(ActionEvent event) {
-        ActionEvent select = new ActionEvent();
-        deleteRole(select);
-    }
-
-    @FXML
-    void deleteRole(ActionEvent select) {
-        int pos = rolesTable.getSelectionModel().getSelectedIndex();
-        if(pos != -1){
-            //
-            updateRolesTable();
-        }
-
-    }
-
     //Update table
     public void updateRolesTable(){
         // Coding
     }
 
+    //Search
+    @FXML
+    private void searchRoles(javafx.scene.input.KeyEvent event) {
+    }
 }
