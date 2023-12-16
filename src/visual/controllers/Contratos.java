@@ -58,9 +58,9 @@ public class Contratos implements Initializable {
     }
 
     //Search
-    @FXML
-    private void search(KeyEvent event) {
-        String filtro = this
-    }
+
+    // void search(KeyEvent event) {
+     //   String filtro = this
+    //}
 
 }

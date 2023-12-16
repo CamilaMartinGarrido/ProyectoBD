@@ -7,10 +7,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="544eced7-edbf-49fc-93f0-cfd10c2f3bf9" name="Changes" comment="Changes">
+    <list default="true" id="544eced7-edbf-49fc-93f0-cfd10c2f3bf9" name="Changes" comment="workspace update">
+      <change afterPath="$PROJECT_DIR$/src/visual/views/dialogs/DialogPlanAlimenticio.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Paquetes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Paquetes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ServicesLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ServicesLocator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/visual/controllers/Contratos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Contratos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/views/Contratos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Contratos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/dialogs/AddContrato.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/dialogs/DialogContrato.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/dialogs/AddHotel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/dialogs/DialogHotel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/dialogs/AddPaquetes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/dialogs/DialogPaquetes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/dialogs/AddUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/dialogs/DialogUser.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +30,8 @@
       <list>
         <option value="AnnotationType" />
         <option value="JavaFXApplication" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -50,13 +57,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ChangesTree.GroupingKeys" value="" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "master"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="visual.controllers" />
@@ -73,7 +78,7 @@
       <recent name="D:\ProyectoBD\src\visual\views" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Principal">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -87,6 +92,22 @@
         </pattern>
         <pattern>
           <option name="PATTERN" value="visual.main.Main" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="visual.main.Principal" />
+      <module name="Conozca Cuba" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-19.0.2.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="visual.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,6 +137,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Principal" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -233,12 +255,16 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="368b398e-d305-4463-a13b-cf02c49e39d9" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="368b398e-d305-4463-a13b-cf02c49e39d9">
           <value>
             <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -257,6 +283,7 @@
                   </entry>
                 </map>
               </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
             </State>
           </value>
         </entry>
@@ -279,12 +306,6 @@
         </entry>
       </map>
     </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="368b398e-d305-4463-a13b-cf02c49e39d9" value="TOOL_WINDOW" />
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Probando commit" />
@@ -295,7 +316,8 @@
     <MESSAGE value="Actualización de las clases" />
     <MESSAGE value="Actualizacion Visuals, Services y DTO" />
     <MESSAGE value="Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+    <MESSAGE value="workspace update" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -303,7 +325,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/visual/main/Main.java</url>
           <line>17</line>
-          <properties class="visual.main.Main" method="start">
+          <properties class="visual.main.Main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
