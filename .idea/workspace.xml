@@ -7,24 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="544eced7-edbf-49fc-93f0-cfd10c2f3bf9" name="Changes" comment="updategit">
-      <change afterPath="$PROJECT_DIR$/src/visual/controllers/DialogActiviadesDiarias.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visual/controllers/DialogTemporada.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visual/controllers/DialogVehiculo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visual/views/dialogs/DialogActiviadesDiarias.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visual/views/dialogs/DialogTemporada.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visual/views/dialogs/DialogVehiculo.fxml" afterDir="false" />
+    <list default="true" id="544eced7-edbf-49fc-93f0-cfd10c2f3bf9" name="Changes" comment="update dialogs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Paquetes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Paquetes.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Servicios.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Transporte.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Ventas.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/ServicesLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ServicesLocator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Contratos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Contratos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Usuarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/views/dialogs/DialogPlanAlimenticio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/dialogs/DialogPlanAlimenticio.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/views/dialogs/DialogPlanAlimenticio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/DialogPlanAlimenticio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +41,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2YJFrCFUmOH6GBMATLCavUwJJvq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -269,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702703882174</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update dialogs">
+      <option name="closed" value="true" />
+      <created>1702749060422</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1702749060422</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -336,7 +329,8 @@
     <MESSAGE value="Changes" />
     <MESSAGE value="workspace update" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="update dialogs" />
+    <option name="LAST_COMMIT_MESSAGE" value="update dialogs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
