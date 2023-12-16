@@ -83,18 +83,5 @@ public class UserService {
         cs.executeUpdate();
     }
 
-    public static int getUserCode(String name) throws SQLException {
-        Connection connection = ServicesLocator.getConnection();
-        int cod = -1;
-        String sql = "SELECT user.id_user FROM public.user " +
-                "WHERE user.user_name = '?' ";
-        PreparedStatement statement = connection.prepareStatement(sql);
-        statement.setString(1, name);
-        statement.execute();
-        ResultSet result = statement.getResultSet();
-        while (result.next()) {
-            cod = result.getInt(1);
-        }
-        return cod;
-    }
+
 }

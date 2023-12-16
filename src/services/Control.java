@@ -4,7 +4,7 @@ import dto.User;
 
 public class Control {
 
-    private User sesion = null;
+    private User session = null;
 
     public Control() {
         super();
@@ -12,10 +12,10 @@ public class Control {
     }
 
     public User getSessionUser() {
-        return sesion;
+        return session;
     }
 
     public void setSessionUser(User sessionUser) {
-        this.sesion = sessionUser;
+        this.session = sessionUser;
     }
 }
