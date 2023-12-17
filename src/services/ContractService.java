@@ -1,7 +1,6 @@
 package services;
 
 import dto.Contract;
-import dto.Contract_Hotel;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
@@ -27,7 +26,7 @@ public class ContractService {
         }
         return list;
     }
-   /* public static LinkedList<Contract_Hotel> getContracts() throws SQLException {
+   /* public static LinkedList<Contract_Hotel> getHotelContracts() throws SQLException {
         LinkedList<Contract_Hotel> list = new LinkedList<>();
         Connection connection = ServicesLocator.getConnection();
         ResultSet res = connection.createStatement().executeQuery(

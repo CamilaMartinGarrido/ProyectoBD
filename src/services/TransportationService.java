@@ -1,10 +1,27 @@
 package services;
 
 import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.LinkedList;
 
 
 public class TransportationService {
+
+    public static LinkedList<String> getBorrower() throws SQLException {
+        LinkedList<String> list = new LinkedList<>();
+        Connection connection = ServicesLocator.getConnection();
+        ResultSet res = connection.createStatement().executeQuery(
+                "SELECT transportation.borrower" +
+                        "FROM public.transportation"
+        );
+        while (res.next()) {
+            list.add(res.getString("borrower"));
+        }
+        return list;
+    }
+
     public void add_transportation(int fk_transportation_model, int fk_transportation_vehicle, String borrower ) throws SQLException {
         String function = "{call add_transportation(?,?,?)}";
         java.sql.Connection connection = ServicesLocator.getConnection();

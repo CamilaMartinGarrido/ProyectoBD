@@ -56,4 +56,12 @@ public class Room {
         this.setRoom_surcharge(room_surcharge);
         this.setId_plan(id_plan);
     }
+    public Room(int id_room, int room_number, String room_type, double room_cost) {
+        this.setId_room(id_room);
+        this.setRoom_number(room_number);
+        this.setRoom_type(room_type);
+        this.setRoom_cost(room_cost);
+
+
+    }
 }

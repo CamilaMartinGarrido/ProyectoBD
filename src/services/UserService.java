@@ -61,25 +61,24 @@ public class UserService {
         return userList;
     }
 
-   /* public static void insertarUsuario(User user) throws SQLException, ClassNotFoundException {
+    public static void addUser(User user) throws SQLException{
 
         Connection connection = ServicesLocator.getConnection();
-        CallableStatement cs = connection.prepareCall("{call \"usuario_insert\"(?,?,?,?)}");
+        CallableStatement cs = connection.prepareCall("{call \"add_user\"(?,?,?)}");
         cs.setString(1, user.getUser_name());
-        String encrip = EncriptShado_MD5.digestMD5(user.getPassword());
-        cs.setString(2, encrip);
+       // String encrip = EncriptShado_MD5.digestMD5(user.getPassword());
+        cs.setString(2, user.getPassword());
         cs.setInt(3, user.getId_role());
-        cs.setString(4, user.getUser_name());
         cs.executeUpdate();
 
-    }*/
+    }
 
 
-    public static void eliminarUsuario(int user) throws SQLException {
+    public static void deleteUser(User user) throws SQLException {
 
         Connection connection = ServicesLocator.getConnection();
-        CallableStatement cs = connection.prepareCall("{call \"usuario_delete\"(?)}");
-        cs.setInt(1, user);
+        CallableStatement cs = connection.prepareCall("{call \"delete_user\"(?)}");
+        cs.setInt(1, user.getId_user());
         cs.executeUpdate();
     }
 

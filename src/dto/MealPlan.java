@@ -1,7 +1,7 @@
 package dto;
 import java.util.ArrayList;
 
-public class Meal_Plan {
+public class MealPlan {
     //Attributes
     private int id_plan;
     private String plan_type;
@@ -31,7 +31,7 @@ public class Meal_Plan {
     }
 
     //Constructor
-    public Meal_Plan(int id_plan, String plan_type, double plan_cost) {
+    public MealPlan(int id_plan, String plan_type, double plan_cost) {
         this.setId_plan(id_plan);
         this.setPlan_type(plan_type);
         this.setPlan_cost(plan_cost);

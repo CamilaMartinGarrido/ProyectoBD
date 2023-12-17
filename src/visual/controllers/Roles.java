@@ -1,5 +1,5 @@
 package visual.controllers;
-import dto.Role;
+import dto.Rol;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -15,7 +15,7 @@ public class Roles implements Initializable {
     @FXML
     private TableColumn<Roles, String> description_role;
     @FXML
-    private TableView<Role> rolesTable;
+    private TableView<Rol> rolesTable;
 
 
     @Override

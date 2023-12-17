@@ -1,6 +1,6 @@
 package dto;
 
-public class Role {
+public class Rol {
     //Attributes
     private int id_role;
     private String name_role;
@@ -26,7 +26,7 @@ public class Role {
     public void setDescription_role(String description_role) { this.description_role = description_role; }
 
     //Constructor
-    public Role(int id_role, String name_role, String description_role) {
+    public Rol(int id_role, String name_role, String description_role) {
         this.setId_role(id_role);
         this.setName_role(name_role);
         this.setDescription_role(description_role);
