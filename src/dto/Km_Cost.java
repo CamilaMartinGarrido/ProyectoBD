@@ -1,6 +1,6 @@
 package dto;
 
-public class Km_Cost extends Transportation_Model{
+public class Km_Cost extends Transportation_Model {
     //Attributes
     private double km_cost;
     private double full_ride_km_cost;

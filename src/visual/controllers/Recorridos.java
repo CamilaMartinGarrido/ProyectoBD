@@ -1,5 +1,5 @@
 package visual.controllers;
-import dto.Route;
+import dto.Routes;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -19,7 +19,7 @@ public class Recorridos implements Initializable {
     @FXML
     private TableColumn<Recorridos, Double> full_ride_cost;
     @FXML
-    private TableView<Route> routesTable;
+    private TableView<Routes> routesTable;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) { }

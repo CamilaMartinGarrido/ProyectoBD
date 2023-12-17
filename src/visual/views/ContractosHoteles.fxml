@@ -13,9 +13,9 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="661.0" prefWidth="593.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.ContratosHoteles">
+<AnchorPane prefHeight="650.0" prefWidth="1041.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.ContratosHoteles">
     <children>
-        <TableView fx:id="contractsTable" layoutX="30.0" layoutY="126.0" prefHeight="260.0" prefWidth="534.0" stylesheets="@table.css">
+        <TableView fx:id="contractsTable" layoutX="30.0" layoutY="126.0" prefHeight="260.0" prefWidth="534.0" stylesheets="@table.css" AnchorPane.bottomAnchor="275.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="126.0">
             <columns>
                 <TableColumn fx:id="name_hotel" prefWidth="114.0" text="Hotel" />
                 <TableColumn fx:id="start_contract" minWidth="4.0" prefWidth="102.0" text="Fecha Inicio" />
@@ -24,7 +24,7 @@
                 <TableColumn fx:id="description_contract" minWidth="4.0" prefWidth="226.0" text="Descripción" />
             </columns>
         </TableView>
-        <GridPane layoutX="410.0" layoutY="68.0" prefHeight="49.0" prefWidth="142.0">
+        <GridPane layoutX="410.0" layoutY="68.0" prefHeight="49.0" prefWidth="142.0" AnchorPane.rightAnchor="100.0">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="57.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="63.0" minWidth="10.0" prefWidth="57.0" />
@@ -56,33 +56,33 @@
                 <Font name="Georgia Bold" size="28.0" />
             </font>
         </Label>
-        <ImageView fitHeight="65.0" fitWidth="277.0" layoutX="297.0" layoutY="15.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+        <ImageView fitHeight="65.0" fitWidth="277.0" layoutX="297.0" layoutY="15.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" AnchorPane.rightAnchor="20.0">
             <image>
                 <Image url="@../../images/decorado.png" />
             </image>
         </ImageView>
-        <MFXTextField fx:id="textBuscar" caretVisible="false" floatingText="Buscar" layoutX="40.0" layoutY="69.0" onKeyReleased="#searchContracts" prefHeight="49.0" prefWidth="271.0" selectable="false" style="-fx-border-color: blue;" styleClass="mfx-text-field">
+        <MFXTextField fx:id="textBuscar" caretVisible="false" floatingText="Buscar" layoutX="40.0" layoutY="69.0" onKeyReleased="#searchContracts" prefHeight="49.0" prefWidth="271.0" selectable="false" style="-fx-border-color: blue;" styleClass="mfx-text-field" AnchorPane.leftAnchor="100.0">
             <textFill>
                 <Color />
             </textFill>
         </MFXTextField>
-      <TableView fx:id="habitaciones" layoutX="30.0" layoutY="438.0" prefHeight="209.0" prefWidth="240.0" stylesheets="@table.css">
+      <TableView fx:id="habitaciones" layoutX="30.0" layoutY="427.0" prefHeight="209.0" prefWidth="240.0" stylesheets="@table.css" AnchorPane.leftAnchor="100.0">
          <columns>
             <TableColumn fx:id="type_room" prefWidth="107.0" text="Tipo" />
             <TableColumn fx:id="room_number" minWidth="4.0" prefWidth="131.0" text="Número" />
          </columns>
       </TableView>
-      <TableView fx:id="temporadas" layoutX="326.0" layoutY="438.0" prefHeight="209.0" prefWidth="240.0" stylesheets="@table.css">
+      <TableView fx:id="temporadas" layoutX="701.0" layoutY="427.0" prefHeight="209.0" prefWidth="240.0" stylesheets="@table.css">
          <columns>
             <TableColumn fx:id="name_season" prefWidth="238.0" text="Temporada" />
          </columns>
       </TableView>
-      <Label layoutX="103.0" layoutY="394.0" prefHeight="44.0" prefWidth="94.0" text="Habitaciones">
+      <Label layoutX="173.0" layoutY="383.0" prefHeight="44.0" prefWidth="94.0" text="Habitaciones" AnchorPane.leftAnchor="173.0">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="399.0" layoutY="394.0" prefHeight="44.0" prefWidth="94.0" text="Temporadas">
+      <Label layoutX="774.0" layoutY="383.0" prefHeight="44.0" prefWidth="94.0" text="Temporadas" AnchorPane.leftAnchor="774.0" AnchorPane.rightAnchor="173.0">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>

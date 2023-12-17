@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="534.0" style="-fx-background-color: white; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.DialogVehiculo">
+   <children>
+      <MFXTextField floatMode="BORDER" floatingText="Descripcion" layoutX="49.0" layoutY="107.0" prefHeight="38.0" prefWidth="434.0" />
+      <MFXTextField floatMode="BORDER" floatingText="Costo de espera" layoutX="299.0" layoutY="166.0" prefHeight="38.0" prefWidth="185.0" />
+      <Label layoutX="20.0" layoutY="31.0" prefHeight="53.0" prefWidth="198.0" text="Añadir/Editar">
+         <font>
+            <Font name="Bookman Old Style Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="322.0" layoutY="233.0" style="-fx-border-color: #285AB6; -fx-border-radius: 10;" text="Guardar">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="420.0" layoutY="233.0" style="-fx-border-color: #285AB6; -fx-border-radius: 10;" text="Cancelar">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <MFXTextField floatMode="BORDER" floatingText="Costo por km" layoutX="49.0" layoutY="166.0" prefHeight="38.0" prefWidth="185.0" />
+   </children>
+</AnchorPane>

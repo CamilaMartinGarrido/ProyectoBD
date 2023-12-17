@@ -12,6 +12,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import services.Control;
 import services.UserService;
 
@@ -43,9 +44,12 @@ public class LoginController implements Initializable {
 
     }
 
-    public void closeWindow(javafx.scene.input.MouseEvent mouseEvent) {
+    private void close(){
         Stage stage = (Stage) btnClose.getScene().getWindow();
         stage.close();
+    }
+    public void closeWindow(javafx.scene.input.MouseEvent mouseEvent) {
+        close();
     }
 
     public void SystemAccess(ActionEvent event) {
@@ -63,12 +67,14 @@ public class LoginController implements Initializable {
            // User user = new User(textUser.getText(), role);
            // this.control.setSessionUser(user);
             try {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/visual/views/Vehiculos.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/visual/views/Dashboard.fxml"));
                 Parent root = fxmlLoader.load();
                 Stage stage = new Stage();
                 stage.setTitle("Ventana");
-                stage.setScene(new Scene(root, 450, 450));
+                stage.setScene(new Scene(root));
+                stage.initStyle(StageStyle.UNDECORATED);
                 stage.show();
+                close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
