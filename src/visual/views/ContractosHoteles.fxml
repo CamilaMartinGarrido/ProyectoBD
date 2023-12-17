@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="661.0" prefWidth="593.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.ContratosHoteles">
+    <children>
+        <TableView fx:id="contractsTable" layoutX="30.0" layoutY="126.0" prefHeight="260.0" prefWidth="534.0" stylesheets="@table.css">
+            <columns>
+                <TableColumn fx:id="name_hotel" prefWidth="114.0" text="Hotel" />
+                <TableColumn fx:id="start_contract" minWidth="4.0" prefWidth="102.0" text="Fecha Inicio" />
+                <TableColumn fx:id="end_contract" minWidth="4.0" prefWidth="123.0" text="Fecha Terminación" />
+                <TableColumn fx:id="resolution_contract" minWidth="4.0" prefWidth="140.0" text="Fecha Conciliación" />
+                <TableColumn fx:id="description_contract" minWidth="4.0" prefWidth="226.0" text="Descripción" />
+            </columns>
+        </TableView>
+        <GridPane layoutX="410.0" layoutY="68.0" prefHeight="49.0" prefWidth="142.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="57.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="63.0" minWidth="10.0" prefWidth="57.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="72.0" minWidth="10.0" prefWidth="56.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <ImageView fitHeight="46.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/add-button.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="54.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                    <image>
+                        <Image url="@../../images/edit-button.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="47.0" fitWidth="44.0" onMouseClicked="#deleteImageClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                    <image>
+                        <Image url="@../../images/delete-button.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </GridPane>
+        <Label layoutX="40.0" layoutY="25.0" prefHeight="44.0" prefWidth="271.0" text="Contratos Hoteles">
+            <font>
+                <Font name="Georgia Bold" size="28.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="65.0" fitWidth="277.0" layoutX="297.0" layoutY="15.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+            <image>
+                <Image url="@../../images/decorado.png" />
+            </image>
+        </ImageView>
+        <MFXTextField fx:id="textBuscar" caretVisible="false" floatingText="Buscar" layoutX="40.0" layoutY="69.0" onKeyReleased="#searchContracts" prefHeight="49.0" prefWidth="271.0" selectable="false" style="-fx-border-color: blue;" styleClass="mfx-text-field">
+            <textFill>
+                <Color />
+            </textFill>
+        </MFXTextField>
+      <TableView fx:id="habitaciones" layoutX="30.0" layoutY="438.0" prefHeight="209.0" prefWidth="240.0" stylesheets="@table.css">
+         <columns>
+            <TableColumn fx:id="type_room" prefWidth="107.0" text="Tipo" />
+            <TableColumn fx:id="room_number" minWidth="4.0" prefWidth="131.0" text="Número" />
+         </columns>
+      </TableView>
+      <TableView fx:id="temporadas" layoutX="326.0" layoutY="438.0" prefHeight="209.0" prefWidth="240.0" stylesheets="@table.css">
+         <columns>
+            <TableColumn fx:id="name_season" prefWidth="238.0" text="Temporada" />
+         </columns>
+      </TableView>
+      <Label layoutX="103.0" layoutY="394.0" prefHeight="44.0" prefWidth="94.0" text="Habitaciones">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="399.0" layoutY="394.0" prefHeight="44.0" prefWidth="94.0" text="Temporadas">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
