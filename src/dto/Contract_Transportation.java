@@ -1,7 +1,10 @@
 package dto;
+import java.sql.Timestamp;
 import java.util.Date;
 
-public class Contract_Transportation extends Contract {
+public class
+
+Contract_Transportation extends Contract {
     //Attributes
     private int id_transp_model;
     private int id_vehicle;
@@ -32,7 +35,7 @@ public class Contract_Transportation extends Contract {
 
     //Constructor
 
-    public Contract_Transportation(int id_contract, Date start_contract, Date end_contract, Date resolution_contract,
+    public Contract_Transportation(int id_contract, Timestamp start_contract, Timestamp end_contract, Timestamp resolution_contract,
                                    String description_contract, String contract_type, int id_transp_model,
                                    int id_vehicle, String borrower) {
         super(id_contract, start_contract, end_contract, resolution_contract, description_contract, contract_type);

@@ -1,5 +1,6 @@
 package dto;
-import java.util.Date;
+
+import java.sql.Timestamp;
 
 public class Contract_Hotel extends Contract {
     //Attributes
@@ -31,7 +32,7 @@ public class Contract_Hotel extends Contract {
     }
 
     //Constructor
-    public Contract_Hotel(int id_contract, Date start_contract, Date end_contract, Date resolution_contract,
+    public Contract_Hotel(int id_contract, Timestamp start_contract, Timestamp end_contract, Timestamp resolution_contract,
                           String description_contract, String contract_type, int id_hotel, int id_room, int id_season) {
         super(id_contract, start_contract, end_contract, resolution_contract, description_contract, contract_type);
         this.setId_hotel(id_hotel);

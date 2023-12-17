@@ -1,6 +1,5 @@
 package visual.controllers;
-import dto.Meal_Plan;
-import dto.Vehicle;
+import dto.MealPlan;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -16,7 +15,7 @@ public class PlanesAlimenticios implements Initializable {
     @FXML
     private TableColumn<PlanesAlimenticios, Double> plan_cost;
     @FXML
-    private TableView<Meal_Plan> plansTable;
+    private TableView<MealPlan> plansTable;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) { }

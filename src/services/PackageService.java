@@ -29,49 +29,49 @@ public class PackageService {
         }
         return list;
     }
-    public void add_package(String promotional_name, int days_count, int nights_count, int pax_count, double total_hotel_cost, double hotel_airport_ride_cost, double total_transportation_cost, double total_package_cost) throws SQLException {
+    public void add_package(Package p ) throws SQLException {
         String function = "{call add_package(?,?,?,?,?,?,?,?)}";
         java.sql.Connection connection = ServicesLocator.getConnection();
         CallableStatement preparedFunction = connection.prepareCall(function);
 
-        preparedFunction.setString(1, promotional_name);
-        preparedFunction.setInt(2, days_count);
-        preparedFunction.setInt(3, nights_count);
-        preparedFunction.setInt(4, pax_count);
-        preparedFunction.setDouble(5, total_hotel_cost);
-        preparedFunction.setDouble(6, hotel_airport_ride_cost);
-        preparedFunction.setDouble(7, total_transportation_cost);
-        preparedFunction.setDouble(8, total_package_cost);
+        preparedFunction.setString(1, p.getPromotional_name());
+        preparedFunction.setInt(1, p.getDays_count());
+        preparedFunction.setInt(1, p.getNights_count());
+        preparedFunction.setInt(1, p.getPax_count());
+        preparedFunction.setDouble(1, p.getTotal_hotel_cost());
+        preparedFunction.setDouble(1, p.getHotel_airport_ride_cost());
+        preparedFunction.setDouble(1, p.getTotal_transportation_cost());
+        preparedFunction.setDouble(1, p.getTotal_package_cost());
         preparedFunction.execute();
 
         preparedFunction.close();
     }
 
-    public void delete_package(int cod) throws SQLException {
+    public void delete_package(Package p) throws SQLException {
         String function = "{call delete_package(?)";
         java.sql.Connection connection = ServicesLocator.getConnection();
         CallableStatement preparedFunction = connection.prepareCall(function);
 
-        preparedFunction.setInt(1, cod);
+        preparedFunction.setInt(1, p.getId_package());
         preparedFunction.execute();
         preparedFunction.close();
 
     }
 
-    public void update_package(int cod, String promotional_name, int days_count, int nights_count, int pax_count, double total_hotel_cost, double hotel_airport_ride_cost, double total_transportation_cost, double total_package_cost) throws SQLException {
+    public void update_package(Package p ) throws SQLException {
         String function = "{call update_package(?,?,?,?,?,?,?,?,?)}";
         java.sql.Connection connection = ServicesLocator.getConnection();
         CallableStatement preparedFunction = connection.prepareCall(function);
 
-        preparedFunction.setInt(1, cod);
-        preparedFunction.setString(2, promotional_name);
-        preparedFunction.setInt(3, days_count);
-        preparedFunction.setInt(4, nights_count);
-        preparedFunction.setInt(5, pax_count);
-        preparedFunction.setDouble(6, total_hotel_cost);
-        preparedFunction.setDouble(7, hotel_airport_ride_cost);
-        preparedFunction.setDouble(8, total_transportation_cost);
-        preparedFunction.setDouble(9, total_package_cost);
+        preparedFunction.setInt(1, p.getId_package());
+        preparedFunction.setString(1, p.getPromotional_name());
+        preparedFunction.setInt(1, p.getDays_count());
+        preparedFunction.setInt(1, p.getNights_count());
+        preparedFunction.setInt(1, p.getPax_count());
+        preparedFunction.setDouble(1, p.getTotal_hotel_cost());
+        preparedFunction.setDouble(1, p.getHotel_airport_ride_cost());
+        preparedFunction.setDouble(1, p.getTotal_transportation_cost());
+        preparedFunction.setDouble(1, p.getTotal_package_cost());
 
         preparedFunction.execute();
 

@@ -4,6 +4,7 @@ import java.sql.CallableStatement;
 import java.sql.SQLException;
 
 public class BusinessModelService {
+
     public void add_business_model(String name, int business_model_hotel) throws SQLException {
         String function = "{call add_business_model(?,?)}";
         java.sql.Connection connection = ServicesLocator.getConnection();

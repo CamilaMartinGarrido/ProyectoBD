@@ -163,4 +163,26 @@ public class Hotel {
         this.setLocation_hotel(location_hotel);
         this.setBusiness_model(business_model);
     }
+    public Hotel( String name_hotel, String chain_hotel, String category_hotel, String address_hotel,
+                 String province_hotel, boolean is_active, Date date_hotel, String phone, String fax, String email,
+                 double distance_to_city, double distance_to_airport, int room_count, int floor_count,
+                 String location_hotel) {
+
+        this.setName_hotel(name_hotel);
+        this.setChain_hotel(chain_hotel);
+        this.setCategory_hotel(category_hotel);
+        this.setAddress_hotel(address_hotel);
+        this.setProvince_hotel(province_hotel);
+        this.setIs_active(is_active);
+        this.setDate_hotel(date_hotel);
+        this.setPhone(phone);
+        this.setFax(fax);
+        this.setEmail(email);
+        this.setDistance_to_city(distance_to_city);
+        this.setDistance_to_airport(distance_to_airport);
+        this.setRoom_count(room_count);
+        this.setFloor_count(floor_count);
+        this.setLocation_hotel(location_hotel);
+
+    }
 }

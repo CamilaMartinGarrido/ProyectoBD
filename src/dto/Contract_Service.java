@@ -1,4 +1,5 @@
 package dto;
+import java.sql.Timestamp;
 import java.util.Date;
 
 public class Contract_Service extends Contract {
@@ -14,7 +15,7 @@ public class Contract_Service extends Contract {
     }
 
     //Constructor
-    public Contract_Service(int id_contract, Date start_contract, Date end_contract, Date resolution_contract,
+    public Contract_Service(int id_contract, Timestamp start_contract, Timestamp end_contract, Timestamp resolution_contract,
                             String description_contract, String contract_type, int id_activity) {
         super(id_contract, start_contract, end_contract, resolution_contract, description_contract, contract_type);
         this.setId_activity(id_activity);
