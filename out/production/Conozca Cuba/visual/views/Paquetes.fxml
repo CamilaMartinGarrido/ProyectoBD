@@ -54,7 +54,7 @@
             </ImageView>
          </children>
       </GridPane>
-      <Label layoutX="30.0" layoutY="41.0" prefHeight="44.0" prefWidth="287.0" text="Paquetes Turisticos">
+      <Label layoutX="38.0" layoutY="41.0" prefHeight="44.0" prefWidth="287.0" text="Paquetes Turisticos">
          <font>
             <Font name="Georgia Bold" size="28.0" />
          </font>

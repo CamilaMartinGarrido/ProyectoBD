@@ -1,6 +1,6 @@
 package dto;
 
-public class Route extends Transportation_Model{
+public class Routes extends Transportation_Model {
     //Attributes
     private String description_route;
     private double route_cost;
@@ -30,8 +30,8 @@ public class Route extends Transportation_Model{
     }
 
     //Constructor
-    public Route(int id_transp_model, String type_transp_model, String description_tm, String description_route,
-                 double route_cost, double full_ride_cost) {
+    public Routes(int id_transp_model, String type_transp_model, String description_tm, String description_route,
+                  double route_cost, double full_ride_cost) {
         super(id_transp_model, type_transp_model, description_tm);
         this.setDescription_route(description_route);
         this.setRoute_cost(route_cost);
