@@ -51,7 +51,7 @@ public class Paquetes implements Initializable {
     void deleteUser(ActionEvent select) throws SQLException, ClassNotFoundException {
         int pos = usersTable.getSelectionModel().getSelectedIndex();
         if(pos != -1){
-            ServicesLocator.getUserService().eliminarUsuario(ServicesLocator.getUserService().getUsers().get(pos).getId_user());
+            ServicesLocator.getUserService().deleteUser(ServicesLocator.getUserService().getUsers().get(pos));
             updateUsersTable();
         }
 

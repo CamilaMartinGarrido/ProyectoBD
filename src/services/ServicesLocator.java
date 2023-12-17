@@ -1,7 +1,5 @@
 package services;
 
-import connection.DataBaseConnection;
-
 import java.sql.SQLException;
 
 public class ServicesLocator {
@@ -24,9 +22,9 @@ public class ServicesLocator {
     public static VehicleService vehicleService = null;
 
     public static java.sql.Connection getConnection() {
-        DataBaseConnection connection = null;
+        connection.DataBaseConnection connection = null;
         try {
-            connection = new DataBaseConnection("localhost", "Proyecto_BD_ConozcaCuba", "postgres", "CamilaBD");
+            connection = new connection.DataBaseConnection("localhost", "proyecto_bd_cnozco_cuba", "postgres", "R@gn@r");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {

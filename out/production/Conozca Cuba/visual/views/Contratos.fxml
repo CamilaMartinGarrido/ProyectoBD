@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -9,6 +10,7 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="620.0" prefWidth="599.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.Contratos">
@@ -54,10 +56,15 @@
             <Font name="Georgia Bold" size="28.0" />
          </font>
       </Label>
-      <ImageView fitHeight="65.0" fitWidth="277.0" layoutX="-32.0" layoutY="70.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+      <ImageView fitHeight="65.0" fitWidth="277.0" layoutX="308.0" layoutY="20.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
          <image>
             <Image url="@../../images/decorado.png" />
          </image>
       </ImageView>
+      <MFXTextField fx:id="textBuscar" caretVisible="false" floatingText="Buscar" layoutX="40.0" layoutY="95.0" onKeyReleased="#searchContracts" prefHeight="49.0" prefWidth="283.0" selectable="false" style="-fx-border-color: blue;" styleClass="mfx-text-field">
+         <textFill>
+            <Color />
+         </textFill>
+      </MFXTextField>
    </children>
 </AnchorPane>

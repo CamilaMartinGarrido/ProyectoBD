@@ -7,9 +7,212 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="544eced7-edbf-49fc-93f0-cfd10c2f3bf9" name="Changes" comment="update dialogs">
+    <list default="true" id="cc0e2e9d-fe5f-478d-b19c-4e273f07786c" name="Default Changelist" comment="Espero no se rompa">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_9_0_801_jdbc3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conozca Cuba.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Conozca Cuba.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/META-INF/services/java.sql.Driver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/PGConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/PGNotification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/PGRefCursorResultSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/PGResultSetMetaData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/PGStatement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/copy/CopyIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/copy/CopyManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/copy/CopyOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/copy/CopyOut.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/copy/PGCopyInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/copy/PGCopyOutputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/BaseConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/BaseResultSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/BaseStatement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/ConnectionFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/Encoding.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/Field.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/Logger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/Notification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/Oid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/PGBindException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/PGStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/ParameterList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/Parser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/ProtocolConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/Query.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/QueryExecutor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/ResultCursor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/ResultHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/TypeInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/UTF8Encoding.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/VisibleBufferedInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/types/PGBigDecimal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/types/PGBoolean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/types/PGByte.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/types/PGDouble.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/types/PGFloat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/types/PGInteger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/types/PGLong.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/types/PGNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/types/PGShort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/types/PGString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/types/PGType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/types/PGUnknown.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v2/ConnectionFactoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v2/FastpathParameterList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v2/ProtocolConnectionImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v2/QueryExecutorImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v2/SimpleParameterList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v2/V2Query.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v3/CompositeParameterList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v3/CompositeQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v3/ConnectionFactoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v3/CopyInImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v3/CopyOperationImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v3/CopyOutImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v3/Portal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v3/ProtocolConnectionImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v3/QueryExecutorImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v3/SimpleParameterList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v3/SimpleQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v3/V3ParameterList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/core/v3/V3Query.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/ds/PGConnectionPoolDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/ds/PGPooledConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/ds/PGPoolingDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/ds/PGSimpleDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/ds/common/BaseDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/ds/common/PGObjectFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/ds/jdbc23/AbstractJdbc23PooledConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/ds/jdbc23/AbstractJdbc23PoolingDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/ds/jdbc23/AbstractJdbc23SimpleDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/fastpath/Fastpath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/fastpath/FastpathArg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/geometric/PGbox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/geometric/PGcircle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/geometric/PGline.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/geometric/PGlseg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/geometric/PGpath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/geometric/PGpoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/geometric/PGpolygon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/gss/GSSCallbackHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/gss/GssAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/gss/MakeGSS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc2/AbstractJdbc2Array.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc2/AbstractJdbc2Blob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc2/AbstractJdbc2BlobClob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc2/AbstractJdbc2Clob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc2/AbstractJdbc2Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc2/AbstractJdbc2DatabaseMetaData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc2/AbstractJdbc2ResultSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc2/AbstractJdbc2ResultSetMetaData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc2/AbstractJdbc2Statement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc2/EscapedFunctions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc2/ResultWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc2/TimestampUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc2/TypeInfoCache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc2/optional/ConnectionPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc2/optional/PoolingDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc2/optional/SimpleDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/AbstractJdbc3Blob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/AbstractJdbc3Clob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/AbstractJdbc3Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/AbstractJdbc3DatabaseMetaData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/AbstractJdbc3ParameterMetaData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/AbstractJdbc3ResultSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/AbstractJdbc3Statement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/Jdbc3Array.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/Jdbc3Blob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/Jdbc3CallableStatement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/Jdbc3Clob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/Jdbc3Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/Jdbc3ConnectionPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/Jdbc3DatabaseMetaData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/Jdbc3ParameterMetaData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/Jdbc3PoolingDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/Jdbc3PreparedStatement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/Jdbc3ResultSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/Jdbc3ResultSetMetaData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/Jdbc3SimpleDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/Jdbc3Statement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/jdbc3/PSQLSavepoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/largeobject/BlobInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/largeobject/BlobOutputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/largeobject/LargeObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/largeobject/LargeObjectManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/ssl/MakeSSL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/ssl/NonValidatingFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/ssl/WrappedFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/translation/messages_bg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/translation/messages_cs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/translation/messages_de.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/translation/messages_es.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/translation/messages_fr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/translation/messages_it.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/translation/messages_ja.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/translation/messages_nl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/translation/messages_pl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/translation/messages_pt_BR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/translation/messages_ru.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/translation/messages_sr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/translation/messages_tr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/translation/messages_zh_CN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/translation/messages_zh_TW.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/util/Base64.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/util/GT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/util/MD5Digest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/util/PGInterval.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/util/PGbytea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/util/PGmoney.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/util/PGobject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/util/PGtokenizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/util/PSQLDriverVersion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/util/PSQLException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/util/PSQLState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/util/PSQLWarning.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/util/ServerErrorMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/util/StreamWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/util/UnixCrypt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/xa/PGXAConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/xa/PGXADataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/xa/PGXADataSourceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/xa/PGXAException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar/org/postgresql/xa/RecoveredXid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/connection/DataBaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/connection/DataBaseConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/season.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/season.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/ContractService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/services/ContractService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/RoomService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/services/RoomService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/SeasonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/services/SeasonService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/ServicesLocator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/services/ServicesLocator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/TransportationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/services/TransportationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/VehicleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/services/VehicleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/ActividadesDiarias.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/ActividadesDiarias.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Contratos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Contratos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Habitaciones.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Habitaciones.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Hoteles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Hoteles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/PlanesAlimenticios.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/PlanesAlimenticios.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Roles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Roles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Temporadas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Temporadas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Usuarios.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Usuarios.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Vehiculos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Vehiculos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Contratos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Contratos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Habitaciones.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Habitaciones.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Hoteles.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Hoteles.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Temporadas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Temporadas.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Vehiculos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Vehiculos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/dialogs/AddContrato.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/dialogs/AddHotel.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/dialogs/AddPaquetes.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/dialogs/AddUser.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/connection/DataBaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/connection/DataBaseConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/ServicesLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ServicesLocator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Paquetes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Paquetes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Usuarios.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +244,6 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
   <component name="ProjectId" id="2YJFrCFUmOH6GBMATLCavUwJJvq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -52,11 +252,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/postgresql-9.0-801.jdbc3.jar" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.11750883" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="visual.controllers" />
@@ -73,7 +275,7 @@
       <recent name="D:\ProyectoBD\src\visual\views" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Principal">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -132,8 +334,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Principal" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Principal" />
       </list>
     </recent_temporary>
   </component>
@@ -262,20 +464,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702749060422</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Espero no se rompa">
+      <created>1702783667244</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1702783667244</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="368b398e-d305-4463-a13b-cf02c49e39d9" value="TOOL_WINDOW" />
-      </map>
-    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="368b398e-d305-4463-a13b-cf02c49e39d9">
           <value>
             <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -294,7 +499,6 @@
                   </entry>
                 </map>
               </option>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
             </State>
           </value>
         </entry>
@@ -317,6 +521,12 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="368b398e-d305-4463-a13b-cf02c49e39d9" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Probando commit" />
@@ -330,7 +540,8 @@
     <MESSAGE value="workspace update" />
     <MESSAGE value="update" />
     <MESSAGE value="update dialogs" />
-    <option name="LAST_COMMIT_MESSAGE" value="update dialogs" />
+    <MESSAGE value="Espero no se rompa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Espero no se rompa" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -338,7 +549,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/visual/main/Main.java</url>
           <line>17</line>
-          <properties class="visual.main.Main">
+          <properties class="visual.main.Main" method="start">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
