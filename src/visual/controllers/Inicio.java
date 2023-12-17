@@ -56,8 +56,20 @@ public class Inicio implements Initializable {
     }
 
     //Inicio
-    public void Transporte (ActionEvent actionEvent) throws IOException {
-
+    public void usuarios(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent fxml = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/visual/views/Usuarios.fxml")));
+        pnMenu.getChildren().removeAll();
+        pnMenu.getChildren().setAll((Node) fxml);
+    }
+    public void contratos(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent fxml = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/visual/views/Contratos.fxml")));
+        pnMenu.getChildren().removeAll();
+        pnMenu.getChildren().setAll((Node) fxml);
+    }
+    public void actividadesDiarias(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent fxml = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/visual/views/ActividadesDiarias.fxml")));
+        pnMenu.getChildren().removeAll();
+        pnMenu.getChildren().setAll((Node) fxml);
     }
 
     public void Transporte(javafx.event.ActionEvent actionEvent) throws IOException {
