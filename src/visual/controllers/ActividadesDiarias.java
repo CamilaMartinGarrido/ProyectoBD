@@ -59,4 +59,8 @@ public class ActividadesDiarias implements Initializable {
         // Coding
     }
 
+    //Search
+    @FXML
+    private void searchActivities(javafx.scene.input.KeyEvent event) {
+    }
 }

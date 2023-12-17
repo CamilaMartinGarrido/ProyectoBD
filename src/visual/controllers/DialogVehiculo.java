@@ -1,4 +1,4 @@
 package visual.controllers;
 
-public class Transporte {
+public class DialogVehiculo {
 }

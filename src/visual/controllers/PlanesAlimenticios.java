@@ -48,4 +48,8 @@ public class PlanesAlimenticios implements Initializable {
         // Coding
     }
 
+    //Search
+    @FXML
+    private void searchPlans(javafx.scene.input.KeyEvent event) {
+    }
 }

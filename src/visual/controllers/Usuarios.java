@@ -1,13 +1,19 @@
 package visual.controllers;
 import dto.User;
+import io.github.palexdev.materialfx.controls.MFXTextField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.input.KeyEvent;
 import services.ServicesLocator;
+import services.UserService;
+
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
@@ -22,14 +28,15 @@ public class Usuarios implements Initializable {
     private TableColumn<Usuarios, String> role;
     @FXML
     private TableView<User> usersTable;
+    @FXML
+    private MFXTextField textBuscar;
 
-    private ObservableList<User> usuarios;
-    private ObservableList<User> filtroUsuarios;
+    private final UserService us = ServicesLocator.getUserService();
+    private ObservableList<User> usuarios = FXCollections.observableArrayList();
+    private final FilteredList<User> filtroUsuarios = new FilteredList<>(usuarios, b -> true);
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        usuarios = FXCollections.observableArrayList();
-        filtroUsuarios = FXCollections.observableArrayList();
     }
 
     //Insert user
@@ -41,15 +48,14 @@ public class Usuarios implements Initializable {
     //Delete user
     @FXML
     private void deleteImageClicked(ActionEvent event) throws SQLException, ClassNotFoundException {
-        ActionEvent select = new ActionEvent();
-        deleteUser(select);
+        int pos = usersTable.getSelectionModel().getSelectedIndex();
+        deleteUser(pos);
     }
 
     @FXML
-    void deleteUser(ActionEvent select) throws SQLException, ClassNotFoundException {
-        int pos = usersTable.getSelectionModel().getSelectedIndex();
+    void deleteUser(int pos) throws SQLException, ClassNotFoundException {
         if(pos != -1){
-            ServicesLocator.getUserService().eliminarUsuario(ServicesLocator.getUserService().getUsers().get(pos).getId_user());
+            UserService.eliminarUsuario(UserService.getUsers().get(pos).getId_user());
             updateUsersTable();
         }
 
@@ -57,8 +63,32 @@ public class Usuarios implements Initializable {
 
     //Update table
     public void updateUsersTable() throws SQLException, ClassNotFoundException {
-        usuarios = FXCollections.observableArrayList(ServicesLocator.getUserService().getUsers());
+        usuarios = FXCollections.observableArrayList(UserService.getUsers());
         usersTable.setItems(usuarios);
     }
 
+    //Search
+    public void setupFilter(MFXTextField textBuscar, TableView<User> usersTable, FilteredList<User> filtroUsuarios) {
+        textBuscar.textProperty().addListener((observable, oldValue, newValue) -> {
+            filtroUsuarios.setPredicate(user -> {
+                if (newValue == null || newValue.isEmpty()) {
+                    return true;
+                }
+                String lowerCaseFilter = newValue.toLowerCase();
+                if (user.getUser_name().toLowerCase().contains(lowerCaseFilter)) {
+                    return true;
+                } else if (String.valueOf(user.getId_role()).contains(lowerCaseFilter)) {
+                    return true;
+                } else {
+                    return false;
+                }
+            });
+        });
+        SortedList<User> datosOrdenados = new SortedList<>(filtroUsuarios);
+        datosOrdenados.comparatorProperty().bind(usersTable.comparatorProperty());
+        usersTable.setItems(datosOrdenados);
+    }
+
+    public void searchUsers(KeyEvent keyEvent) {
+    }
 }

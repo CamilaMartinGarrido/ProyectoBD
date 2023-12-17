@@ -58,9 +58,15 @@ public class Contratos implements Initializable {
     }
 
     //Search
-   // @FXML
-    /*private void search(KeyEvent event) {
-        String filtro = this
-    }*/
+//<<<<<<< Updated upstream
 
+    // void search(KeyEvent event) {
+     //   String filtro = this
+    //}
+
+//=======
+    @FXML
+    private void searchContracts(javafx.scene.input.KeyEvent keyEvent) {
+    }
+///>>>>>>> Stashed changes
 }

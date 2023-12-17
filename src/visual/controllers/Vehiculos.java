@@ -56,4 +56,8 @@ public class Vehiculos implements Initializable {
         // Coding
     }
 
+    //Search
+    @FXML
+    private void searchVehicles(javafx.scene.input.KeyEvent event) {
+    }
 }

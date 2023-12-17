@@ -60,11 +60,10 @@ public class LoginController implements Initializable {
             textPassword.setText("");
         } else {
             int role = UserService.getLoginUser(textUser.getText());
-            User user = new User(textUser.getText(), role);
-            this.control.setSessionUser(user);
+           // User user = new User(textUser.getText(), role);
+           // this.control.setSessionUser(user);
             try {
-                FXMLLoader fxmlLoader = new FXMLLoader();
-                fxmlLoader.setLocation(getClass().getResource("/visual/views/Vehiculos.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/visual/views/Usuarios.fxml"));
                 Parent root = fxmlLoader.load();
                 Stage stage = new Stage();
                 stage.setTitle("Ventana");

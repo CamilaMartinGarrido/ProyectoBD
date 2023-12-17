@@ -54,4 +54,8 @@ public class Hoteles implements Initializable {
         // Coding
     }
 
+    //Search
+    @FXML
+    private void searchHotels(javafx.scene.input.KeyEvent event) {
+    }
 }
