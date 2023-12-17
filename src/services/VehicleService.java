@@ -32,18 +32,18 @@ public class VehicleService {
         CallableStatement preparedFunction = connection.prepareCall(function);
 
         preparedFunction.setString(1, v.getLicense_plate());
-        preparedFunction.setString(1, v.getBrand());
-        preparedFunction.setDouble(1, v.getLuggage_capacity());
-        preparedFunction.setDouble(1, v.getWith_luggage_capacity());
-        preparedFunction.setDouble(1, v.getTotal_capacity());
-        preparedFunction.setInt(1, v.getYear_build());
+        preparedFunction.setString(2, v.getBrand());
+        preparedFunction.setDouble(3, v.getLuggage_capacity());
+        preparedFunction.setDouble(4, v.getWith_luggage_capacity());
+        preparedFunction.setDouble(5, v.getTotal_capacity());
+        preparedFunction.setInt(6, v.getYear_build());
         preparedFunction.execute();
 
         preparedFunction.close();
     }
 
     public void delete_vehicle(Vehicle v) throws SQLException {
-        String function = "{call delete_vehicle(?)";
+        String function = "{call delete_vehicle(?)}";
         java.sql.Connection connection = ServicesLocator.getConnection();
         CallableStatement preparedFunction = connection.prepareCall(function);
 

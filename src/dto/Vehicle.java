@@ -72,4 +72,14 @@ public class Vehicle {
         this.setTotal_capacity(total_capacity);
         this.setYear_build(year_build);
     }
+    public Vehicle( String license_plate, String brand, double luggage_capacity,
+                   double with_luggage_capacity, double total_capacity, int year_build) {
+
+        this.setLicense_plate(license_plate);
+        this.setBrand(brand);
+        this.setLuggage_capacity(luggage_capacity);
+        this.setWith_luggage_capacity(with_luggage_capacity);
+        this.setTotal_capacity(total_capacity);
+        this.setYear_build(year_build);
+    }
 }
