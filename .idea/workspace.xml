@@ -9,26 +9,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f480cd2c-4e8c-4126-a1fe-3667f16d7df5" name="Default Changelist" comment="tufe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/conection/DataBaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/connection/DataBaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/Meal_Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/MealPlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/Rol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ContractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ContractService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Meal_PlanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Meal_PlanService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/RoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/RoomService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/SeasonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/SeasonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ServicesLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ServicesLocator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/TransportationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/TransportationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/VehicleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/VehicleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Contratos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Contratos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/PlanesAlimenticios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/PlanesAlimenticios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Roles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Temporadas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Temporadas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/main/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +221,21 @@
       <option name="project" value="LOCAL" />
       <updated>1702497221267</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="tufe">
+      <created>1702782281765</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702782281765</updated>
+    </task>
+    <task id="LOCAL-00013" summary="tufe">
+      <created>1702782328319</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702782328319</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -307,7 +301,8 @@
     <MESSAGE value="Actualización de las clases" />
     <MESSAGE value="Actualizacion Visuals, Services y DTO" />
     <MESSAGE value="Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+    <MESSAGE value="tufe" />
+    <option name="LAST_COMMIT_MESSAGE" value="tufe" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
