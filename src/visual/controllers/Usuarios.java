@@ -10,7 +10,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.input.KeyEvent;
 import services.ServicesLocator;
 import services.UserService;
 
@@ -68,6 +67,11 @@ public class Usuarios implements Initializable {
     }
 
     //Search
+    @FXML
+    private void searchUsers(javafx.scene.input.KeyEvent event) {
+        setupFilter(textBuscar, usersTable, filtroUsuarios);
+    }
+
     public void setupFilter(MFXTextField textBuscar, TableView<User> usersTable, FilteredList<User> filtroUsuarios) {
         textBuscar.textProperty().addListener((observable, oldValue, newValue) -> {
             filtroUsuarios.setPredicate(user -> {
@@ -87,8 +91,5 @@ public class Usuarios implements Initializable {
         SortedList<User> datosOrdenados = new SortedList<>(filtroUsuarios);
         datosOrdenados.comparatorProperty().bind(usersTable.comparatorProperty());
         usersTable.setItems(datosOrdenados);
-    }
-
-    public void searchUsers(KeyEvent keyEvent) {
     }
 }
