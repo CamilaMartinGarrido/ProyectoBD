@@ -4,8 +4,6 @@ import dto.User;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import io.github.palexdev.materialfx.controls.MFXPasswordField;
 import io.github.palexdev.materialfx.controls.MFXTextField;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -13,9 +11,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import services.Control;
 import services.UserService;
 
@@ -47,12 +43,9 @@ public class LoginController implements Initializable {
 
     }
 
-    private void close(){
-        Stage stage = (Stage) this.btnClose.getScene().getWindow();
-        stage.close();
-    }
     public void closeWindow(javafx.scene.input.MouseEvent mouseEvent) {
-        close();
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        stage.close();
     }
 
     public void SystemAccess(ActionEvent event) {
@@ -70,17 +63,12 @@ public class LoginController implements Initializable {
            // User user = new User(textUser.getText(), role);
            // this.control.setSessionUser(user);
             try {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/visual/views/Dashboard.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/visual/views/Vehiculos.fxml"));
                 Parent root = fxmlLoader.load();
                 Stage stage = new Stage();
-                stage.setTitle("Inicio");
-                Scene scene = new Scene(root);
-                stage.setScene(scene);
-                stage.setFullScreen(true);
-                stage.initStyle(StageStyle.UNDECORATED);
+                stage.setTitle("Ventana");
+                stage.setScene(new Scene(root, 450, 450));
                 stage.show();
-
-                close();
             } catch (IOException e) {
                 e.printStackTrace();
             }

@@ -13,19 +13,19 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="241.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.Vehiculos">
+<AnchorPane prefHeight="620.0" prefWidth="599.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.Vehiculos">
     <children>
-        <TableView fx:id="vehiclesTable" layoutX="20.0" layoutY="163.0" prefHeight="443.0" prefWidth="546.0" stylesheets="@table.css" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="157.0">
+        <TableView fx:id="vehiclesTable" layoutX="30.0" layoutY="151.0" prefHeight="443.0" prefWidth="546.0" stylesheets="@table.css">
             <columns>
-                <TableColumn fx:id="license_plate" prefWidth="118.0" resizable="false" text="Chapa" />
-                <TableColumn fx:id="brand" minWidth="0.0" prefWidth="135.0" text="Marca" />
-                <TableColumn fx:id="luggage_capacity" minWidth="0.0" prefWidth="156.0" text="Capacidad sin equipaje" />
-                <TableColumn fx:id="with_luggage_capacity" minWidth="0.0" prefWidth="180.0" text="Capacidad con equipaje" />
-                <TableColumn fx:id="total_capacity" minWidth="0.0" prefWidth="140.0" text="Capacidad total" />
-                <TableColumn fx:id="year_build" minWidth="4.0" prefWidth="163.0" text="Año de fabricación" />
+                <TableColumn fx:id="license_plate" prefWidth="75.0" text="Chapa" />
+                <TableColumn fx:id="brand" minWidth="4.0" prefWidth="69.0" text="Marca" />
+                <TableColumn fx:id="luggage_capacity" minWidth="0.0" prefWidth="102.0" text="Capacidad sin equipaje" />
+                <TableColumn fx:id="with_luggage_capacity" minWidth="0.0" prefWidth="106.0" text="Capacidad con equipaje" />
+                <TableColumn fx:id="total_capacity" minWidth="4.0" prefWidth="98.0" text="Capacidad total" />
+                <TableColumn fx:id="year_build" minWidth="4.0" prefWidth="93.0" text="Año de fabricación" />
             </columns>
         </TableView>
-        <GridPane layoutX="396.0" layoutY="85.0" prefHeight="68.0" prefWidth="169.0" AnchorPane.rightAnchor="14.0">
+        <GridPane layoutX="396.0" layoutY="85.0" prefHeight="68.0" prefWidth="169.0">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="57.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="63.0" minWidth="10.0" prefWidth="57.0" />
@@ -35,7 +35,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <ImageView fitHeight="46.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView  fx:id="add" fitHeight="46.0" fitWidth="44.0" onMouseClicked="#addClicked" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../../images/add-button.png" />
                     </image>
@@ -57,7 +57,7 @@
                 <Font name="Georgia Bold" size="28.0" />
             </font>
         </Label>
-        <ImageView fitHeight="65.0" fitWidth="277.0" layoutX="308.0" layoutY="20.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" AnchorPane.rightAnchor="14.0">
+        <ImageView fitHeight="65.0" fitWidth="277.0" layoutX="308.0" layoutY="20.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
             <image>
                 <Image url="@../../images/decorado.png" />
             </image>
