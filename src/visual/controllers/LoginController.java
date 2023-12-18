@@ -64,12 +64,13 @@ public class LoginController implements Initializable {
             textPassword.setText("");
         } else {
             int role = UserService.getLoginUser(textUser.getText());
-           // User user = new User(textUser.getText(), role);
-           // this.control.setSessionUser(user);
+            User user = new User(textUser.getText(), role);
+            this.control.setSessionUser(user);
             try {
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/visual/views/Dashboard.fxml"));
                 Parent root = fxmlLoader.load();
                 Stage stage = new Stage();
+                //stage.getScene().getWindow().setUserData(new User(textUser.getText(), role));
                 stage.setTitle("Ventana");
                 stage.setScene(new Scene(root));
                 stage.initStyle(StageStyle.UNDECORATED);

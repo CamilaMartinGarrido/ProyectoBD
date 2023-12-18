@@ -1,6 +1,7 @@
 package visual.controllers;
 
 import com.jfoenix.controls.JFXButton;
+import dto.User;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -9,10 +10,12 @@ import javafx.scene.Parent;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import services.Control;
 
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.net.URL;
+import java.util.EventObject;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
@@ -50,10 +53,14 @@ public class Inicio implements Initializable {
     @FXML
     private Pane pnMenu;
 
+    User user;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+       // Stage stage = (Stage) this.pnMenu.getScene().getWindow();
+       // user = (User) stage.getUserData();
+       // lblUsername.setText(user.getUser_name());
     }
 
     //Inicio

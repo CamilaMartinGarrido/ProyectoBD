@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="pnTransportes" prefHeight="233.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.Contratos">
+<AnchorPane fx:id="pnTransportes" prefHeight="233.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.Transportes">
    <children>
       <Label layoutX="40.0" layoutY="41.0" prefHeight="44.0" prefWidth="239.0" text="Transportacion">
          <font>
