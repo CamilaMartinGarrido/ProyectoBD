@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="pnTransportes" prefHeight="431.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.Contratos">
+<AnchorPane fx:id="pnTransportes" prefHeight="233.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.Contratos">
    <children>
       <Label layoutX="40.0" layoutY="41.0" prefHeight="44.0" prefWidth="239.0" text="Transportacion">
          <font>
@@ -19,27 +19,12 @@
             <Image url="@../../images/decorado.png" />
          </image>
       </ImageView>
-      <JFXButton fx:id="btnHoteles" layoutX="40.0" layoutY="197.0" onAction="#hoteles" prefHeight="53.0" prefWidth="140.0" style="-fx-border-color: #285AB6; -fx-border-radius: 10; -fx-background-radius: 10;" text="CostoKm" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="570.0">
+      <JFXButton fx:id="btnModelos" layoutX="387.0" layoutY="128.0" onAction="#modelos" prefHeight="53.0" prefWidth="333.0" style="-fx-border-color: #285AB6; -fx-border-radius: 10; -fx-background-radius: 10;" text="Modelos de Transportación" AnchorPane.leftAnchor="387.0" AnchorPane.rightAnchor="30.0">
          <font>
             <Font size="24.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="btnTransportes" layoutX="195.0" layoutY="197.0" onAction="#transportes" prefHeight="53.0" prefWidth="252.0" style="-fx-border-color: #285AB6; -fx-border-radius: 10; -fx-background-radius: 10;" text="Costo Km y Horas" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="303.0">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </JFXButton>
-      <JFXButton fx:id="btnServicio" layoutX="459.0" layoutY="197.0" onAction="#servicios" prefHeight="53.0" prefWidth="252.0" style="-fx-border-color: #285AB6; -fx-border-radius: 10; -fx-background-radius: 10;" text="Costo por Recorrido" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="459.0" AnchorPane.rightAnchor="39.0">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </JFXButton>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="117.0" layoutY="111.0" prefHeight="44.0" prefWidth="366.0" text="Modelos de transportación " textFill="#001effce" AnchorPane.bottomAnchor="154.0" AnchorPane.leftAnchor="117.0" AnchorPane.rightAnchor="116.0">
-         <font>
-            <Font name="Georgia Italic" size="28.0" />
-         </font>
-      </Label>
-      <JFXButton fx:id="btnTransportes1" layoutX="210.0" layoutY="129.0" onAction="#transportes" prefWidth="332.0" style="-fx-border-color: #285AB6; -fx-border-radius: 10; -fx-background-radius: 10;" text="Vehículos">
+      <JFXButton fx:id="btnVehiculos" layoutX="40.0" layoutY="128.0" onAction="#transportes" prefWidth="332.0" style="-fx-border-color: #285AB6; -fx-border-radius: 10; -fx-background-radius: 10;" text="Vehículos" AnchorPane.leftAnchor="30.0">
          <font>
             <Font size="24.0" />
          </font>

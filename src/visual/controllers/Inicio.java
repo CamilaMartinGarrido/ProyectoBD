@@ -8,6 +8,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 
 import java.awt.event.ActionEvent;
 import java.io.IOException;
@@ -72,14 +73,27 @@ public class Inicio implements Initializable {
         pnMenu.getChildren().setAll((Node) fxml);
     }
     public void hoteles(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent fxml = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/visual/views/HotelesMenu.fxml")));
+        pnMenu.getChildren().removeAll();
+        pnMenu.getChildren().setAll((Node) fxml);
+    }
+    public void transporte(javafx.event.ActionEvent actionEvent) throws IOException {
         Parent fxml = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/visual/views/Vehiculos.fxml")));
         pnMenu.getChildren().removeAll();
         pnMenu.getChildren().setAll((Node) fxml);
     }
-    public void Transporte(javafx.event.ActionEvent actionEvent) throws IOException {
+    public void paquetes(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent fxml = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/visual/views/Paquetes.fxml")));
+        pnMenu.getChildren().removeAll();
+        pnMenu.getChildren().setAll((Node) fxml);
+    }
+    public void reportes(javafx.event.ActionEvent actionEvent) throws IOException {
         Parent fxml = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/visual/views/Vehiculos.fxml")));
         pnMenu.getChildren().removeAll();
         pnMenu.getChildren().setAll((Node) fxml);
     }
-
+    public void cerrarVentana(javafx.event.ActionEvent actionEvent) {
+        Stage stage = (Stage) btnCerrarSesion.getScene().getWindow();
+        stage.close();
+    }
 }
