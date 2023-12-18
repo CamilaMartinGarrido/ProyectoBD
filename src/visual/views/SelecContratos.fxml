@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="309.0" prefWidth="599.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.Contratos">
+<AnchorPane prefHeight="309.0" prefWidth="599.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.SelecContratos">
    <children>
       <Label layoutX="40.0" layoutY="41.0" prefHeight="44.0" prefWidth="158.0" text="Contratos">
          <font>

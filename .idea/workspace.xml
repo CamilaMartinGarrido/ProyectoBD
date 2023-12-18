@@ -7,30 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bb2a9b3-ecf3-4f57-8a69-a34a3eeae61c" name="Default Changelist" comment="modificacion">
+    <list default="true" id="0bb2a9b3-ecf3-4f57-8a69-a34a3eeae61c" name="Default Changelist" comment="Puesto menu">
+      <change afterPath="$PROJECT_DIR$/src/visual/views/Transportes.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visual/views/Transportes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Daily_Activity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/Daily_Activity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/DailyActivityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/services/DailyActivityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/HotelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/services/HotelService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/PackageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/services/PackageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/VehicleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/services/VehicleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/ActividadesDiarias.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/ActividadesDiarias.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Hoteles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Hoteles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Usuarios.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Usuarios.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/ActividadesDiarias.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/ActividadesDiarias.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Paquetes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Paquetes.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/Daily_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/Daily_Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ContractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ContractService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/DailyActivityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/DailyActivityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/HotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/HotelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/PackageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/PackageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/VehicleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/VehicleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/ActividadesDiarias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/ActividadesDiarias.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Hoteles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Hoteles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Paquetes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Paquetes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Usuarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/views/ActividadesDiarias.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/ActividadesDiarias.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/views/Paquetes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Paquetes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/season.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/season.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Inicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +54,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "master"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="visual.controllers" />
@@ -290,23 +279,28 @@
       <option name="project" value="LOCAL" />
       <updated>1702846847822</updated>
     </task>
-    <task id="LOCAL-00018" summary="modificacion">
-      <created>1702854307654</created>
+    <task id="LOCAL-00018" summary="Puesto menu">
+      <option name="closed" value="true" />
+      <created>1702852057487</created>
       <option name="number" value="00018" />
       <option name="presentableId" value="LOCAL-00018" />
       <option name="project" value="LOCAL" />
-      <updated>1702854307654</updated>
+      <updated>1702852057487</updated>
     </task>
     <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="368b398e-d305-4463-a13b-cf02c49e39d9" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="368b398e-d305-4463-a13b-cf02c49e39d9">
           <value>
             <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -325,6 +319,7 @@
                   </entry>
                 </map>
               </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
             </State>
           </value>
         </entry>
@@ -347,12 +342,6 @@
         </entry>
       </map>
     </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="368b398e-d305-4463-a13b-cf02c49e39d9" value="TOOL_WINDOW" />
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Probando commit" />
@@ -368,8 +357,8 @@
     <MESSAGE value="update dialogs" />
     <MESSAGE value="Actualizados dialogos, y medio menu funcional" />
     <MESSAGE value="a" />
-    <MESSAGE value="modificacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="modificacion" />
+    <MESSAGE value="Puesto menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Puesto menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
