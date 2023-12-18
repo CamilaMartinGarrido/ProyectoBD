@@ -53,13 +53,13 @@ public class Daily_Activity {
 
     //Constructor
     public Daily_Activity(int id_activity, Timestamp date_activity, Timestamp time_activity, double cost_activity,
-                           String description_activity,  boolean is_valid) {
+                           String description_activity) {
         this.setId_activity(id_activity);
         this.setDate_activity(date_activity);
         this.setTime_activity(time_activity);
         this.setCost_activity(cost_activity);
         this.setDescription_activity(description_activity);
-        this.setIs_valid(is_valid);
+
     }
     public Daily_Activity(  Timestamp date_activity, Timestamp time_activity, double cost_activity,
                            String description_activity) {
