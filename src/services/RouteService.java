@@ -4,14 +4,15 @@ import java.sql.CallableStatement;
 import java.sql.SQLException;
 
 public class RouteService {
-    public void add_route(String description_route,double route_cost, double full_ride_cost) throws SQLException {
-        String function = "{call add_route(?,?,?)}";
+    public void add_route(int id_transp_model, String description_route, double route_cost, double full_ride_cost) throws SQLException {
+        String function = "{call add_route(?,?,?,?)}";
         java.sql.Connection connection = ServicesLocator.getConnection();
         CallableStatement preparedFunction = connection.prepareCall(function);
 
-        preparedFunction.setString(1, description_route);
-        preparedFunction.setDouble(2, route_cost);
-        preparedFunction.setDouble(3, full_ride_cost);
+        preparedFunction.setInt(1, id_transp_model);
+        preparedFunction.setString(2, description_route);
+        preparedFunction.setDouble(3, route_cost);
+        preparedFunction.setDouble(4, full_ride_cost);
 
 
         preparedFunction.execute();

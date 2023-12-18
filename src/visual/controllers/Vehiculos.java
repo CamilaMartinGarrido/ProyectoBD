@@ -49,6 +49,9 @@ public class Vehiculos implements Initializable {
         vehiclesTable = new TableView<Vehicle>();
         service = ServicesLocator.getVehicleService();
     }
+    public TableView<Vehicle> getTable() {
+        return vehiclesTable;
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -59,7 +62,6 @@ public class Vehiculos implements Initializable {
         total_capacity.setCellValueFactory(new PropertyValueFactory<>("total_capacity"));
         year_build.setCellValueFactory(new PropertyValueFactory<>("year_build"));
 
-
         try {
             updateVehiclesTable();
         } catch (SQLException throwables) {
@@ -67,14 +69,24 @@ public class Vehiculos implements Initializable {
         }
     }
 
-    //Add vehicle
+    //Add
+    @FXML
+    public void addClicked(javafx.scene.input.MouseEvent mouseEvent) throws IOException {
+        Stage window = new Stage();
 
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/visual/views/dialogs/DialogVehiculo.fxml"));
 
-    //Update vehicle
+        window.setScene(new Scene(loader.load()));
 
+        window.show();
+    }
 
-    //Delete vehicle
-
+    //Delete
+    @FXML
+    public void deleteImageClicked(javafx.scene.input.MouseEvent mouseEvent) throws SQLException {
+        ActionEvent select = new ActionEvent();
+        deleteVehicle(select);
+    }
 
     @FXML
     void deleteVehicle(ActionEvent select) throws SQLException {
@@ -88,7 +100,8 @@ public class Vehiculos implements Initializable {
 
     }
 
-    //Update table
+    //Update
+    @FXML
     public void updateVehiclesTable() throws SQLException {
         //Obtener datos
         LinkedList<Vehicle> list = VehicleService.getVehicles();
@@ -101,26 +114,5 @@ public class Vehiculos implements Initializable {
     //Search
     @FXML
     private void searchVehicles(javafx.scene.input.KeyEvent event) {
-    }
-
-    @FXML
-    public void addClicked(javafx.scene.input.MouseEvent mouseEvent) throws IOException {
-        Stage window = new Stage();
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/visual/views/dialogs/DialogVehiculo.fxml"));
-
-        window.setScene(new Scene(loader.load()));
-
-        window.show();
-    }
-
-    public TableView<Vehicle> getTable() {
-        return vehiclesTable;
-    }
-
-    @FXML
-    public void deleteImageClicked(javafx.scene.input.MouseEvent mouseEvent) throws SQLException {
-        ActionEvent select = new ActionEvent();
-        deleteVehicle(select);
     }
 }
