@@ -48,13 +48,11 @@ public class DialogVehiculo implements Initializable {
     private AnchorPane root;
     private Vehiculos v = new Vehiculos();
     private VehicleService service;
+    private int id;
 
     public DialogVehiculo() {
         service = ServicesLocator.getVehicleService();
     }
-
-
-
 
 
     @FXML
@@ -66,6 +64,33 @@ public class DialogVehiculo implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
+public void setId(int value){
+        id = value;
+}
+    public void setMatricula(String value) {
+        matricula.setText(value);
+    }
+
+    public void setMarca(String value) {
+        marca.setText(value);
+    }
+
+    public void setCapacidadEquipaje(String value) {
+        capacidadEquipaje.setText(value);
+    }
+
+    public void setCapacidadSinEquipaje(String value) {
+        capacidadSinEquipaje.setText(value);
+    }
+
+    public void setAnno(String value) {
+        anno.setText(value);
+    }
+
+    public void setCapacidadTotal(String value) {
+        capacidadTotal.setText(value);
+    }
+
     @FXML
     public void guardarClicked(javafx.scene.input.MouseEvent mouseEvent) throws SQLException {
         String plate = matricula.getText();
@@ -75,10 +100,17 @@ public class DialogVehiculo implements Initializable {
         Double whithLuggage = Double.parseDouble(capacidadSinEquipaje.getText());
         int year = Integer.parseInt(anno.getText());
 
-        Vehicle vehicle = new Vehicle(plate, brand, luggageCapacity, whithLuggage, totalCapacity, year);
-        TableView<Vehicle> t = v.getTable();
-        t.getItems().add(vehicle);
-        service.add_vehicle(vehicle);
-        v.updateVehiclesTable();
+        Vehicle vehicle = new Vehicle(id,plate, brand, luggageCapacity, whithLuggage, totalCapacity, year);
+        if (service.findVehicle(vehicle) == true) {
+            service.update_vehicle(vehicle);
+        } else {
+            Vehicle aux = new Vehicle(plate, brand, luggageCapacity, whithLuggage, totalCapacity, year);
+            TableView<Vehicle> t = v.getTable();
+            t.getItems().add(aux);
+            service.add_vehicle(aux);
+        }
+
+
+        v.getTable().refresh();
     }
 }

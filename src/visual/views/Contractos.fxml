@@ -17,7 +17,7 @@
     <children>
         <TableView fx:id="contractsTable" layoutX="37.0" layoutY="126.0" prefHeight="435.0" prefWidth="651.0" stylesheets="@table.css" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="126.0">
             <columns>
-                <TableColumn fx:id="name_hotel" prefWidth="114.0" text="Tipo" />
+                <TableColumn fx:id="contract_type" prefWidth="114.0" text="Tipo" />
                 <TableColumn fx:id="start_contract" minWidth="4.0" prefWidth="102.0" text="Fecha Inicio" />
                 <TableColumn fx:id="end_contract" minWidth="4.0" prefWidth="123.0" text="Fecha Terminación" />
                 <TableColumn fx:id="resolution_contract" minWidth="4.0" prefWidth="125.0" text="Fecha Conciliación" />

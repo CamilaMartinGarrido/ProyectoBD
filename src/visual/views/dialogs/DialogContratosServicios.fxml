@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="644.0" style="-fx-background-color: white; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.DialogVehiculo">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="729.0" style="-fx-background-color: white; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.DialogVehiculo">
    <children>
       <Label layoutX="20.0" layoutY="31.0" prefHeight="53.0" prefWidth="198.0" text="Añadir/Editar">
          <font>
@@ -24,7 +26,7 @@
             <Font size="17.0" />
          </font>
       </JFXButton>
-      <TableView fx:id="activitiesTable" focusTraversable="false" layoutX="34.0" layoutY="137.0" prefHeight="223.0" prefWidth="577.0" stylesheets="@../table.css">
+      <TableView fx:id="activitiesTable" focusTraversable="false" layoutX="34.0" layoutY="137.0" prefHeight="223.0" prefWidth="577.0" stylesheets="@../table.css" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="33.0">
          <columns>
             <TableColumn fx:id="type_activity" prefWidth="88.0" text="Tipo" />
             <TableColumn fx:id="day_activity" minWidth="4.0" prefWidth="61.0" text="Día" />
@@ -38,10 +40,14 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Label layoutX="51.0" layoutY="84.0" prefHeight="53.0" prefWidth="250.0" text="Escoja una actividad diaria:">
+      <Label layoutX="51.0" layoutY="84.0" prefHeight="53.0" prefWidth="250.0" text="Escoja una actividad diaria:" AnchorPane.bottomAnchor="310.0" AnchorPane.leftAnchor="51.0">
          <font>
             <Font name="Bookman Old Style Italic" size="18.0" />
          </font>
       </Label>
+      <MFXDatePicker allowEdit="false" editable="false" floatMode="BORDER" floatingText="Fecha de inicio del contrato" layoutX="43.0" layoutY="88.0" prefHeight="38.0" AnchorPane.leftAnchor="43.0" />
+      <MFXDatePicker floatMode="BORDER" floatingText="Fecha de fin del contrato" layoutX="269.0" layoutY="88.0" prefHeight="38.0" prefWidth="120.0" />
+      <MFXDatePicker allowEdit="false" editable="false" floatMode="BORDER" floatingText="Fecha de inicio del contrato" layoutX="480.0" layoutY="88.0" prefHeight="38.0" AnchorPane.rightAnchor="43.0" />
+      <MFXTextField floatMode="BORDER" floatingText="Descripcion" layoutX="43.0" layoutY="146.0" prefHeight="38.0" prefWidth="642.0" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="43.0" />
    </children>
 </AnchorPane>
