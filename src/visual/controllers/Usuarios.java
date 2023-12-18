@@ -49,13 +49,9 @@ public class Usuarios implements Initializable {
         }
     }
 
-    //Insert user
+    //Add
 
-
-    //Update user
-
-
-    //Delete user
+    //Delete
     @FXML
     private void deleteImageClicked(ActionEvent event) throws SQLException, ClassNotFoundException {
         int pos = usersTable.getSelectionModel().getSelectedIndex();
@@ -73,7 +69,7 @@ public class Usuarios implements Initializable {
 
     //Update table
     public void updateUsersTable() throws SQLException, ClassNotFoundException {
-            LinkedList<User> list = UserService.getUsers();
+        LinkedList<User> list = UserService.getUsers();
         usuarios = FXCollections.observableArrayList(list);
         usersTable.setItems(usuarios);
     }

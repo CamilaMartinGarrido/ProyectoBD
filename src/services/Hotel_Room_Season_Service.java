@@ -1,6 +1,8 @@
 package services;
 
 import java.sql.CallableStatement;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Hotel_Room_Season_Service {
@@ -44,5 +46,18 @@ public class Hotel_Room_Season_Service {
         preparedFunction.execute();
 
         preparedFunction.close();
+    }
+
+    public static int getIdHotel_Room_Season() throws SQLException,ClassNotFoundException{
+        java.sql.Connection connection = ServicesLocator.getConnection();
+        int cod=-1;
+        String sql = "SELECT * FROM hotel_room_season AS h" +
+                "ORDER BY h.id_hotel_room_season DESC" +
+                "LIMIT 1";
+        PreparedStatement statement = connection.prepareStatement(sql);
+        statement.execute();
+        ResultSet result = statement.getResultSet();
+        cod = result.getInt(1);
+        return cod;
     }
 }

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pnHotelesMenu" prefHeight="304.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.HotelesMenu">
+   <children>
+      <Label layoutX="40.0" layoutY="41.0" prefHeight="44.0" prefWidth="158.0" text="Hoteles">
+         <font>
+            <Font name="Georgia Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="65.0" fitWidth="277.0" layoutX="308.0" layoutY="20.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="20.0">
+         <image>
+            <Image url="@../../images/decorado.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnHoteles" layoutX="58.0" layoutY="197.0" onAction="#hoteles" prefHeight="53.0" prefWidth="208.0" style="-fx-border-color: #285AB6; -fx-border-radius: 10; -fx-background-radius: 10;" text="Hoteles" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="522.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnHabitaciones" layoutX="272.0" layoutY="197.0" onAction="#habitaciones" prefHeight="53.0" prefWidth="208.0" style="-fx-border-color: #285AB6; -fx-border-radius: 10; -fx-background-radius: 10;" text="Habitaciones" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="272.0" AnchorPane.rightAnchor="270.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnTemporada" layoutX="522.0" layoutY="197.0" onAction="#temporadas" prefHeight="53.0" prefWidth="208.0" style="-fx-border-color: #285AB6; -fx-border-radius: 10; -fx-background-radius: 10;" text="Temporada" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="522.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnHabitaciones1" layoutX="238.0" layoutY="119.0" onAction="#alimentos" prefHeight="53.0" prefWidth="277.0" style="-fx-border-color: #285AB6; -fx-border-radius: 10; -fx-background-radius: 10;" text="Planes Alimenticios">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

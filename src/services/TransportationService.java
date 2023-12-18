@@ -1,9 +1,6 @@
 package services;
 
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.LinkedList;
 
 
@@ -64,5 +61,18 @@ public class TransportationService {
         preparedFunction.execute();
 
         preparedFunction.close();
+    }
+
+    public static int getIdTransporation() throws SQLException,ClassNotFoundException{
+        java.sql.Connection connection = ServicesLocator.getConnection();
+        int cod=-1;
+        String sql = "SELECT * FROM transportation AS t" +
+                "ORDER BY t.id_transportation DESC" +
+                "LIMIT 1";
+        PreparedStatement statement = connection.prepareStatement(sql);
+        statement.execute();
+        ResultSet result = statement.getResultSet();
+        cod = result.getInt(1);
+        return cod;
     }
 }
