@@ -10,11 +10,13 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import services.ServicesLocator;
 import services.UserService;
 
 import java.net.URL;
 import java.sql.SQLException;
+import java.util.LinkedList;
 import java.util.ResourceBundle;
 
 public class Usuarios implements Initializable {
@@ -36,6 +38,15 @@ public class Usuarios implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        user_name.setCellValueFactory(new PropertyValueFactory<>("user_name"));
+        password.setCellValueFactory(new PropertyValueFactory<>("password"));
+        role.setCellValueFactory(new PropertyValueFactory<>("id_role"));
+
+        try{
+            updateUsersTable();
+        }catch(SQLException | ClassNotFoundException throwables){
+            throwables.printStackTrace();
+        }
     }
 
     //Insert user
@@ -62,7 +73,8 @@ public class Usuarios implements Initializable {
 
     //Update table
     public void updateUsersTable() throws SQLException, ClassNotFoundException {
-        usuarios = FXCollections.observableArrayList(UserService.getUsers());
+            LinkedList<User> list = UserService.getUsers();
+        usuarios = FXCollections.observableArrayList(list);
         usersTable.setItems(usuarios);
     }
 

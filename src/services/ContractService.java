@@ -48,10 +48,10 @@ public class ContractService {
         CallableStatement preparedFunction = connection.prepareCall(function);
 
         preparedFunction.setTimestamp(1, c.getStart_contract());
-        preparedFunction.setTimestamp(1, c.getEnd_contract());
-        preparedFunction.setTimestamp(1, c.getResolution_contract());
-        preparedFunction.setString(1, c.getDescription_contract());
-        preparedFunction.setString(1, c.getContract_type());
+        preparedFunction.setTimestamp(2, c.getEnd_contract());
+        preparedFunction.setTimestamp(3, c.getResolution_contract());
+        preparedFunction.setString(4, c.getDescription_contract());
+        preparedFunction.setString(5, c.getContract_type());
         preparedFunction.execute();
 
         preparedFunction.close();
@@ -74,7 +74,7 @@ public class ContractService {
         CallableStatement preparedFunction = connection.prepareCall(function);
 
         preparedFunction.setInt(1, c.getId_contract());
-        preparedFunction.setString(1, c.getDescription_contract());
+        preparedFunction.setString(2, c.getDescription_contract());
 
         preparedFunction.execute();
 

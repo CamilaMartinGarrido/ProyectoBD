@@ -19,7 +19,7 @@ public class DailyActivityService {
                         "FROM public.daily_activity"
         );
         while (res.next()) {
-            list.add(new Daily_Activity(res.getTimestamp("date_activity"),
+            list.add(new Daily_Activity(res.getInt("id_activity"),res.getTimestamp("date_activity"),
                     res.getTimestamp("time_activity"),
                     res.getDouble("cost_activity"),
                     res.getString("description_activity")
@@ -36,9 +36,9 @@ public class DailyActivityService {
         CallableStatement preparedFunction = connection.prepareCall(function);
 
         preparedFunction.setTimestamp(1, d.getDay_activity());
-        preparedFunction.setTimestamp(1, d.getTime_activity());
-        preparedFunction.setString(1, d.getDescription_activity());
-        preparedFunction.setDouble(1, d.getCost_activity());
+        preparedFunction.setTimestamp(2, d.getTime_activity());
+        preparedFunction.setString(3, d.getDescription_activity());
+        preparedFunction.setDouble(4, d.getCost_activity());
 
         preparedFunction.execute();
 
@@ -62,10 +62,10 @@ public class DailyActivityService {
         CallableStatement preparedFunction = connection.prepareCall(function);
 
         preparedFunction.setInt(1, d.getId_activity());
-        preparedFunction.setTimestamp(1, d.getDay_activity());
-        preparedFunction.setTimestamp(1, d.getTime_activity());
-        preparedFunction.setString(1, d.getDescription_activity());
-        preparedFunction.setDouble(1, d.getCost_activity());
+        preparedFunction.setTimestamp(2, d.getDay_activity());
+        preparedFunction.setTimestamp(3, d.getTime_activity());
+        preparedFunction.setString(4, d.getDescription_activity());
+        preparedFunction.setDouble(5, d.getCost_activity());
 
         preparedFunction.execute();
 

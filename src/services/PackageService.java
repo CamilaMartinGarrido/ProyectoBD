@@ -35,13 +35,13 @@ public class PackageService {
         CallableStatement preparedFunction = connection.prepareCall(function);
 
         preparedFunction.setString(1, p.getPromotional_name());
-        preparedFunction.setInt(1, p.getDays_count());
-        preparedFunction.setInt(1, p.getNights_count());
-        preparedFunction.setInt(1, p.getPax_count());
-        preparedFunction.setDouble(1, p.getTotal_hotel_cost());
-        preparedFunction.setDouble(1, p.getHotel_airport_ride_cost());
-        preparedFunction.setDouble(1, p.getTotal_transportation_cost());
-        preparedFunction.setDouble(1, p.getTotal_package_cost());
+        preparedFunction.setInt(2, p.getDays_count());
+        preparedFunction.setInt(3, p.getNights_count());
+        preparedFunction.setInt(4, p.getPax_count());
+        preparedFunction.setDouble(5, p.getTotal_hotel_cost());
+        preparedFunction.setDouble(6, p.getHotel_airport_ride_cost());
+        preparedFunction.setDouble(7, p.getTotal_transportation_cost());
+        preparedFunction.setDouble(8, p.getTotal_package_cost());
         preparedFunction.execute();
 
         preparedFunction.close();
@@ -64,14 +64,14 @@ public class PackageService {
         CallableStatement preparedFunction = connection.prepareCall(function);
 
         preparedFunction.setInt(1, p.getId_package());
-        preparedFunction.setString(1, p.getPromotional_name());
-        preparedFunction.setInt(1, p.getDays_count());
-        preparedFunction.setInt(1, p.getNights_count());
-        preparedFunction.setInt(1, p.getPax_count());
-        preparedFunction.setDouble(1, p.getTotal_hotel_cost());
-        preparedFunction.setDouble(1, p.getHotel_airport_ride_cost());
-        preparedFunction.setDouble(1, p.getTotal_transportation_cost());
-        preparedFunction.setDouble(1, p.getTotal_package_cost());
+        preparedFunction.setString(2, p.getPromotional_name());
+        preparedFunction.setInt(3, p.getDays_count());
+        preparedFunction.setInt(4, p.getNights_count());
+        preparedFunction.setInt(5, p.getPax_count());
+        preparedFunction.setDouble(6, p.getTotal_hotel_cost());
+        preparedFunction.setDouble(7, p.getHotel_airport_ride_cost());
+        preparedFunction.setDouble(8, p.getTotal_transportation_cost());
+        preparedFunction.setDouble(9, p.getTotal_package_cost());
 
         preparedFunction.execute();
 

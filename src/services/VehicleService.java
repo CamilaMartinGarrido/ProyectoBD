@@ -59,12 +59,12 @@ public class VehicleService {
         CallableStatement preparedFunction = connection.prepareCall(function);
 
         preparedFunction.setInt(1, v.getId_vehicle());
-        preparedFunction.setString(1, v.getLicense_plate());
-        preparedFunction.setString(1, v.getBrand());
-        preparedFunction.setDouble(1, v.getLuggage_capacity());
-        preparedFunction.setDouble(1, v.getWith_luggage_capacity());
-        preparedFunction.setDouble(1, v.getTotal_capacity());
-        preparedFunction.setInt(1, v.getYear_build());
+        preparedFunction.setString(2, v.getLicense_plate());
+        preparedFunction.setString(3, v.getBrand());
+        preparedFunction.setDouble(4, v.getLuggage_capacity());
+        preparedFunction.setDouble(5, v.getWith_luggage_capacity());
+        preparedFunction.setDouble(6, v.getTotal_capacity());
+        preparedFunction.setInt(7, v.getYear_build());
 
         preparedFunction.execute();
 
