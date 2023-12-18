@@ -8,6 +8,7 @@ import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class VehicleService {
@@ -25,7 +26,18 @@ public class VehicleService {
         return list;
     }
 
-
+public boolean findVehicle(Vehicle v) throws SQLException {
+    LinkedList<Vehicle> list = getVehicles();
+    Iterator<Vehicle> iter = list.iterator();
+    boolean aux = false;
+    while(iter.hasNext() && !aux ){
+        Vehicle vehicle = iter.next();
+        if(v.getId_vehicle()== vehicle.getId_vehicle()){
+            aux = true;
+        }
+    }
+    return aux;
+}
     public void add_vehicle(Vehicle v) throws SQLException {
         String function = "{call add_vehicle(?,?,?,?,?,?)}";
         java.sql.Connection connection = ServicesLocator.getConnection();
