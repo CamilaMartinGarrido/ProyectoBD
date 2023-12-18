@@ -1,14 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="visual.controllers.DialogContratosTransportes"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.0" prefWidth="729.0" style="-fx-background-color: white; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.DialogVehiculo">
+   <children>
+      <Label layoutX="20.0" layoutY="31.0" prefHeight="53.0" prefWidth="198.0" text="Añadir/Editar">
+         <font>
+            <Font name="Bookman Old Style Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="322.0" layoutY="233.0" style="-fx-border-color: #285AB6; -fx-border-radius: 10;" text="Guardar" AnchorPane.bottomAnchor="29.0" AnchorPane.rightAnchor="127.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="420.0" layoutY="233.0" style="-fx-border-color: #285AB6; -fx-border-radius: 10;" text="Cancelar" AnchorPane.bottomAnchor="29.0" AnchorPane.rightAnchor="25.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="49.0" layoutY="184.0" prefHeight="53.0" prefWidth="250.0" text="Escoja un vehículo:" AnchorPane.leftAnchor="49.0">
+         <font>
+            <Font name="Bookman Old Style Italic" size="18.0" />
+         </font>
+      </Label>
+      <MFXDatePicker allowEdit="false" editable="false" floatMode="BORDER" floatingText="Fecha de inicio del contrato" layoutX="43.0" layoutY="88.0" prefHeight="38.0" AnchorPane.leftAnchor="43.0" />
+      <MFXDatePicker floatMode="BORDER" floatingText="Fecha de fin del contrato" layoutX="269.0" layoutY="88.0" prefHeight="38.0" prefWidth="120.0" />
+      <MFXDatePicker allowEdit="false" editable="false" floatMode="BORDER" floatingText="Fecha de inicio del contrato" layoutX="480.0" layoutY="88.0" prefHeight="38.0" AnchorPane.rightAnchor="43.0" />
+      <MFXTextField floatMode="BORDER" floatingText="Descripcion" layoutX="43.0" layoutY="146.0" prefHeight="38.0" prefWidth="642.0" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="43.0" />
+      <TableView fx:id="vehiclesTable" layoutX="49.0" layoutY="237.0" prefHeight="199.0" prefWidth="643.0" stylesheets="@../table.css">
+         <columns>
+            <TableColumn fx:id="license_plate" prefWidth="85.0" resizable="false" text="Chapa" />
+            <TableColumn fx:id="brand" minWidth="0.0" prefWidth="100.0" text="Marca" />
+            <TableColumn fx:id="luggage_capacity" minWidth="0.0" prefWidth="141.0" text="Capacidad sin equipaje" />
+            <TableColumn fx:id="with_luggage_capacity" minWidth="0.0" prefWidth="151.0" text="Capacidad con equipaje" />
+            <TableColumn fx:id="total_capacity" minWidth="0.0" prefWidth="117.0" text="Capacidad total" />
+            <TableColumn fx:id="year_build" minWidth="4.0" prefWidth="114.0" text="Año de fabricación" />
+         </columns>
+      </TableView>
+      <Label layoutX="49.0" layoutY="436.0" prefHeight="53.0" prefWidth="327.0" text="Escoja un modelo de transportacion:">
+         <font>
+            <Font name="Bookman Old Style Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

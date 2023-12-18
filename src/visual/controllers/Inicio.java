@@ -71,10 +71,15 @@ public class Inicio implements Initializable {
         pnMenu.getChildren().removeAll();
         pnMenu.getChildren().setAll((Node) fxml);
     }
-
+    public void hoteles(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent fxml = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/visual/views/Vehiculos.fxml")));
+        pnMenu.getChildren().removeAll();
+        pnMenu.getChildren().setAll((Node) fxml);
+    }
     public void Transporte(javafx.event.ActionEvent actionEvent) throws IOException {
         Parent fxml = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/visual/views/Vehiculos.fxml")));
         pnMenu.getChildren().removeAll();
         pnMenu.getChildren().setAll((Node) fxml);
     }
+
 }

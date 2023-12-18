@@ -7,14 +7,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bb2a9b3-ecf3-4f57-8a69-a34a3eeae61c" name="Default Changelist" comment="Puesto menu">
-      <change afterPath="$PROJECT_DIR$/src/visual/views/Transportes.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visual/views/Transportes.java" afterDir="false" />
+    <list default="true" id="0bb2a9b3-ecf3-4f57-8a69-a34a3eeae61c" name="Default Changelist" comment="Actualizado Menu">
+      <change afterPath="$PROJECT_DIR$/src/visual/controllers/HotelesMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visual/views/HotelesMenu.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/season.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/season.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Contratos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Contratos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Contratos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Contratos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Contratos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Contratos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/visual/controllers/Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Inicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/views/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Contratos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Contratos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Transportes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Transportes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Transportes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Transportes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/dialogs/DialogContratosServicios.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/dialogs/DialogContratosServicios.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/dialogs/DialogContratosTransportes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/dialogs/DialogContratosTransportes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/dialogs/DialogRecorridos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/dialogs/DialogRecorridos.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +293,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702852057487</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Actualizado Menu">
+      <option name="closed" value="true" />
+      <created>1702853494316</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1702853494316</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -358,7 +372,8 @@
     <MESSAGE value="Actualizados dialogos, y medio menu funcional" />
     <MESSAGE value="a" />
     <MESSAGE value="Puesto menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Puesto menu" />
+    <MESSAGE value="Actualizado Menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizado Menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

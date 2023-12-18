@@ -1,4 +1,4 @@
-package visual.views;
+package visual.controllers;
 
 public class Transportes {
 }
