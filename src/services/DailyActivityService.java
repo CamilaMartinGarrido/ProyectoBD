@@ -3,10 +3,7 @@ package services;
 import dto.Contract;
 import dto.Daily_Activity;
 
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.Date;
 import java.util.LinkedList;
 
@@ -70,5 +67,18 @@ public class DailyActivityService {
         preparedFunction.execute();
 
         preparedFunction.close();
+    }
+
+    public static int getIdActivity() throws SQLException,ClassNotFoundException{
+        java.sql.Connection connection = ServicesLocator.getConnection();
+        int cod=-1;
+        String sql = "SELECT * FROM daily_activity AS d" +
+                "ORDER BY d.id_activity DESC" +
+                "LIMIT 1";
+        PreparedStatement statement = connection.prepareStatement(sql);
+        statement.execute();
+        ResultSet result = statement.getResultSet();
+        cod = result.getInt(1);
+        return cod;
     }
 }
