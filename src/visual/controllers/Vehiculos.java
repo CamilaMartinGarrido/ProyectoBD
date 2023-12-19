@@ -12,7 +12,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.image.ImageView;
 
-import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -20,9 +19,12 @@ import java.util.LinkedList;
 import java.util.ResourceBundle;
 
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import services.ServicesLocator;
 import services.VehicleService;
+
+import javax.swing.*;
 
 
 public class Vehiculos implements Initializable {
@@ -48,9 +50,7 @@ public class Vehiculos implements Initializable {
     public Vehiculos() {
         vehiclesTable = new TableView<Vehicle>();
         service = ServicesLocator.getVehicleService();
-    }
-    public TableView<Vehicle> getTable() {
-        return vehiclesTable;
+
     }
 
     @Override
@@ -62,6 +62,7 @@ public class Vehiculos implements Initializable {
         total_capacity.setCellValueFactory(new PropertyValueFactory<>("total_capacity"));
         year_build.setCellValueFactory(new PropertyValueFactory<>("year_build"));
 
+
         try {
             updateVehiclesTable();
         } catch (SQLException throwables) {
@@ -69,24 +70,14 @@ public class Vehiculos implements Initializable {
         }
     }
 
-    //Add
-    @FXML
-    public void addClicked(javafx.scene.input.MouseEvent mouseEvent) throws IOException {
-        Stage window = new Stage();
+    //Add vehicle
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/visual/views/dialogs/DialogVehiculo.fxml"));
 
-        window.setScene(new Scene(loader.load()));
+    //Update vehicle
 
-        window.show();
-    }
 
-    //Delete
-    @FXML
-    public void deleteImageClicked(javafx.scene.input.MouseEvent mouseEvent) throws SQLException {
-        ActionEvent select = new ActionEvent();
-        deleteVehicle(select);
-    }
+    //Delete vehicle
+
 
     @FXML
     void deleteVehicle(ActionEvent select) throws SQLException {
@@ -95,13 +86,13 @@ public class Vehiculos implements Initializable {
             Vehicle v = vehiclesTable.getItems().get(pos);
             vehiclesTable.getItems().remove(pos);
             service.delete_vehicle(v);
+
             updateVehiclesTable();
         }
 
     }
 
-    //Update
-    @FXML
+    //Update table
     public void updateVehiclesTable() throws SQLException {
         //Obtener datos
         LinkedList<Vehicle> list = VehicleService.getVehicles();
@@ -114,5 +105,50 @@ public class Vehiculos implements Initializable {
     //Search
     @FXML
     private void searchVehicles(javafx.scene.input.KeyEvent event) {
+    }
+
+    @FXML
+    public void addClicked(javafx.scene.input.MouseEvent mouseEvent) throws IOException {
+        Stage window = new Stage();
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/visual/views/dialogs/DialogVehiculos.fxml"));
+
+        window.setScene(new Scene(loader.load()));
+
+        window.show();
+    }
+
+
+    public TableView<Vehicle> getTable() {
+        return vehiclesTable;
+    }
+
+    @FXML
+    public void deleteImageClicked(javafx.scene.input.MouseEvent mouseEvent) throws SQLException {
+        ActionEvent select = new ActionEvent();
+        deleteVehicle(select);
+    }
+
+    public void editClicked(MouseEvent mouseEvent) throws IOException {
+        int pos = vehiclesTable.getSelectionModel().getSelectedIndex();
+        if (pos != -1) {
+            Vehicle v = vehiclesTable.getItems().get(pos);
+            Stage window = new Stage();
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/visual/views/dialogs/DialogVehiculo.fxml"));
+            window.setScene(new Scene(loader.load()));
+            DialogVehiculo controller = loader.getController();
+            controller.setId(v.getId_vehicle());
+            controller.setMatricula(v.getLicense_plate());
+            controller.setMarca(v.getBrand());
+            controller.setAnno(String.valueOf(v.getYear_build()));
+            controller.setCapacidadEquipaje(String.valueOf(v.getLuggage_capacity()));
+            controller.setCapacidadSinEquipaje(String.valueOf(v.getWith_luggage_capacity()));
+            controller.setCapacidadTotal(String.valueOf(v.getTotal_capacity()));
+
+            window.show();
+        } else {
+            JOptionPane.showMessageDialog(null, "Seleccione un campo");
+        }
     }
 }

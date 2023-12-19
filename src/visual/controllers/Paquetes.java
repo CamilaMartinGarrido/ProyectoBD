@@ -6,14 +6,20 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 import services.PackageService;
 import services.ServicesLocator;
 
+import javax.swing.*;
 import java.awt.event.KeyEvent;
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.LinkedList;
@@ -48,13 +54,13 @@ public class Paquetes implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-name.setCellValueFactory(new PropertyValueFactory<>("promotional_name"));
-days.setCellValueFactory(new PropertyValueFactory<>("days_count"));
-nights.setCellValueFactory(new PropertyValueFactory<>("nights_count"));
-pax.setCellValueFactory(new PropertyValueFactory<>("pax_count"));
-hotelCost.setCellValueFactory(new PropertyValueFactory<>("total_hotel_cost"));
-transportationCost.setCellValueFactory(new PropertyValueFactory<>("total_transportation_cost"));
-totalCost.setCellValueFactory(new PropertyValueFactory<>("total_package_cost"));
+        name.setCellValueFactory(new PropertyValueFactory<>("promotional_name"));
+        days.setCellValueFactory(new PropertyValueFactory<>("days_count"));
+        nights.setCellValueFactory(new PropertyValueFactory<>("nights_count"));
+        pax.setCellValueFactory(new PropertyValueFactory<>("pax_count"));
+        hotelCost.setCellValueFactory(new PropertyValueFactory<>("total_hotel_cost"));
+        transportationCost.setCellValueFactory(new PropertyValueFactory<>("total_transportation_cost"));
+        totalCost.setCellValueFactory(new PropertyValueFactory<>("total_package_cost"));
         try {
             updateTable();
         } catch (SQLException | ClassNotFoundException throwables) {
@@ -63,23 +69,34 @@ totalCost.setCellValueFactory(new PropertyValueFactory<>("total_package_cost"));
     }
 
     //Insert user
+    @FXML
+    public void addClicked(javafx.scene.input.MouseEvent mouseEvent) throws IOException {
+        Stage window = new Stage();
 
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/visual/views/dialogs/DialogPaquetes.fxml"));
+
+        window.setScene(new Scene(loader.load()));
+
+        window.show();
+    }
 
     //Update user
 
 
     //Delete user
     @FXML
-    private void deleteImageClicked(ActionEvent event) throws SQLException, ClassNotFoundException {
+    private void deleteImageClicked(MouseEvent event) throws SQLException, ClassNotFoundException {
         ActionEvent select = new ActionEvent();
-        deleteUser(select);
+        delete(select);
     }
 
     @FXML
-    void deleteUser(ActionEvent select) throws SQLException, ClassNotFoundException {
+    void delete(ActionEvent select) throws SQLException, ClassNotFoundException {
         int pos = packageTable.getSelectionModel().getSelectedIndex();
         if (pos != -1) {
-            ServicesLocator.getUserService().deleteUser(ServicesLocator.getUserService().getUsers().get(pos));
+            Package p = packageTable.getItems().get(pos);
+            packageTable.getItems().remove(pos);
+            service.delete_package(p);
             updateTable();
         }
 
@@ -95,5 +112,28 @@ totalCost.setCellValueFactory(new PropertyValueFactory<>("total_package_cost"));
     //Search
     @FXML
     private void searchUsers(javafx.scene.input.KeyEvent event) {
+    }
+
+    public void editClicked(MouseEvent mouseEvent) throws IOException {
+        int pos = packageTable.getSelectionModel().getSelectedIndex();
+        if (pos != -1) {
+            Package p = packageTable.getItems().get(pos);
+            packageTable.getItems().remove(pos);
+            Stage window = new Stage();
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/visual/views/dialogs/AddPaquetes.fxml"));
+            window.setScene(new Scene(loader.load()));
+            AddPaquetes controller = loader.getController();
+            controller.setId(p.getId_package());
+            controller.setCostoViajeHotelAeropuertoField(String.valueOf(p.getTotal_transportation_cost()));
+            controller.setCantidadDiasField(String.valueOf(p.getDays_count()));
+            controller.setCantidadNochesField(String.valueOf(p.getNights_count()));
+            controller.setCantidadPersonasField(String.valueOf(p.getPax_count()));
+            controller.setPorcentajeGananciaField(String.valueOf(p.getPercent_profit()));
+            window.show();
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "Seleccione un campo");
+        }
     }
 }
