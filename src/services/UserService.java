@@ -1,6 +1,9 @@
 package services;
 import dto.User;
+import dto.Vehicle;
+
 import java.sql.*;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class UserService {
@@ -59,6 +62,18 @@ public class UserService {
             userList.add(new User(result.getInt("id_user"), result.getString("user_name"), result.getString("user_password"), result.getInt("id_role")));
         }
         return userList;
+    }
+    public static boolean find(User user) throws SQLException, ClassNotFoundException {
+        LinkedList<User> list = getUsers();
+        Iterator<User> iter = list.iterator();
+        boolean aux = false;
+        while(iter.hasNext() && !aux ){
+            User u = iter.next();
+            if(u.getId_user()== user.getId_user()){
+                aux = true;
+            }
+        }
+        return aux;
     }
 
     public static void addUser(User user) throws SQLException{
