@@ -18,5 +18,8 @@
     <orderEntry type="library" exported="" name="postgresql-9.0-801.jdbc4" level="project" />
     <orderEntry type="library" name="postgresql-9.0-801.jdbc3" level="project" />
     <orderEntry type="library" name="jasperreports-6.21.0" level="project" />
+    <orderEntry type="library" name="commons-digester-2.1" level="project" />
+    <orderEntry type="library" name="commons-collections4-4.4" level="project" />
+    <orderEntry type="library" name="commons-logging-1.2" level="project" />
   </component>
 </module>

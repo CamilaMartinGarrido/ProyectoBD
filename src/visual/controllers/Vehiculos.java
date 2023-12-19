@@ -158,7 +158,6 @@ public class Vehiculos implements Initializable {
             controller.setCapacidadEquipaje(String.valueOf(v.getLuggage_capacity()));
             controller.setCapacidadSinEquipaje(String.valueOf(v.getWith_luggage_capacity()));
             controller.setCapacidadTotal(String.valueOf(v.getTotal_capacity()));
-
             window.show();
         } else {
             JOptionPane.showMessageDialog(null, "Seleccione un campo");

@@ -1,7 +1,6 @@
 package visual.controllers;
 
 import dto.Hotel;
-import dto.Vehicle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -14,7 +13,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import services.HotelService;
+import services.Hotel_Service;
 import services.ServicesLocator;
 
 import javax.swing.*;
@@ -38,7 +37,7 @@ public class Hoteles implements Initializable {
     private TableColumn<Hoteles, String> province_hotel;
     @FXML
     private TableView<Hotel> hotelsTable;
-    private static HotelService service;
+    private static Hotel_Service service;
 
     public Hoteles() {
 
@@ -85,7 +84,7 @@ public class Hoteles implements Initializable {
 
     //Update table
     public void updateHotelsTable() throws SQLException {
-        LinkedList<Hotel> list = HotelService.getHotels();
+        LinkedList<Hotel> list = Hotel_Service.getHotels();
         ObservableList<Hotel> visibleList = FXCollections.observableArrayList(list);
         hotelsTable.setItems(visibleList);
     }

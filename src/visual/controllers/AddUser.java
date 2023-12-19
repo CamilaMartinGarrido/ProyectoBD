@@ -55,11 +55,11 @@ private UserService service;
         String pass = contraseñaField.getText();
         int rol = Integer.parseInt(rolComboBox.getText());
         User u = new User(userName,pass,rol);
-        if(UserService.find(u) == true){
+        if(UserService.find(u)){
 
         }else{
             User user = new User(id,userName,pass,rol);
-            UserService.addUser(user);
+            UserService.add_user(user);
         }
     }
 

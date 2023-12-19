@@ -1,7 +1,5 @@
 package services;
-
 import dto.Package;
-
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -10,7 +8,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 public class PackageService {
-
+    //List of Packages
     public static LinkedList<Package> getPackages()throws SQLException{
         LinkedList<Package>list = new LinkedList<>();
         Connection connection = ServicesLocator.getConnection();
@@ -19,34 +17,24 @@ public class PackageService {
                         "FROM public.package"
         );
         while(res.next()){
-            list.add(new Package( res.getInt("id_package"),res.getString( "promotional_name"),
-            res.getInt( "days_count"),
-            res.getInt( "nights_count"),
-            res.getInt( "pax_count"),
-            res.getDouble( "total_hotel_cost"),
-            res.getDouble("hotel_airport_ride_cost"),
-            res.getDouble( "total_transportation_cost"),
-            res.getDouble( "total_package_cost")));
+            list.add(new Package(
+                    res.getInt("id_package"),
+                    res.getString( "promotional_name"),
+                    res.getInt( "days_count"),
+                    res.getInt( "nights_count"),
+                    res.getInt( "pax_count"),
+                    res.getDouble( "total_hotel_cost"),
+                    res.getDouble("hotel_airport_ride_cost"),
+                    res.getDouble( "total_transportation_cost"),
+                    res.getDouble( "total_package_cost"),
+                    res.getDouble("percent_profit")));
         }
         return list;
     }
-
-    public boolean find(Package p) throws SQLException {
-        LinkedList<Package> packages = getPackages();
-        Iterator<Package> iter = packages.iterator();
-        boolean aux = false;
-        while (iter.hasNext() && !aux){
-            Package pa = iter.next();
-            if(pa.getId_package() == p.getId_package()){
-                aux = true;
-            }
-        }
-        return aux;
-    }
-
+    //Add
     public void add_package(Package p ) throws SQLException {
         String function = "{call add_package(?,?,?,?,?,?,?,?)}";
-        java.sql.Connection connection = ServicesLocator.getConnection();
+        Connection connection = ServicesLocator.getConnection();
         CallableStatement preparedFunction = connection.prepareCall(function);
 
         preparedFunction.setString(1, p.getPromotional_name());
@@ -57,25 +45,27 @@ public class PackageService {
         preparedFunction.setDouble(6, p.getHotel_airport_ride_cost());
         preparedFunction.setDouble(7, p.getTotal_transportation_cost());
         preparedFunction.setDouble(8, p.getTotal_package_cost());
-        preparedFunction.execute();
+
+        preparedFunction.executeQuery();
 
         preparedFunction.close();
     }
-
+    //Delete
     public void delete_package(Package p) throws SQLException {
         String function = "{call delete_package(?)";
-        java.sql.Connection connection = ServicesLocator.getConnection();
+        Connection connection = ServicesLocator.getConnection();
         CallableStatement preparedFunction = connection.prepareCall(function);
 
         preparedFunction.setInt(1, p.getId_package());
-        preparedFunction.execute();
+
+        preparedFunction.executeQuery();
+
         preparedFunction.close();
-
     }
-
+    //Update
     public void update_package(Package p ) throws SQLException {
         String function = "{call update_package(?,?,?,?,?,?,?,?,?)}";
-        java.sql.Connection connection = ServicesLocator.getConnection();
+        Connection connection = ServicesLocator.getConnection();
         CallableStatement preparedFunction = connection.prepareCall(function);
 
         preparedFunction.setInt(1, p.getId_package());
@@ -88,8 +78,21 @@ public class PackageService {
         preparedFunction.setDouble(8, p.getTotal_transportation_cost());
         preparedFunction.setDouble(9, p.getTotal_package_cost());
 
-        preparedFunction.execute();
+        preparedFunction.executeQuery();
 
         preparedFunction.close();
+    }
+    //Find
+    public boolean find(Package p) throws SQLException {
+        LinkedList<Package> packages = getPackages();
+        Iterator<Package> iter = packages.iterator();
+        boolean aux = false;
+        while (iter.hasNext() && !aux){
+            Package pa = iter.next();
+            if(pa.getId_package() == p.getId_package()){
+                aux = true;
+            }
+        }
+        return aux;
     }
 }

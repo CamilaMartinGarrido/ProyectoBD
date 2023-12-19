@@ -12,9 +12,7 @@ public class MealPlan {
     public int getId_plan() {
         return id_plan;
     }
-    public void setId_plan(int id_plan) {
-        this.id_plan = id_plan;
-    }
+    public void setId_plan(int id_plan) { this.id_plan = id_plan; }
     //plan_type
     public String getPlan_type() {
         return plan_type;
@@ -30,7 +28,12 @@ public class MealPlan {
         this.plan_cost = plan_cost;
     }
 
-    //Constructor
+    //Constructor without id
+    public MealPlan(String plan_type, double plan_cost) {
+        this.setPlan_type(plan_type);
+        this.setPlan_cost(plan_cost);
+    }
+    //Constructor witht id
     public MealPlan(int id_plan, String plan_type, double plan_cost) {
         this.setId_plan(id_plan);
         this.setPlan_type(plan_type);

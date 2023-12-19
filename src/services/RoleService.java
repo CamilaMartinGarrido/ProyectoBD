@@ -1,15 +1,12 @@
 package services;
-
-
-
 import dto.Rol;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.LinkedList;
 
 public class RoleService {
+    //List of Roles
     public static LinkedList<Rol> getRoles() throws SQLException {
         Rol rol = null;
         LinkedList<Rol> listRol = new LinkedList<>();
@@ -20,7 +17,8 @@ public class RoleService {
         ResultSet result = consult.executeQuery(sqlSentence);
         while (result.next()) {
             if (rol == null) {
-                rol = new Rol(rol.getId_role(),
+                rol = new Rol(
+                        rol.getId_role(),
                         rol.getName_role(),
                         rol.getDescription_role());
             }

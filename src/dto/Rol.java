@@ -11,9 +11,7 @@ public class Rol {
     public int getId_role() {
         return id_role;
     }
-    public void setId_role(int id_role) {
-        this.id_role = id_role;
-    }
+    public void setId_role(int id_role) { this.id_role = id_role; }
     //name_role
     public String getName_role() {
         return name_role;
@@ -25,7 +23,12 @@ public class Rol {
     public String getDescription_role() { return description_role; }
     public void setDescription_role(String description_role) { this.description_role = description_role; }
 
-    //Constructor
+    //Constructor without id
+    public Rol(String name_role, String description_role) {
+        this.setName_role(name_role);
+        this.setDescription_role(description_role);
+    }
+    //Constructor with id
     public Rol(int id_role, String name_role, String description_role) {
         this.setId_role(id_role);
         this.setName_role(name_role);

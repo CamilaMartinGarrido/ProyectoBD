@@ -1,13 +1,10 @@
 package services;
-import dto.Rol;
 import dto.User;
-
-import javax.management.relation.Role;
 import java.sql.*;
 import java.util.LinkedList;
 
 public class UserService {
-
+    //Login
     public static int getLoginUser(String user, String passw) {
         int rol = -1;
         try {
@@ -23,34 +20,87 @@ public class UserService {
         }
         return rol;
     }
-
+    //List of Users
     public static LinkedList<User> getUsers() throws SQLException, ClassNotFoundException {
         LinkedList<User> userList = new LinkedList<>();
         Connection connection = ServicesLocator.getConnection();
-        ResultSet result = connection.createStatement().executeQuery(
+        ResultSet res = connection.createStatement().executeQuery(
                 "SELECT * " +
                         "FROM public.user");
-        while (result.next()) {
-            userList.add(new User(result.getInt("id_user"), result.getString("user_name"), result.getString("user_password"), result.getInt("id_role")));
+        while (res.next()) {
+            userList.add(new User(
+                    res.getInt("id_user"),
+                    res.getString("user_name"),
+                    res.getString("user_password"),
+                    res.getInt("id_role")));
         }
         return userList;
     }
 
+    public static boolean find(User u) {
+        return true;
+    }
+
+
+    /*
+    //Add
     public static void addUser(User user) throws SQLException{
         Connection connection = ServicesLocator.getConnection();
-        CallableStatement cs = connection.prepareCall("{call \"add_user\"(?,?,?)}");
+        CallableStatement cs = connection.prepareCall("{call add_user(?,?,?)}");
         cs.setString(1, user.getUser_name());
         cs.setString(2, user.getPassword());
         cs.setInt(3, user.getId_role());
         cs.executeUpdate();
-
     }
-
+    //Delete
     public static void deleteUser(User user) throws SQLException {
-
         Connection connection = ServicesLocator.getConnection();
         CallableStatement cs = connection.prepareCall("{call \"delete_user\"(?)}");
         cs.setInt(1, user.getId_user());
         cs.executeUpdate();
+    }
+    */
+
+
+    //Add
+    public static void add_user(User user) throws SQLException {
+        String function = "{call add_user(?,?,?)}";
+        Connection connection = ServicesLocator.getConnection();
+        CallableStatement preparedFunction = connection.prepareCall(function);
+
+        preparedFunction.setString(1, user.getUser_name());
+        preparedFunction.setString(1, user.getPassword());
+        preparedFunction.setDouble(1, user.getId_role());
+
+        preparedFunction.executeQuery();
+
+        preparedFunction.close();
+    }
+    //Delete
+    public static void delete_user(User user) throws SQLException {
+        String function = "{call delete_user(?)";
+        Connection connection = ServicesLocator.getConnection();
+        CallableStatement preparedFunction = connection.prepareCall(function);
+
+        preparedFunction.setInt(1, user.getId_user());
+
+        preparedFunction.executeQuery();
+
+        preparedFunction.close();
+    }
+    //Update
+    public static void update_user(User user) throws SQLException {
+        String function = "{call update_user(?,?,?,?)}";
+        Connection connection = ServicesLocator.getConnection();
+        CallableStatement preparedFunction = connection.prepareCall(function);
+
+        preparedFunction.setInt(1, user.getId_user());
+        preparedFunction.setString(1, user.getUser_name());
+        preparedFunction.setString(1, user.getPassword());
+        preparedFunction.setInt(1, user.getId_role());
+
+        preparedFunction.executeQuery();
+
+        preparedFunction.close();
     }
 }

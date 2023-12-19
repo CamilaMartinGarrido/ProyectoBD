@@ -9,6 +9,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextFormatter;
+import javafx.util.converter.NumberStringConverter;
 import services.DailyActivityService;
 import services.ServicesLocator;
 
@@ -101,7 +103,13 @@ public DialogActiviadesDiarias(){
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+    costoActividad.setTextFormatter(new TextFormatter<>(new NumberStringConverter(), 0,
+            change -> {
+                String newText = change.getControlNewText();
+                if (newText.matches("\\d*")) {
+                    return change;
+                } else return null;
+            }));
     }
     @FXML
     public void guardarClicked(javafx.scene.input.MouseEvent mouseEvent) throws SQLException {
@@ -113,8 +121,8 @@ public DialogActiviadesDiarias(){
        String desc = descripcionActividad.getText();
        Double surcharge = Double.parseDouble(recargo.getText());
 
-        Daily_Activity daily_activity = new Daily_Activity(id,tipo,dia,t,cost,province,desc,surcharge);
-        if (service.findActivity(daily_activity) == true) {
+        Daily_Activity daily_activity = new Daily_Activity(id,tipo,dia,t,cost,province,desc, true,surcharge);
+        if (service.findActivity(daily_activity)) {
             service.update_daily_activity(daily_activity);
         } else {
             Daily_Activity aux = new Daily_Activity(tipo,dia,t,cost,province,desc,surcharge);
