@@ -85,7 +85,7 @@ public class Inicio implements Initializable {
         pnMenu.getChildren().setAll((Node) fxml);
     }
     public void transporte(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent fxml = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/visual/views/Vehiculos.fxml")));
+        Parent fxml = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/visual/views/Transportes.fxml")));
         pnMenu.getChildren().removeAll();
         pnMenu.getChildren().setAll((Node) fxml);
     }
@@ -96,6 +96,11 @@ public class Inicio implements Initializable {
     }
     public void reportes(javafx.event.ActionEvent actionEvent) throws IOException {
         Parent fxml = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/visual/views/Reportes.fxml")));
+        pnMenu.getChildren().removeAll();
+        pnMenu.getChildren().setAll((Node) fxml);
+    }
+    public void inicio(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent fxml = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/visual/views/Vehiculos.fxml")));
         pnMenu.getChildren().removeAll();
         pnMenu.getChildren().setAll((Node) fxml);
     }

@@ -15,7 +15,7 @@
 
 <AnchorPane prefHeight="650.0" prefWidth="750.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="241.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.Vehiculos">
     <children>
-        <TableView fx:id="vehiclesTable" layoutX="20.0" layoutY="163.0" prefHeight="443.0" prefWidth="546.0" stylesheets="@table.css" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="157.0">
+        <TableView fx:id="vehiclesTable" layoutX="20.0" layoutY="163.0" prefHeight="443.0" prefWidth="546.0" stylesheets="@table.css" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="157.0">
             <columns>
                 <TableColumn fx:id="license_plate" prefWidth="85.0" resizable="false" text="Chapa" />
                 <TableColumn fx:id="brand" minWidth="0.0" prefWidth="100.0" text="Marca" />

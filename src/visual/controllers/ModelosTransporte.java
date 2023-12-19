@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
 import services.Control;
 
@@ -62,6 +63,9 @@ public class ModelosTransporte implements Initializable {
     //Update table
     public void updateContractsTable(){
         // Coding
+    }
+
+    public void searchContracts(KeyEvent keyEvent) {
     }
 
     //Search

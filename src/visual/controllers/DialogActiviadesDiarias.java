@@ -9,6 +9,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextFormatter;
+import javafx.util.converter.NumberStringConverter;
 import services.DailyActivityService;
 import services.ServicesLocator;
 
@@ -101,7 +103,13 @@ public DialogActiviadesDiarias(){
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+    costoActividad.setTextFormatter(new TextFormatter<>(new NumberStringConverter(), 0,
+            change -> {
+                String newText = change.getControlNewText();
+                if (newText.matches("\\d*")) {
+                    return change;
+                } else return null;
+            }));
     }
     @FXML
     public void guardarClicked(javafx.scene.input.MouseEvent mouseEvent) throws SQLException {

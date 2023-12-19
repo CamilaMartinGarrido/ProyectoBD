@@ -29,7 +29,7 @@ public class Transportes {
     }
 
     @FXML
-    void transportes(ActionEvent event) throws IOException {
+    void vehiculos(ActionEvent event) throws IOException {
         Parent fxml = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/visual/views/Vehiculos.fxml")));
         pnTransportes.getChildren().removeAll();
         pnTransportes.getChildren().setAll((Node) fxml);

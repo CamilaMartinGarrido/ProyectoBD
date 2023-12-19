@@ -8,32 +8,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bb2a9b3-ecf3-4f57-8a69-a34a3eeae61c" name="Default Changelist" comment="Actualizado los permisos de los roles">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_collections4_4_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_digester_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/commons-collections4-4.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/commons-digester-2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jasperreports-6.21.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reports/Report_1_list_of_hotels_contract.jasper" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reports/Report_2_list_of_hotel_season_contracts.jasper" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reports/Report_3_list_of_transportation_contracts.jasper" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reports/Report_4_list_of_services_contract.jasper" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reports/Report_5_list_of_active_hotels.jasper" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reports/Report_6_list_of_package_itinerary.jasper" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reports/Report_7_list_of_packages_sales_income_plan.jasper" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reports/Report_8_list_of_inactive_hotels.jasper" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_9_0_801_jdbc3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_9_0_801_jdbc3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Conozca Cuba.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Conozca Cuba.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/connection/DataBaseConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/RoleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/RoomService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/RouteService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/SeasonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/ServicesLocator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/TransportationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/Transportation_Model_Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/VehicleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/ActividadesDiarias.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Contratos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Habitaciones.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Hoteles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/PlanesAlimenticios.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Roles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Temporadas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Usuarios.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Vehiculos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/connection/DataBaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utiles/DataBaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ServicesLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ServicesLocator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/dto/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Usuarios.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Usuarios.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Vehiculos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Vehiculos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Vehiculos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/views/Vehiculos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ReportService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/DialogActiviadesDiarias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/DialogActiviadesDiarias.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Inicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/ModelosTransporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/ModelosTransporte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Reportes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Reportes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Transportes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Transportes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Usuarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Reportes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Reportes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Transportes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Transportes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Vehiculos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Vehiculos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/dialogs/DialogUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/dialogs/DialogUsers.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,10 +85,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/ProyectoBD/libs/jasperreports-6.21.0.jar",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.0",
+    "last_opened_file_path": "D:/ProyectoBD/libs/commons-logging-1.2.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.21724138"
   }
 }]]></component>
@@ -87,9 +98,9 @@
       <recent name="visual.controllers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ProyectoBD\libs" />
       <recent name="D:\ProyectoBD\src\services" />
       <recent name="C:\Users\camil\IdeaProjects\Conozca Cuba\src" />
-      <recent name="D:\ProyectoBD\libs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\camil\IdeaProjects\Conozca Cuba\src\visual\views" />

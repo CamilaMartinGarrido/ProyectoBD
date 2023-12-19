@@ -53,18 +53,18 @@ public class ReportService {
             e2.printStackTrace();
         }
     }
-   /* public void loadReport5(String chain_h, String province_h){
-        HashMap<String,String> myParameters = new HashMap<String,String>();
+    public void loadReport5(String chain_h, String province_h){
+        HashMap<String,Object> myParameters = new HashMap<String,Object>();
         myParameters.put("chain_h", chain_h);
         myParameters.put("province_h", province_h);
         try {
-            //JasperPrint print = JasperFillManager.fillReport("src/reports/Report_5_list_of_active_hotels.jasper", myParameters, myConnection);
-            //JasperViewer view = new JasperViewer(print, false);
-            //view.setVisible(true);
+            JasperPrint print = JasperFillManager.fillReport("src/reports/Report_5_list_of_active_hotels.jasper", myParameters, myConnection);
+            JasperViewer view = new JasperViewer(print, false);
+            view.setVisible(true);
         } catch (JRException e2) {
             e2.printStackTrace();
         }
-    }*/
+    }
 
     public void loadReport6(){
         try {

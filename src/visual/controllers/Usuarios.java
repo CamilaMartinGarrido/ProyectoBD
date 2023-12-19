@@ -47,6 +47,7 @@ public class Usuarios implements Initializable {
         password.setCellValueFactory(new PropertyValueFactory<>("password"));
         role.setCellValueFactory(new PropertyValueFactory<>("id_role"));
 
+
         try{
             updateUsersTable();
         }catch(SQLException | ClassNotFoundException throwables){
@@ -109,10 +110,13 @@ public class Usuarios implements Initializable {
     public void addClicked(MouseEvent event) throws IOException {
         Stage window = new Stage();
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/visual/views/dialogs/DialogUser.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/visual/views/dialogs/DialogVehiculo.fxml"));
 
         window.setScene(new Scene(loader.load()));
 
         window.show();
+    }
+
+    public void editClicked(MouseEvent mouseEvent) {
     }
 }
