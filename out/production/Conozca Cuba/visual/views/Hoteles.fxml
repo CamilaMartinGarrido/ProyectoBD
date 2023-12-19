@@ -34,17 +34,17 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <ImageView fitHeight="46.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="46.0" fitWidth="44.0" onMouseClicked="#addClicked" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/add-button.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="54.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+            <ImageView fitHeight="54.0" fitWidth="44.0" pickOnBounds="true" onMouseClicked="#editClickd" preserveRatio="true" GridPane.columnIndex="1">
                <image>
                   <Image url="@../../images/edit-button.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="47.0" fitWidth="44.0" onMouseClicked="#deleteImageClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+            <ImageView fitHeight="47.0" fitWidth="44.0" onMouseClicked="#deleteImageClicked"  pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
                <image>
                   <Image url="@../../images/delete-button.png" />
                </image>
