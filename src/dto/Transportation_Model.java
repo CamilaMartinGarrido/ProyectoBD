@@ -29,7 +29,12 @@ public class Transportation_Model {
         this.description_tm = description_tm;
     }
 
-    //Constructor
+    //Constructor without id
+    public Transportation_Model(String type_transp_model, String description_tm) {
+        this.setType_transp_model(type_transp_model);
+        this.setDescription_tm(description_tm);
+    }
+    //Constructor with id
     public Transportation_Model(int id_transp_model, String type_transp_model, String description_tm) {
         this.setId_transp_model(id_transp_model);
         this.setType_transp_model(type_transp_model);

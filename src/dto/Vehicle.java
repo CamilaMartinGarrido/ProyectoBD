@@ -61,10 +61,9 @@ public class Vehicle {
         this.year_build = year_build;
     }
 
-    //Constructor
-    public Vehicle(int id_vehicle, String license_plate, String brand, double luggage_capacity,
-                   double with_luggage_capacity, double total_capacity, int year_build) {
-        this.setId_vehicle(id_vehicle);
+    //Constructor without id
+    public Vehicle( String license_plate, String brand, double luggage_capacity,
+                    double with_luggage_capacity, double total_capacity, int year_build) {
         this.setLicense_plate(license_plate);
         this.setBrand(brand);
         this.setLuggage_capacity(luggage_capacity);
@@ -72,9 +71,10 @@ public class Vehicle {
         this.setTotal_capacity(total_capacity);
         this.setYear_build(year_build);
     }
-    public Vehicle( String license_plate, String brand, double luggage_capacity,
+    //Constructor with id
+    public Vehicle(int id_vehicle, String license_plate, String brand, double luggage_capacity,
                    double with_luggage_capacity, double total_capacity, int year_build) {
-
+        this.setId_vehicle(id_vehicle);
         this.setLicense_plate(license_plate);
         this.setBrand(brand);
         this.setLuggage_capacity(luggage_capacity);

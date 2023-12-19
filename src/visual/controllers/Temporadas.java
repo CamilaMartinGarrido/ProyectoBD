@@ -1,5 +1,5 @@
 package visual.controllers;
-import dto.season;
+import dto.Season;
 import dto.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -25,7 +25,7 @@ public class Temporadas implements Initializable {
     @FXML
     private TableColumn<Temporadas, String> description_season;
     @FXML
-    private TableView<season> seasonsTable;
+    private TableView<Season> seasonsTable;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {permisosRoles(); }

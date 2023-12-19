@@ -1,14 +1,12 @@
 package services;
 
-import dto.Contract;
 import dto.Hotel;
-import dto.Vehicle;
 
 import java.sql.*;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-public class HotelService {
+public class Hotel_Service {
     public static LinkedList<Hotel> getHotels() throws SQLException {
         LinkedList<Hotel> list = new LinkedList<>();
         Connection connection = ServicesLocator.getConnection();
@@ -17,7 +15,9 @@ public class HotelService {
                         "FROM public.hotel"
         );
         while (res.next()) {
-            list.add(new Hotel(res.getInt("id_hotel"),res.getString("name_hotel"),
+            list.add(new Hotel(
+                    res.getInt("id_hotel"),
+                    res.getString("name_hotel"),
                     res.getString("chain_hotel"),
                     res.getString("category_hotel"),
                     res.getString("address_hotel"),
@@ -29,33 +29,16 @@ public class HotelService {
                     res.getString("email"),
                     res.getDouble("distance_to_city"),
                     res.getDouble("distance_to_airport"),
-                    res.getInt("floor_count"),
+                    res.getInt("room_count"),
                     res.getString("location_hotel"),
-                    res.getString("business_model")
-                    ));
+                    res.getString("business_model")));
         }
         return list;
     }
-
-    public boolean find(Hotel hotel) throws SQLException {
-        LinkedList<Hotel> list = getHotels();
-        Iterator<Hotel> iter = list.iterator();
-        boolean aux = false;
-        while(iter.hasNext() && !aux ){
-            Hotel h = iter.next();
-            if(h.getId_hotel()== hotel.getId_hotel()){
-                aux = true;
-            }
-        }
-        return aux;
-    }
-
-
-
-
+    //Add
     public void add_Hotel(Hotel h) throws SQLException {
         String function = "{ call add_hotel(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}";
-        java.sql.Connection connection = ServicesLocator.getConnection();
+        Connection connection = ServicesLocator.getConnection();
         CallableStatement preparedFunction = connection.prepareCall(function);
 
         preparedFunction.setString(1, h.getName_hotel());
@@ -73,23 +56,24 @@ public class HotelService {
         preparedFunction.setInt(13, h.getRoom_count());
         preparedFunction.setInt(14, h.getFloor_count());
         preparedFunction.setString(15, h.getLocation_hotel());
-        preparedFunction.executeQuery();
-        preparedFunction.close();
 
+        preparedFunction.executeQuery();
+
+        preparedFunction.close();
     }
 
     public void delete_Hotel(Hotel h ) throws SQLException {
         String function = "{ call delete_hotel(?)}";
-        java.sql.Connection connection = ServicesLocator.getConnection();
+        Connection connection = ServicesLocator.getConnection();
         CallableStatement preparedFunction = connection.prepareCall(function);
         preparedFunction.setInt(1, h.getId_hotel());
-        preparedFunction.executeQuery();
+        preparedFunction.execute();
         preparedFunction.close();
     }
 
     public void update_Hotel(Hotel h) throws SQLException {
         String function = "{ call update_hotel(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}";
-        java.sql.Connection connection = ServicesLocator.getConnection();
+        Connection connection = ServicesLocator.getConnection();
         CallableStatement preparedFunction = connection.prepareCall(function);
 
         preparedFunction.setInt(1, h.getId_hotel());
@@ -108,8 +92,20 @@ public class HotelService {
         preparedFunction.setInt(14, h.getRoom_count());
         preparedFunction.setInt(15, h.getFloor_count());
         preparedFunction.setString(16, h.getLocation_hotel());
-        preparedFunction.executeQuery();
+        preparedFunction.execute();
         preparedFunction.close();
 
+    }
+    public boolean find(Hotel hotel) throws SQLException {
+        LinkedList<Hotel> list = getHotels();
+        Iterator<Hotel> iter = list.iterator();
+        boolean aux = false;
+        while(iter.hasNext() && !aux ){
+            Hotel h = iter.next();
+            if(h.getId_hotel()== hotel.getId_hotel()){
+                aux = true;
+            }
+        }
+        return aux;
     }
 }

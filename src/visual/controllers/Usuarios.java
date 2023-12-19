@@ -67,7 +67,7 @@ public class Usuarios implements Initializable {
     @FXML
     void deleteUser(int pos) throws SQLException, ClassNotFoundException {
         if(pos != -1){
-            UserService.deleteUser(UserService.getUsers().get(pos));
+            UserService.delete_user(UserService.getUsers().get(pos));
             updateUsersTable();
         }
 

@@ -18,7 +18,7 @@
          <children>
             <VBox layoutY="211.0" prefHeight="440.0" prefWidth="241.0">
                <children>
-                  <JFXButton fx:id="btnInicio" focusTraversable="false" onAction="#inicio" prefHeight="50.0" prefWidth="241.0" style="-fx-border-color: white; -fx-border-width: 0 0 1 0;" text="Inicio" textFill="WHITE">
+                  <JFXButton fx:id="btnInicio" focusTraversable="false" onAction="#inicio" prefHeight="50.0" prefWidth="241.0" style="-fx-border-color: white; -fx-border-width: 0 0 1 0;" text="Roles" textFill="WHITE">
                      <font>
                         <Font name="Bookman Old Style" size="20.0" />
                      </font>

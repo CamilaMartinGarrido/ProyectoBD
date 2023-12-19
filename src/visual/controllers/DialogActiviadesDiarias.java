@@ -121,8 +121,8 @@ public DialogActiviadesDiarias(){
        String desc = descripcionActividad.getText();
        Double surcharge = Double.parseDouble(recargo.getText());
 
-        Daily_Activity daily_activity = new Daily_Activity(id,tipo,dia,t,cost,province,desc,surcharge);
-        if (service.findActivity(daily_activity) == true) {
+        Daily_Activity daily_activity = new Daily_Activity(id,tipo,dia,t,cost,province,desc, true,surcharge);
+        if (service.findActivity(daily_activity)) {
             service.update_daily_activity(daily_activity);
         } else {
             Daily_Activity aux = new Daily_Activity(tipo,dia,t,cost,province,desc,surcharge);

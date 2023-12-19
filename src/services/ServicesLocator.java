@@ -1,24 +1,21 @@
 package services;
-
 import utiles.DataBaseConnection;
-
 import java.sql.SQLException;
 
 public class ServicesLocator {
     public static ContractService contractQ = null;
-    public static HotelService hotelQ = null;
-    public static BusinessModelService businessModelQ = null;
     public static DailyActivityService dailyActivityService = null;
-    public static Hotel_Room_Season_Service hotel_room_season_service = null;
-    public static Km_CostService km_costService = null;
+    public static HotelRoomSeasonService hotel_room_season_service = null;
+    public static Hotel_Service hotelQ = null;
+    public static KmCostService km_costService = null;
     public static Km_Hours_Cost_Service km_hours_cost_service = null;
-    public static Meal_PlanService meal_planService = null;
+    public static MealPlanService meal_planService = null;
     public static PackageService packageService = null;
     public static RoleService roleService = null;
     public static RoomService roomService = null;
     public static RouteService routeService = null;
     public static SeasonService seasonService = null;
-    public static Transportation_Model_Service transportation_model_service = null;
+    public static TransportationModelService transportation_model_service = null;
     public static TransportationService transportationService = null;
     public static UserService userService = null;
     public static VehicleService vehicleService = null;
@@ -26,7 +23,7 @@ public class ServicesLocator {
     public static java.sql.Connection getConnection() {
         DataBaseConnection connection = null;
         try {
-            connection = new DataBaseConnection("localhost", "bd" , "postgres", "R@gn@r");
+            connection = new DataBaseConnection("localhost", "conozco_cuba" , "postgres", "jmspg2023");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
@@ -42,19 +39,13 @@ public class ServicesLocator {
         return contractQ;
     }
 
-    public static HotelService getHotelQ() {
+    public static Hotel_Service getHotelQ() {
         if (hotelQ == null) {
-            hotelQ = new HotelService();
+            hotelQ = new Hotel_Service();
         }
         return hotelQ;
     }
 
-    public static BusinessModelService getBusinessModelQ() {
-        if (businessModelQ == null) {
-            businessModelQ = new BusinessModelService();
-        }
-        return businessModelQ;
-    }
 
     public static DailyActivityService getDailyActivityService() {
         if (dailyActivityService == null) {
@@ -63,16 +54,16 @@ public class ServicesLocator {
         return dailyActivityService;
     }
 
-    public static Hotel_Room_Season_Service getHotel_room_season_service() {
+    public static HotelRoomSeasonService getHotel_room_season_service() {
         if (hotel_room_season_service == null) {
-            hotel_room_season_service = new Hotel_Room_Season_Service();
+            hotel_room_season_service = new HotelRoomSeasonService();
         }
         return hotel_room_season_service;
     }
 
-    public static Km_CostService getKm_costService() {
+    public static KmCostService getKm_costService() {
         if (km_costService == null) {
-            km_costService = new Km_CostService();
+            km_costService = new KmCostService();
         }
         return km_costService;
     }
@@ -84,9 +75,9 @@ public class ServicesLocator {
         return km_hours_cost_service;
     }
 
-    public static Meal_PlanService getMeal_planService() {
+    public static MealPlanService getMeal_planService() {
         if (meal_planService == null) {
-            meal_planService = new Meal_PlanService();
+            meal_planService = new MealPlanService();
         }
         return meal_planService;
     }
@@ -119,9 +110,9 @@ public class ServicesLocator {
         return seasonService;
     }
 
-    public static Transportation_Model_Service getTransportation_model_service() {
+    public static TransportationModelService getTransportation_model_service() {
         if (transportation_model_service == null) {
-            transportation_model_service = new Transportation_Model_Service();
+            transportation_model_service = new TransportationModelService();
         }
         return transportation_model_service;
     }

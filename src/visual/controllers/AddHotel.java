@@ -5,7 +5,7 @@ import io.github.palexdev.materialfx.controls.MFXTextField;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
-import services.HotelService;
+import services.Hotel_Service;
 import services.ServicesLocator;
 
 import java.net.URL;
@@ -24,7 +24,7 @@ public class AddHotel implements Initializable {
     @FXML
     private MFXTextField provinceField;
     private int id;
-    private HotelService service;
+    private Hotel_Service service;
 
     public AddHotel() {
         service = ServicesLocator.getHotelQ();
@@ -66,11 +66,11 @@ public class AddHotel implements Initializable {
         String adress = this.addressField.getText();
         String category = this.categoryField.getText();
         String province = this.provinceField.getText();
-        Hotel hotel = new Hotel(id, name, chain, adress, category, province);
-        if (service.find(hotel) == true) {
+        Hotel hotel = new Hotel(id, name, chain, category, adress, province);
+        if (service.find(hotel)) {
             service.update_Hotel(hotel);
         } else {
-            Hotel h2 = new Hotel(id, name, chain, adress, category, province);
+            Hotel h2 = new Hotel(id, name, chain, category, adress, province);
             service.add_Hotel(h2);
         }
     }

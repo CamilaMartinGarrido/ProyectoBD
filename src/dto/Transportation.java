@@ -1,16 +1,16 @@
 package dto;
-import java.sql.Timestamp;
-import java.util.Date;
 
-public class
-
-Contract_Transportation extends Contract {
+public class Transportation  {
     //Attributes
+    private int id_transportation;
     private int id_transp_model;
     private int id_vehicle;
     private String borrower;
 
     //Getters and Setters
+    //id_transportation
+    public int getId_transportation() { return id_transportation; }
+    public void setId_transportation(int id_transportation) { this.id_transportation = id_transportation; }
     //id_transp_model
     public int getId_transp_model() {
         return id_transp_model;
@@ -33,12 +33,15 @@ Contract_Transportation extends Contract {
         this.borrower = borrower;
     }
 
-    //Constructor
-
-    public Contract_Transportation(int id_contract, Timestamp start_contract, Timestamp end_contract, Timestamp resolution_contract,
-                                   String description_contract, String contract_type, int id_transp_model,
-                                   int id_vehicle, String borrower) {
-        super(id_contract, start_contract, end_contract, resolution_contract, description_contract, contract_type);
+    //Constructor without id
+    public Transportation(int id_transp_model, int id_vehicle, String borrower) {
+        this.setId_transp_model(id_transp_model);
+        this.setId_vehicle(id_vehicle);
+        this.setBorrower(borrower);
+    }
+    //Constructor with id
+    public Transportation(int id_transportation, int id_transp_model, int id_vehicle, String borrower) {
+        this.setId_transportation(id_transportation);
         this.setId_transp_model(id_transp_model);
         this.setId_vehicle(id_vehicle);
         this.setBorrower(borrower);

@@ -1,7 +1,7 @@
 package dto;
 import java.util.Date;
 
-public class season {
+public class Season {
     //Attributes
     private int id_season;
     private String name_season;
@@ -46,8 +46,15 @@ public class season {
         this.description_season = description_season;
     }
 
-    //Constructor
-    public season(int id_season, String name_season, Date start_season, Date end_season, String description_season) {
+    //Constructor without id
+    public Season(String name_season, Date start_season, Date end_season, String description_season) {
+        this.setName_season(name_season);
+        this.setStart_season(start_season);
+        this.setEnd_season(end_season);
+        this.setDescription_season(description_season);
+    }
+    //Constructor with id
+    public Season(int id_season, String name_season, Date start_season, Date end_season, String description_season) {
         this.setId_season(id_season);
         this.setName_season(name_season);
         this.setStart_season(start_season);

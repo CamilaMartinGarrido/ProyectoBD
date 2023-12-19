@@ -1,9 +1,7 @@
 package visual.controllers;
 
 import dto.Contract;
-import dto.Contract_Hotel;
 import dto.User;
-import dto.Vehicle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
