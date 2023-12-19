@@ -23,10 +23,7 @@ public class PackageService {
                     res.getInt( "days_count"),
                     res.getInt( "nights_count"),
                     res.getInt( "pax_count"),
-                    res.getDouble( "total_hotel_cost"),
                     res.getDouble("hotel_airport_ride_cost"),
-                    res.getDouble( "total_transportation_cost"),
-                    res.getDouble( "total_package_cost"),
                     res.getDouble("percent_profit")));
         }
         return list;

@@ -151,7 +151,7 @@ public class Hotel {
     //Constructor with id
     public Hotel(int id_hotel, String name_hotel, String chain_hotel, String category_hotel, String address_hotel,
                  String province_hotel, boolean is_active, Date date_hotel, String phone, String fax, String email,
-                 double distance_to_city, double distance_to_airport, int room_count,
+                 double distance_to_city, double distance_to_airport, int floor_count,
                  String location_hotel, String business_model) {
         this.setId_hotel(id_hotel);
         this.setName_hotel(name_hotel);
@@ -166,7 +166,6 @@ public class Hotel {
         this.setEmail(email);
         this.setDistance_to_city(distance_to_city);
         this.setDistance_to_airport(distance_to_airport);
-        this.setRoom_count(room_count);
         this.setFloor_count(floor_count);
         this.setLocation_hotel(location_hotel);
         this.setBusiness_model(business_model);

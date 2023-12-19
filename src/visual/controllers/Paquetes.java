@@ -2,6 +2,7 @@ package visual.controllers;
 
 import dto.Package;
 import dto.User;
+import dto.Vehicle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -18,6 +19,7 @@ import javafx.stage.Stage;
 import services.Control;
 import services.PackageService;
 import services.ServicesLocator;
+import services.VehicleService;
 
 import javax.swing.*;
 import java.awt.event.KeyEvent;
@@ -39,8 +41,6 @@ public class Paquetes implements Initializable {
     @FXML
     private TableColumn<Package, Integer> pax;
     @FXML
-    private TableColumn<Package, Double> hotelCost;
-    @FXML
     private TableColumn<Package, Double> transportationCost;
     @FXML
     private TableColumn<Package, Double> totalCost;
@@ -51,31 +51,31 @@ public class Paquetes implements Initializable {
     private PackageService service;
 
     public Paquetes() {
-        packageTable = new TableView<>();
+        this.packageTable = new TableView<>();
         service = ServicesLocator.getPackageService();
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        name.setCellValueFactory(new PropertyValueFactory<>("promotional_name"));
-        days.setCellValueFactory(new PropertyValueFactory<>("days_count"));
-        nights.setCellValueFactory(new PropertyValueFactory<>("nights_count"));
-        pax.setCellValueFactory(new PropertyValueFactory<>("pax_count"));
-        hotelCost.setCellValueFactory(new PropertyValueFactory<>("total_hotel_cost"));
-        transportationCost.setCellValueFactory(new PropertyValueFactory<>("total_transportation_cost"));
-        totalCost.setCellValueFactory(new PropertyValueFactory<>("total_package_cost"));
+      name.setCellValueFactory(new PropertyValueFactory<>("promotional_name"));
+      days.setCellValueFactory(new PropertyValueFactory<>("days_count"));
+      nights.setCellValueFactory(new PropertyValueFactory<>("nights_count"));
+      pax.setCellValueFactory(new PropertyValueFactory<>("pax_count"));
+      transportationCost.setCellValueFactory(new PropertyValueFactory<>("hotel_airport_ride_cost"));
+      totalCost.setCellValueFactory(new PropertyValueFactory<>("percent_profit"));
         try {
             updateTable();
-        } catch (SQLException | ClassNotFoundException throwables) {
+        } catch (SQLException  throwables) {
             throwables.printStackTrace();
         }
         permisosRoles();
     }
-    public void permisosRoles(){
+
+    public void permisosRoles() {
         User u = Control.getInstance().getSessionUser();
-        if(u.getId_role() == 1 || u.getId_role() == 3){
+        if (u.getId_role() == 1 || u.getId_role() == 3) {
             btnsCRUD.setVisible(true);
-        } else if(u.getId_role() == 2){
+        } else if (u.getId_role() == 2) {
             btnsCRUD.setVisible(false);
         }
     }
@@ -115,10 +115,13 @@ public class Paquetes implements Initializable {
     }
 
     //Update table
-    public void updateTable() throws SQLException, ClassNotFoundException {
+    public void updateTable() throws SQLException {
+        //Obtener datos
         LinkedList<Package> list = PackageService.getPackages();
-        ObservableList<Package> visibleList = FXCollections.observableArrayList(list);
-        packageTable.setItems(visibleList);
+        //Lista visible
+        ObservableList<Package> listaVisible = FXCollections.observableArrayList(list);
+        //Establecer datos
+        packageTable.setItems(listaVisible);
     }
 
     //Search
@@ -143,8 +146,7 @@ public class Paquetes implements Initializable {
             controller.setCantidadPersonasField(String.valueOf(p.getPax_count()));
             controller.setPorcentajeGananciaField(String.valueOf(p.getPercent_profit()));
             window.show();
-        }
-        else{
+        } else {
             JOptionPane.showMessageDialog(null, "Seleccione un campo");
         }
     }

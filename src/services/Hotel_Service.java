@@ -29,7 +29,7 @@ public class Hotel_Service {
                     res.getString("email"),
                     res.getDouble("distance_to_city"),
                     res.getDouble("distance_to_airport"),
-                    res.getInt("room_count"),
+                    res.getInt("floor_count"),
                     res.getString("location_hotel"),
                     res.getString("business_model")));
         }
