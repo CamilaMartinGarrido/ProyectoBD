@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="236.0" prefWidth="495.0" style="-fx-background-color: white; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="236.0" prefWidth="495.0" style="-fx-background-color: white; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.AddUser">
    <children>
       <MFXTextField floatMode="BORDER" floatingText="Nombre de Usuario" focusTraversable="false" layoutX="37.0" layoutY="108.0" prefHeight="24.0" prefWidth="124.0" />
       <MFXTextField floatMode="BORDER" floatingText="Contraseña" layoutX="177.0" layoutY="108.0" prefHeight="38.0" prefWidth="124.0" />
@@ -16,7 +16,7 @@
             <Font name="Bookman Old Style Bold" size="25.0" />
          </font>
       </Label>
-      <JFXButton layoutX="288.0" layoutY="179.0" style="-fx-border-color: #285AB6; -fx-border-radius: 10;" text="Guardar">
+      <JFXButton layoutX="288.0" layoutY="179.0" style="-fx-border-color: #285AB6; -fx-border-radius: 10;" onMouseClicked="#guardarClicked" text="Guardar">
          <font>
             <Font size="17.0" />
          </font>

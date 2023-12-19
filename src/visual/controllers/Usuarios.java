@@ -7,22 +7,24 @@ import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.GridPane;
-import services.Control;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 import services.ServicesLocator;
 import services.UserService;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.LinkedList;
 import java.util.ResourceBundle;
 
 public class Usuarios implements Initializable {
-    public GridPane btnsCRUD;
     //Table
     @FXML
     private TableColumn<Usuarios, String> user_name;
@@ -50,16 +52,8 @@ public class Usuarios implements Initializable {
         }catch(SQLException | ClassNotFoundException throwables){
             throwables.printStackTrace();
         }
-        permisosRoles();
     }
-    public void permisosRoles(){
-        User u = Control.getInstance().getSessionUser();
-        if(u.getId_role() == 1){
-            btnsCRUD.setVisible(true);
-        } else if(u.getId_role() == 2 || u.getId_role() == 3){
-            btnsCRUD.setVisible(false);
-        }
-    }
+
     //Add
 
     //Delete
@@ -110,5 +104,15 @@ public class Usuarios implements Initializable {
         SortedList<User> datosOrdenados = new SortedList<>(filtroUsuarios);
         datosOrdenados.comparatorProperty().bind(usersTable.comparatorProperty());
         usersTable.setItems(datosOrdenados);
+    }
+
+    public void addClicked(MouseEvent event) throws IOException {
+        Stage window = new Stage();
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/visual/views/dialogs/DialogUser.fxml"));
+
+        window.setScene(new Scene(loader.load()));
+
+        window.show();
     }
 }

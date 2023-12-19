@@ -124,7 +124,7 @@ public class Vehiculos implements Initializable {
     public void addClicked(javafx.scene.input.MouseEvent mouseEvent) throws IOException {
         Stage window = new Stage();
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/visual/views/dialogs/DialogVehiculos.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/visual/views/dialogs/DialogVehiculo.fxml"));
 
         window.setScene(new Scene(loader.load()));
 
