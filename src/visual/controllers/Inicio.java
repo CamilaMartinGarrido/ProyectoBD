@@ -95,7 +95,7 @@ public class Inicio implements Initializable {
         pnMenu.getChildren().setAll((Node) fxml);
     }
     public void reportes(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent fxml = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/visual/views/Vehiculos.fxml")));
+        Parent fxml = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/visual/views/Reportes.fxml")));
         pnMenu.getChildren().removeAll();
         pnMenu.getChildren().setAll((Node) fxml);
     }

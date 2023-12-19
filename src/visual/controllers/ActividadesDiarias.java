@@ -1,6 +1,7 @@
 package visual.controllers;
 
 import dto.Daily_Activity;
+import dto.User;
 import dto.Vehicle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -13,7 +14,9 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import services.Control;
 import services.DailyActivityService;
 import services.ServicesLocator;
 import services.VehicleService;
@@ -28,6 +31,7 @@ import java.util.LinkedList;
 import java.util.ResourceBundle;
 
 public class ActividadesDiarias implements Initializable {
+    public GridPane btnsCRUD;
     //Table
 
     @FXML
@@ -65,7 +69,15 @@ public class ActividadesDiarias implements Initializable {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
+        permisosRoles();
+    }
+    public void permisosRoles(){
+        User u = Control.getInstance().getSessionUser();
+        if(u.getId_role() == 1){
+            btnsCRUD.setVisible(true);
+        } else if(u.getId_role() == 2 || u.getId_role() == 3){
+            btnsCRUD.setVisible(false);
+        }
     }
 
     //Insert activity

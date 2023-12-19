@@ -27,7 +27,7 @@
 
          </columns>
       </TableView>
-      <GridPane layoutX="396.0" layoutY="85.0" prefHeight="68.0" prefWidth="169.0" AnchorPane.rightAnchor="30.0">
+      <GridPane fx:id="btnsCRUD" layoutX="396.0" layoutY="85.0" prefHeight="68.0" prefWidth="169.0" AnchorPane.rightAnchor="30.0">
          <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="57.0" />
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="63.0" minWidth="10.0" prefWidth="57.0" />
@@ -37,17 +37,17 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <ImageView fitHeight="46.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="46.0" fitWidth="44.0" onMouseClicked="#addClicked" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/add-button.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="54.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+            <ImageView fitHeight="54.0" fitWidth="44.0" pickOnBounds="true" onMouseClicked="#editClicked" preserveRatio="true" GridPane.columnIndex="1">
                <image>
                   <Image url="@../../images/edit-button.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="47.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+            <ImageView fitHeight="47.0" fitWidth="44.0" pickOnBounds="true" onMouseClicked="#deleteImageClicked" preserveRatio="true" GridPane.columnIndex="2">
                <image>
                   <Image url="@../../images/delete-button.png" />
                </image>

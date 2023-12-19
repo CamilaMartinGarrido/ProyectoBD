@@ -13,7 +13,9 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import services.Control;
 import services.PackageService;
 import services.ServicesLocator;
 
@@ -26,6 +28,7 @@ import java.util.LinkedList;
 import java.util.ResourceBundle;
 
 public class Paquetes implements Initializable {
+    public GridPane btnsCRUD;
     //Table
     @FXML
     private TableColumn<Package, String> name;
@@ -65,6 +68,15 @@ public class Paquetes implements Initializable {
             updateTable();
         } catch (SQLException | ClassNotFoundException throwables) {
             throwables.printStackTrace();
+        }
+        permisosRoles();
+    }
+    public void permisosRoles(){
+        User u = Control.getInstance().getSessionUser();
+        if(u.getId_role() == 1 || u.getId_role() == 3){
+            btnsCRUD.setVisible(true);
+        } else if(u.getId_role() == 2){
+            btnsCRUD.setVisible(false);
         }
     }
 
