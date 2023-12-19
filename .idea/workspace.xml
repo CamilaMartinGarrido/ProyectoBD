@@ -9,7 +9,14 @@
   <component name="ChangeListManager">
     <list default="true" id="0bb2a9b3-ecf3-4f57-8a69-a34a3eeae61c" name="Default Changelist" comment="algo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Usuarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/connection/DataBaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/connection/DataBaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/HotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/HotelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ServicesLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ServicesLocator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/AddHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/AddHotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Hoteles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Hoteles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/Hoteles.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Hoteles.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/views/dialogs/DialogHotel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/dialogs/DialogHotel.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +142,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="544eced7-edbf-49fc-93f0-cfd10c2f3bf9" name="Changes" comment="" />
+      <changelist id="0bb2a9b3-ecf3-4f57-8a69-a34a3eeae61c" name="Default Changelist" comment="algo" />
       <created>1700235971693</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -298,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702967703956</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="algo">
+      <created>1702968017775</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1702968017775</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

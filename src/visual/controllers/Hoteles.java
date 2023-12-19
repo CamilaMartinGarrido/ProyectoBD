@@ -1,16 +1,24 @@
 package visual.controllers;
+
 import dto.Hotel;
+import dto.Vehicle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 import services.HotelService;
 import services.ServicesLocator;
 
+import javax.swing.*;
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.LinkedList;
@@ -32,8 +40,8 @@ public class Hoteles implements Initializable {
     private TableView<Hotel> hotelsTable;
     private static HotelService service;
 
-    public Hoteles(){
-        hotelsTable = new TableView<>();
+    public Hoteles() {
+
         service = ServicesLocator.getHotelQ();
     }
 
@@ -44,9 +52,9 @@ public class Hoteles implements Initializable {
         category_hotel.setCellValueFactory(new PropertyValueFactory<>("category_hotel"));
         address_hotel.setCellValueFactory(new PropertyValueFactory<>("address_hotel"));
         province_hotel.setCellValueFactory(new PropertyValueFactory<>("province_hotel"));
-        try{
+        try {
             updateHotelsTable();
-        }catch(SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
@@ -59,20 +67,21 @@ public class Hoteles implements Initializable {
 
     //Delete hotel
     @FXML
-    private void deleteImageClicked(ActionEvent event) throws SQLException {
+    public void deleteImageClicked(MouseEvent mouseEvent) throws SQLException {
         ActionEvent select = new ActionEvent();
         deleteHotel(select);
     }
 
-    @FXML
-    void deleteHotel(ActionEvent select) throws SQLException {
+    private void deleteHotel(ActionEvent select) throws SQLException {
         int pos = hotelsTable.getSelectionModel().getSelectedIndex();
-        if(pos != -1){
-            //
+        if (pos != -1) {
+            Hotel h = hotelsTable.getItems().get(pos);
+            hotelsTable.getItems().remove(pos);
+            service.delete_Hotel(h);
             updateHotelsTable();
         }
-
     }
+
 
     //Update table
     public void updateHotelsTable() throws SQLException {
@@ -84,5 +93,37 @@ public class Hoteles implements Initializable {
     //Search
     @FXML
     private void searchHotels(javafx.scene.input.KeyEvent event) {
+
+    }
+
+
+    public void addClicked(MouseEvent mouseEvent) throws IOException {
+        Stage window = new Stage();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/visual/views/dialogs/DialogHotel.fxml"));
+        window.setScene(new Scene(loader.load()));
+        window.show();
+    }
+
+    public void editClickd(MouseEvent mouseEvent) throws IOException {
+        int pos = hotelsTable.getSelectionModel().getSelectedIndex();
+        if (pos != -1) {
+            Hotel h = hotelsTable.getItems().get(pos);
+
+            Stage window = new Stage();
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/visual/views/dialogs/DialogHotel.fxml"));
+            window.setScene(new Scene(loader.load()));
+            AddHotel controller = loader.getController();
+            controller.setId(h.getId_hotel());
+            controller.setAddress(h.getAddress_hotel());
+            controller.setProvince(h.getProvince_hotel());
+            controller.setHotelChain(h.getChain_hotel());
+            controller.setHotelName(h.getName_hotel());
+            controller.setCategory(h.getCategory_hotel());
+
+            window.show();
+        }else {
+            JOptionPane.showMessageDialog(null, "Seleccione un campo");
+        }
     }
 }
