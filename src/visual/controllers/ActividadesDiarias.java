@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.sql.Time;
+import java.sql.Timestamp;
 import java.util.LinkedList;
 import java.util.ResourceBundle;
 
@@ -73,29 +74,30 @@ public class ActividadesDiarias implements Initializable {
     public void addClicked(javafx.scene.input.MouseEvent mouseEvent) throws IOException {
         Stage window = new Stage();
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/visual/views/dialogs/DialogActividadesDiarias.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/visual/views/dialogs/DialogActiviadesDiarias.fxml"));
 
         window.setScene(new Scene(loader.load()));
 
         window.show();
     }
     //Update activity
-    public void editClicked(MouseEvent mouseEvent) throws IOException, SQLException {
+   public void editClicked(MouseEvent mouseEvent) throws IOException, SQLException {
         int pos = activitiesTable.getSelectionModel().getSelectedIndex();
         if (pos != -1) {
             Daily_Activity d = activitiesTable.getItems().get(pos);
             Stage window = new Stage();
 
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/visual/views/dialogs/DialogVehiculo.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/visual/views/dialogs/DialogActiviadesDiarias.fxml"));
             window.setScene(new Scene(loader.load()));
             DialogActiviadesDiarias controller = loader.getController();
             controller.setId(d.getId_activity());
-            controller.setMatricula(d.getProvince_activity());
-            controller.setMarca(v.getBrand());
-            controller.setAnno(String.valueOf(v.getYear_build()));
-            controller.setCapacidadEquipaje(String.valueOf(v.getLuggage_capacity()));
-            controller.setCapacidadSinEquipaje(String.valueOf(v.getWith_luggage_capacity()));
-            controller.setCapacidadTotal(String.valueOf(v.getTotal_capacity()));
+            controller.setDiaActividad(d.getDay_activity());
+            controller.setTipoActividad(d.getType_activity());
+            controller.setCostoActividad(Double.toString(d.getCost_activity()));
+            controller.setProvincia(d.getProvince_activity());
+            controller.setRecargo(Double.toString(d.getSurcharge_activity()));
+            controller.setDescripcionActividad(d.getDescription_activity());
+            controller.setTiempo(String.valueOf(d.getTime_activity()));
 
             window.show();
         } else {
@@ -105,7 +107,7 @@ public class ActividadesDiarias implements Initializable {
 
     //Delete activity
     @FXML
-    private void deleteImageClicked(ActionEvent event) throws SQLException {
+    private void deleteImageClicked(javafx.scene.input.MouseEvent mouseEvent) throws SQLException {
         ActionEvent select = new ActionEvent();
         deleteActivity(select);
     }
@@ -116,7 +118,7 @@ public class ActividadesDiarias implements Initializable {
         if (pos != -1) {
             Daily_Activity d = activitiesTable.getItems().get(pos);
             activitiesTable.getItems().remove(pos);
-            service.delete_daily_activity();
+            service.delete_daily_activity(d);
                   updateActivitiesTable();
         }
 
@@ -134,5 +136,9 @@ public class ActividadesDiarias implements Initializable {
     //Search
     @FXML
     private void searchActivities(javafx.scene.input.KeyEvent event) {
+    }
+
+    public TableView<Daily_Activity> getActivitiesTable() {
+        return activitiesTable;
     }
 }

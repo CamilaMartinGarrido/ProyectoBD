@@ -5,6 +5,7 @@ import dto.Daily_Activity;
 
 import java.sql.*;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class DailyActivityService {
@@ -48,12 +49,12 @@ public class DailyActivityService {
     }
 
     public void delete_daily_activity(Daily_Activity d) throws SQLException {
-        String function = "{call delete_daily_activity(?)";
+        String function = "{call public.delete_daily_activity(?)";
         java.sql.Connection connection = ServicesLocator.getConnection();
         CallableStatement preparedFunction = connection.prepareCall(function);
 
         preparedFunction.setInt(1, d.getId_activity());
-        preparedFunction.execute();
+        preparedFunction.executeQuery();
         preparedFunction.close();
 
     }
@@ -88,5 +89,18 @@ public class DailyActivityService {
         ResultSet result = statement.getResultSet();
         cod = result.getInt(1);
         return cod;
+    }
+
+    public boolean findActivity(Daily_Activity daily_activity) throws SQLException {
+        LinkedList<Daily_Activity> list = getActivities();
+        Iterator<Daily_Activity> iter = list.iterator();
+        boolean aux = false;
+        while(iter.hasNext() && !aux){
+            Daily_Activity d = iter.next();
+            if(d.getId_activity() == daily_activity.getId_activity()){
+                aux = true;
+            }
+        }
+        return aux;
     }
 }

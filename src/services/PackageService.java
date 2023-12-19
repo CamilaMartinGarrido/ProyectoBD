@@ -6,6 +6,7 @@ import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class PackageService {
@@ -29,6 +30,20 @@ public class PackageService {
         }
         return list;
     }
+
+    public boolean find(Package p) throws SQLException {
+        LinkedList<Package> packages = getPackages();
+        Iterator<Package> iter = packages.iterator();
+        boolean aux = false;
+        while (iter.hasNext() && !aux){
+            Package pa = iter.next();
+            if(pa.getId_package() == p.getId_package()){
+                aux = true;
+            }
+        }
+        return aux;
+    }
+
     public void add_package(Package p ) throws SQLException {
         String function = "{call add_package(?,?,?,?,?,?,?,?)}";
         java.sql.Connection connection = ServicesLocator.getConnection();

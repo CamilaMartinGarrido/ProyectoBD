@@ -93,14 +93,16 @@ public class Daily_Activity {
         this.setSurcharge_activity(surcharge_activity);
 
     }
-    public Daily_Activity(  String day_activity, Timestamp time_activity, double cost_activity,
-                           String description_activity) {
+    public Daily_Activity(  String type_activity, String day_activity, Timestamp time_activity, double cost_activity,
+                            String province_activity,String description_activity,double surcharge_activity) {
 
-       this.setDay_activity(day_activity);
+        this.setType_activity(type_activity);
+        this.setDay_activity(day_activity);
         this.setTime_activity(time_activity);
         this.setCost_activity(cost_activity);
-
+        this.setProvince_activity(province_activity);
         this.setDescription_activity(description_activity);
+        this.setSurcharge_activity(surcharge_activity);
 
     }
 }

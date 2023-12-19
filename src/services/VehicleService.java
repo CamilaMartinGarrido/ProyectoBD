@@ -55,7 +55,7 @@ public boolean findVehicle(Vehicle v) throws SQLException {
     }
 
     public void delete_vehicle(Vehicle v) throws SQLException {
-        String function = "{call delete_vehicle(?)}";
+        String function = "{call public.delete_vehicle(?)}";
         java.sql.Connection connection = ServicesLocator.getConnection();
         CallableStatement preparedFunction = connection.prepareCall(function);
 

@@ -15,7 +15,7 @@
             <Font name="Bookman Old Style Bold" size="25.0" />
          </font>
       </Label>
-      <JFXButton layoutX="322.0" layoutY="233.0" style="-fx-border-color: #285AB6; -fx-border-radius: 10;" text="Guardar" AnchorPane.bottomAnchor="29.0" AnchorPane.rightAnchor="127.0">
+      <JFXButton layoutX="322.0" layoutY="233.0" style="-fx-border-color: #285AB6; -fx-border-radius: 10;" text="Guardar" onMouseClicked="#guardarClicked" AnchorPane.bottomAnchor="29.0" AnchorPane.rightAnchor="127.0">
          <font>
             <Font size="17.0" />
          </font>

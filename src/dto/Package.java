@@ -100,4 +100,30 @@ public class Package {
         this.setTotal_package_cost(total_package_cost);
 
     }
+    public Package(int id_package, String promotional_name, int days_count, int nights_count, int pax_count, double hotel_airport_ride_cost,
+                   double total_package_cost) {
+        this.setId_package(id_package);
+        this.setPromotional_name(promotional_name);
+        this.setDays_count(days_count);
+        this.setNights_count(nights_count);
+        this.setPax_count(pax_count);
+
+        this.setHotel_airport_ride_cost(hotel_airport_ride_cost);
+
+        this.setTotal_package_cost(total_package_cost);
+
+    }
+    public Package( String promotional_name, int days_count, int nights_count, int pax_count, double hotel_airport_ride_cost,
+                   double total_package_cost) {
+
+        this.setPromotional_name(promotional_name);
+        this.setDays_count(days_count);
+        this.setNights_count(nights_count);
+        this.setPax_count(pax_count);
+
+        this.setHotel_airport_ride_cost(hotel_airport_ride_cost);
+
+        this.setPercent_profit(total_package_cost);
+
+    }
 }
