@@ -7,27 +7,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bb2a9b3-ecf3-4f57-8a69-a34a3eeae61c" name="Default Changelist" comment="merge">
-      <change afterPath="$PROJECT_DIR$/src/visual/controllers/Reportes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visual/views/Reportes.fxml" afterDir="false" />
+    <list default="true" id="0bb2a9b3-ecf3-4f57-8a69-a34a3eeae61c" name="Default Changelist" comment="Actualizado los permisos de los roles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/ActividadesDiarias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/ActividadesDiarias.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Contratos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Contratos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Habitaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Habitaciones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/ModelosTransporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/ModelosTransporte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Paquetes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Paquetes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/PlanesAlimenticios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/PlanesAlimenticios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Temporadas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Temporadas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Usuarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/controllers/Vehiculos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/Vehiculos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/views/Habitaciones.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Habitaciones.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/views/Hoteles.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Hoteles.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/views/ModelosTransporte.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/ModelosTransporte.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/views/Paquetes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Paquetes.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/views/PlanesAlimenticios.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/PlanesAlimenticios.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/views/Temporadas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Temporadas.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/views/Usuarios.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Usuarios.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visual/views/Vehiculos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/views/Vehiculos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conozca Cuba.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Conozca Cuba.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/connection/DataBaseConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/RoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/RoomService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/RouteService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/SeasonService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/ServicesLocator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/TransportationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/Transportation_Model_Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/services/VehicleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/ActividadesDiarias.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Contratos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Habitaciones.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Hoteles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/PlanesAlimenticios.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Roles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Temporadas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Usuarios.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Conozca Cuba/visual/controllers/Vehiculos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/connection/DataBaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utiles/DataBaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ServicesLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ServicesLocator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visual/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visual/controllers/LoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +75,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/ProyectoBD/libs/jasperreports-6.21.0.jar",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.21724138"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -77,6 +87,7 @@
       <recent name="visual.controllers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ProyectoBD\src\services" />
       <recent name="C:\Users\camil\IdeaProjects\Conozca Cuba\src" />
       <recent name="D:\ProyectoBD\libs" />
     </key>
@@ -314,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702943850129</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Actualizado los permisos de los roles">
+      <option name="closed" value="true" />
+      <created>1702964321309</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1702964321309</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -388,7 +407,8 @@
     <MESSAGE value="something" />
     <MESSAGE value="merge" />
     <MESSAGE value="Añadido roles de usuarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadido roles de usuarios" />
+    <MESSAGE value="Actualizado los permisos de los roles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizado los permisos de los roles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
