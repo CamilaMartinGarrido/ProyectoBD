@@ -2,6 +2,7 @@ package visual.controllers;
 
 import dto.Contract;
 import dto.Contract_Hotel;
+import dto.User;
 import dto.Vehicle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -12,7 +13,9 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.GridPane;
 import services.ContractService;
+import services.Control;
 import services.ServicesLocator;
 
 import java.net.URL;
@@ -22,6 +25,7 @@ import java.util.LinkedList;
 import java.util.ResourceBundle;
 
 public class Contratos implements Initializable {
+    public GridPane btnsCRUD;
     //Tabla De Contratos
 
     @FXML
@@ -56,8 +60,16 @@ public class Contratos implements Initializable {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        permisosRoles();
     }
-
+    public void permisosRoles(){
+        User u = Control.getInstance().getSessionUser();
+        if(u.getId_role() == 1 || u.getId_role() == 3){
+            btnsCRUD.setVisible(true);
+        } else if(u.getId_role() == 2){
+            btnsCRUD.setVisible(false);
+        }
+    }
     //Insert contract
 
 

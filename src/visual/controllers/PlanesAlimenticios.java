@@ -1,14 +1,19 @@
 package visual.controllers;
 import dto.MealPlan;
+import dto.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.layout.GridPane;
+import services.Control;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class PlanesAlimenticios implements Initializable {
+    public GridPane btnsCRUD;
     //Table
     @FXML
     private TableColumn<PlanesAlimenticios, String> plan_type;
@@ -18,8 +23,15 @@ public class PlanesAlimenticios implements Initializable {
     private TableView<MealPlan> plansTable;
 
     @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) { }
-
+    public void initialize(URL url, ResourceBundle resourceBundle) { permisosRoles(); }
+    public void permisosRoles(){
+        User u = Control.getInstance().getSessionUser();
+        if(u.getId_role() == 1){
+            btnsCRUD.setVisible(true);
+        } else if(u.getId_role() == 2 || u.getId_role() == 3){
+            btnsCRUD.setVisible(false);
+        }
+    }
     //Insert meal_plan
 
 

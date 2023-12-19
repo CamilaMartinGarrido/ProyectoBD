@@ -1,5 +1,6 @@
 package visual.controllers;
 
+import dto.User;
 import dto.Vehicle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -20,7 +21,9 @@ import java.util.ResourceBundle;
 
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import services.Control;
 import services.ServicesLocator;
 import services.VehicleService;
 
@@ -28,6 +31,7 @@ import javax.swing.*;
 
 
 public class Vehiculos implements Initializable {
+    public GridPane btnsCRUD;
     //Table
     @FXML
     private TableColumn<Vehiculos, String> license_plate;
@@ -67,6 +71,15 @@ public class Vehiculos implements Initializable {
             updateVehiclesTable();
         } catch (SQLException throwables) {
             throwables.printStackTrace();
+        }
+        permisosRoles();
+    }
+    public void permisosRoles(){
+        User u = Control.getInstance().getSessionUser();
+        if(u.getId_role() == 1){
+            btnsCRUD.setVisible(true);
+        } else if(u.getId_role() == 2 || u.getId_role() == 3){
+            btnsCRUD.setVisible(false);
         }
     }
 
