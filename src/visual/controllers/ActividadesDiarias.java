@@ -10,6 +10,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.GridPane;
 import services.DailyActivityService;
 import services.ServicesLocator;
 import services.VehicleService;
@@ -21,6 +22,7 @@ import java.util.LinkedList;
 import java.util.ResourceBundle;
 
 public class ActividadesDiarias implements Initializable {
+    public GridPane btnsCRUD;
     //Table
 
     @FXML

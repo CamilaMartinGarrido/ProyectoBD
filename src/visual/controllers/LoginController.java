@@ -22,7 +22,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
-    private Control control = new Control();
     @FXML
     private ImageView btnClose;
 
@@ -39,9 +38,12 @@ public class LoginController implements Initializable {
     private MFXTextField textUser;
 
 
+
+
+
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
     }
 
     private void close(){
@@ -65,12 +67,11 @@ public class LoginController implements Initializable {
         } else {
             int role = UserService.getLoginUser(textUser.getText());
             User user = new User(textUser.getText(), role);
-            this.control.setSessionUser(user);
+            Control.getInstance().setSessionUser(user);
             try {
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/visual/views/Dashboard.fxml"));
                 Parent root = fxmlLoader.load();
                 Stage stage = new Stage();
-                //stage.getScene().getWindow().setUserData(new User(textUser.getText(), role));
                 stage.setTitle("Ventana");
                 stage.setScene(new Scene(root));
                 stage.initStyle(StageStyle.UNDECORATED);

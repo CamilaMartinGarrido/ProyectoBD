@@ -5,10 +5,16 @@ import dto.User;
 public class Control {
 
     private User session = null;
+    private static Control instance;
 
-    public Control() {
-        super();
-        //
+
+    private Control() {}
+
+    public static Control getInstance() {
+        if (instance == null) {
+            instance = new Control();
+        }
+        return instance;
     }
 
     public User getSessionUser() {

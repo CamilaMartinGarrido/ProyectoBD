@@ -53,14 +53,14 @@ public class Inicio implements Initializable {
     @FXML
     private Pane pnMenu;
 
-    User user;
+    private User u;
+
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-       // Stage stage = (Stage) this.pnMenu.getScene().getWindow();
-       // user = (User) stage.getUserData();
-       // lblUsername.setText(user.getUser_name());
+        u = Control.getInstance().getSessionUser();
+        lblUsername.setText(u.getUser_name());
     }
 
     //Inicio
