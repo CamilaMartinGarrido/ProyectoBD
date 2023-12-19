@@ -1,6 +1,6 @@
 package services;
 
-import connection.DataBaseConnection;
+import utiles.DataBaseConnection;
 
 import java.sql.SQLException;
 

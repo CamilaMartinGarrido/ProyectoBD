@@ -59,14 +59,13 @@ public class LoginController implements Initializable {
     }
 
     private void getIn() {
-        String rol = null;
+        int rol = -1;
         rol = UserService.getLoginUser(textUser.getText(), textPassword.getText());
-        if (rol == "") {
+        if (rol == -1) {
             JOptionPane.showMessageDialog(null, "Contraseña y usuario inválidos");
             textPassword.setText("");
         } else {
-            int role = UserService.getLoginUser(textUser.getText());
-            User user = new User(textUser.getText(), role);
+            User user = new User(textUser.getText(), rol);
             Control.getInstance().setSessionUser(user);
             try {
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/visual/views/Dashboard.fxml"));
